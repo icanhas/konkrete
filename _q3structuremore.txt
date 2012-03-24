@@ -1,4 +1,4 @@
-# list of files to extrapolate
+# list of filenames to extrapolate
 
 .:
 !slug.cfg
