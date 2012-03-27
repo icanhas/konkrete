@@ -3,6 +3,8 @@ GS?=gs	# often "gswin64c" or "gswin32c" on Windows
 GSFLAGS?=-q -r90
 OGGENC?=oggenc
 OGGFLAGS?=-Q -q6 --resample 44100
+IM?=convert
+IMFLAGS?=
 
 DBASE=base
 DISTNAME='$(DBASE)-$(shell date +"%Y-%m-%d")'
@@ -18,6 +20,7 @@ DGRAPHICS=$(DVIS)/graphics
 DTEXTURES=$(DVIS)/textures
 DMENUART=$(DGRAPHICS)/menu
 ART=\
+     $(DVIS)/test.png \
      $(DMENUART)/cursor.png \
      $(DMENUART)/sliderbutton0.png \
      $(DMENUART)/switch_off.png \
@@ -41,11 +44,15 @@ DISTFILES=\
      $(DSCRIPTS) \
      $(TARGETS)
 
-.SUFFIXES: .png .pdf .ps .ogg .wav 
+.SUFFIXES: .png .pdf .ps .psd .ogg .wav 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+%.png : %.psd
+	$(IM) $(IMFLAGS) psd:$< $*.tiff
+	$(IM) $(IMFLAGS) $*.tiff[0] png:$@
+	@rm -f $*.tiff
 %.ogg : %.wav
 	$(OGGENC) $(OGGFLAGS) -o $@ $<
 
