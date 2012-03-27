@@ -1,6 +1,8 @@
 SHELL=/bin/sh
 GS?=gs	# often "gswin64c" or "gswin32c" on Windows
 GSFLAGS?=-q -r90
+OGGENC?=oggenc
+OGGFLAGS?=-Q -q6 --resample 44100
 
 DBASE=base
 DISTNAME='$(DBASE)-$(shell date +"%Y-%m-%d")'
@@ -12,12 +14,8 @@ DSCRIPTS=scripts
 DVIS=vis
 DSOUND=sound
 
-DMUSIC=$(DSOUND)/music
-DFEEDBACK=$(DSOUND)/feedback
-
 DGRAPHICS=$(DVIS)/graphics
 DTEXTURES=$(DVIS)/textures
-
 DMENUART=$(DGRAPHICS)/menu
 ART=\
      $(DMENUART)/cursor.png \
@@ -25,6 +23,14 @@ ART=\
      $(DMENUART)/switch_off.png \
      $(DMENUART)/switch_on.png
 TARGETS+=$(ART)
+
+DMUSIC=$(DSOUND)/music
+DFEEDBACK=$(DSOUND)/feedback
+SND=\
+     $(DSOUND)/null.ogg \
+     $(DFEEDBACK)/hit.ogg \
+     $(DMUSIC)/testm.ogg
+TARGETS+=$(SND)
 
 DISTFILES=\
      default.cfg \
@@ -35,11 +41,13 @@ DISTFILES=\
      $(DSCRIPTS) \
      $(TARGETS)
 
-.SUFFIXES: .png .pdf .ps
+.SUFFIXES: .png .pdf .ps .ogg .wav 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+%.ogg : %.wav
+	$(OGGENC) $(OGGFLAGS) -o $@ $<
 
 .PHONY: all clean dist distclean copyall rmbase
 
@@ -52,7 +60,7 @@ copyall: all
 rmbase:
 	@rm -rf $(DBASE)
 
-distclean: rmbase
+distclean: rmbase clean
 	@rm -f $(DISTNAME).*
 
 dist: copyall
