@@ -3,6 +3,7 @@ GS?=gs	# often "gswin64c" or "gswin32c" on Windows
 GSFLAGS?=-q -r90
 
 DBASE=base
+DISTNAME='$(DBASE)-$(shell date +"%Y-%m-%d")'
 
 DBOTFILES=botfiles
 DDEMOS=demos
@@ -25,6 +26,15 @@ ART=\
      $(DMENUART)/switch_on.png
 TARGETS+=$(ART)
 
+DISTFILES=\
+     default.cfg \
+     slab-cpma.cfg \
+     $(DBOTFILES) \
+     $(DDEMOS) \
+     $(DFONTS) \
+     $(DSCRIPTS) \
+     $(TARGETS)
+
 .SUFFIXES: .png .pdf .ps
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
@@ -36,19 +46,8 @@ TARGETS+=$(ART)
 all: $(TARGETS)
 
 copyall: all
-	@if [ ! -d $(DBASE) ]; then\
-		mkdir $(DBASE); \
-	fi
-	
-	@tar -c \
-		$(DBOTFILES) \
-		$(DDEMOS) \
-		$(DFONTS) \
-		$(DSCRIPTS) \
-		$(TARGETS) \
-		| tar -xv -C $(DBASE)
-
-DISTNAME='$(DBASE)-$(shell date +"%Y-%m-%d")'
+	@if [ ! -d $(DBASE) ]; then mkdir $(DBASE); fi
+	@tar -c $(DISTFILES) | tar -xv -C $(DBASE)
 
 rmbase:
 	@rm -rf $(DBASE)
