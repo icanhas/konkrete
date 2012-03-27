@@ -1,6 +1,8 @@
 base/
 *.swp
 *.stackdump
+*.xz
+*.7z
 
 *.ogg
 *.png
