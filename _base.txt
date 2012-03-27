@@ -1,10 +1,12 @@
-Vector images -> level 3 Postscript
+Vector images -> PDF 1.4/1.5 if vector contains transparency, otherwise 
+	level 3 Postscript. Exported Documents should be dimensioned for 
+	rendering at 90dpi.
 Raster images -> PSD/XCF/24-bit TGA or 32-bit TGA if alpha channel needed
 Vector is preferable to raster.
 
-Models -> Decide on something. COLLADA maybe? Though XML is to be avoided.
+Models -> Decide on something. COLLADA?
 
-Maps -> id Tech 3 or 4 map, probably interchangable
+Maps -> id Tech 3 or id Tech 4 map, probably interchangable
 
 Sound -> 441000Hz+ 16-bit+ PCM WAV
 
