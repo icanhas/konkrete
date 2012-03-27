@@ -50,9 +50,9 @@ DISTFILES=\
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.psd
-	$(IM) $(IMFLAGS) psd:$< $*.tiff
-	$(IM) $(IMFLAGS) $*.tiff[0] png:$@
-	@rm -f $*.tiff
+	$(IM) $(IMFLAGS) -deconstruct -coalesce psd:$< tiff:$*.tmp.tiff
+	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
+	@rm -f $*.tmp.tiff
 %.ogg : %.wav
 	$(OGGENC) $(OGGFLAGS) -o $@ $<
 
