@@ -20,6 +20,7 @@ DGRAPHICS=$(DVIS)/graphics
 DTEXTURES=$(DVIS)/textures
 D2DART=$(DGRAPHICS)/2d
 DMENUART=$(DGRAPHICS)/menu
+DEDITORTEX=$(DTEXTURES)/common
 ART=\
      $(DVIS)/test.png \
      $(D2DART)/crosshaira.png \
@@ -28,7 +29,14 @@ ART=\
      $(DMENUART)/cursor.png \
      $(DMENUART)/sliderbutton0.png \
      $(DMENUART)/switch_off.png \
-     $(DMENUART)/switch_on.png
+     $(DMENUART)/switch_on.png \
+     $(DEDITORTEX)/areaportal.png \
+     $(DEDITORTEX)/caulk.png \
+     $(DEDITORTEX)/clip.png \
+     $(DEDITORTEX)/hint.png \
+     $(DEDITORTEX)/nodraw.png \
+     $(DEDITORTEX)/noimpact.png \
+     $(DEDITORTEX)/trigger.png
 TARGETS+=$(ART)
 
 DMUSIC=$(DSOUND)/music
@@ -49,8 +57,14 @@ DISTFILES=\
      $(TARGETS)
 
 .SUFFIXES: .png .pdf .ps .psd .ogg .wav 
+%.png : %.eps
+	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+%.png : %.svg
+	$(IM) $(IMFLAGS) -deconstruct -coalesce svg:$< tiff:$*.tmp.tiff
+	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
+	@rm -f $*.tmp.tiff
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.psd
