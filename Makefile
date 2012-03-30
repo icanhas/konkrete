@@ -18,9 +18,13 @@ DSOUND=sound
 
 DGRAPHICS=$(DVIS)/graphics
 DTEXTURES=$(DVIS)/textures
+D2DART=$(DGRAPHICS)/2d
 DMENUART=$(DGRAPHICS)/menu
 ART=\
      $(DVIS)/test.png \
+     $(D2DART)/crosshaira.png \
+     $(D2DART)/crosshairb.png \
+     $(D2DART)/crosshairc.png \
      $(DMENUART)/cursor.png \
      $(DMENUART)/sliderbutton0.png \
      $(DMENUART)/switch_off.png \
