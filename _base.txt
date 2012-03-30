@@ -1,12 +1,13 @@
-Vector images -> PDF 1.4/1.5 if vector contains transparency, otherwise 
-	level 3 Postscript. Exported Documents should be dimensioned for 
-	rendering at 90dpi.
+Vector images -> PDF 1.4/1.5. Exported Documents should be dimensioned for 
+	rendering correctly at 90dpi. N.B.: alpha or layer opacity below 100% 
+	will completely break rendering with Ghostscript. Actually, this might
+	be an Inkscape bug, but ok.
+
 Raster images -> PSD/XCF/24-bit TGA or 32-bit TGA if alpha channel needed
-Vector is preferable to raster.
 
-Models -> Decide on something. COLLADA?
+Models -> Decide on something. ASE? MD5? COLLADA?
 
-Maps -> id Tech 3 or id Tech 4 map, probably interchangable
+Maps -> id Tech 3 or id Tech 4 map, probably interchangable.
 
-Sound -> 441000Hz+ 16-bit+ PCM WAV
+Sound -> 441000Hz+ 16-bit+ PCM WAV, preferably mono.
 
