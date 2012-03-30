@@ -20,6 +20,7 @@ DGRAPHICS=$(DVIS)/graphics
 DTEXTURES=$(DVIS)/textures
 D2DART=$(DGRAPHICS)/2d
 DMENUART=$(DGRAPHICS)/menu
+DEDITORTEX=$(DTEXTURES)/common
 ART=\
      $(DVIS)/test.png \
      $(D2DART)/crosshaira.png \
@@ -28,7 +29,14 @@ ART=\
      $(DMENUART)/cursor.png \
      $(DMENUART)/sliderbutton0.png \
      $(DMENUART)/switch_off.png \
-     $(DMENUART)/switch_on.png
+     $(DMENUART)/switch_on.png \
+     $(DEDITORTEX)/areaportal.png \
+     $(DEDITORTEX)/caulk.png \
+     $(DEDITORTEX)/clip.png \
+     $(DEDITORTEX)/hint.png \
+     $(DEDITORTEX)/nodraw.png \
+     $(DEDITORTEX)/noimpact.png \
+     $(DEDITORTEX)/trigger.png
 TARGETS+=$(ART)
 
 DMUSIC=$(DSOUND)/music
