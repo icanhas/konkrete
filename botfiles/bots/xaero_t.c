@@ -3,9 +3,9 @@
 // Name:			Xaero_c.c
 // Function:		chat lines for Xaero
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			R.A. Salvatore & The Seven Swords
+// Author:			R.A. Salvatore, The Seven Swords, and Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		Sept. 26, 1999
+// Last update:		May 23, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -226,8 +226,30 @@ chat "xaero"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Fate has thrown you a powerful tool. Though such are often wasted upon fools.";
+		"The mosquito has borrowed the dragon's teeth.";
+		"The flame of honor burns low and flickers in you, ", 0, ".";
+		"Where will you hide, ", 0, ",  when the divine wind deserts you?";
+		"The tiger faces death fiercely, ", 0, ". You are no tiger.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Loose the dragon. Unchain the thunderclap. Let chaos rule!";
+		"Waste not, the providence of Heaven. It may not come again.";
+		"A warrior knows that victory may not come til his own life is spilled out.";
+		"The fire of my soul reaches out to caress the the spirits of my foes.";
+	    "Such power should not be wasted upon lesser beings.";
+		// 0 = enemy name
+	} //end type
+
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -266,7 +288,7 @@ chat "xaero"
 
 	type "kill_insult" //insult initiated when the bot killed someone
 	{
-		"They say there is honor in death. Do not believe them, ", 0, ".";
+		"They say there is honor in death. ~Do ~not believe them, ", 0, ".";
 		"My soul for a true challenge!";
 		"They waste my time by feeding me insects like you.";
 		"The elephant steps on the ant. Does he even notice?";

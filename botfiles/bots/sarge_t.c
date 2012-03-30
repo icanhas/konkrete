@@ -136,7 +136,7 @@ chat "sarge"
 
 	type "death_suicide"  //includes weapon, cratering, & trigger_hurt
 	{
-		"Oooo. Don'tcha just hate it when that happens.";
+		"Oooo. ~Don'tcha just hate it when that happens.";
 		"Accidents happen.";
 		"This battlefield is booby-trapped!";
 		"I did that to make the odds more fair.";
@@ -198,8 +198,31 @@ chat "sarge"
 		"We'll make a soldier out of you yet, ",0, ".";
 	} //end type
 	
-	//================================================================
-	//================================================================
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Fragbait, you are about to experience a personal tragedy.";
+		"You use enough nukes and you might have a chance around here, ", fighter, ".";
+		"That might help you win, ", 0, "... and I just might be voted Miss Quake III Arena too.";
+		"You shoulda saved that for later, ", 0, ". 'Cause now your in deep doo-doo.";
+		"I got nothing good to say to you, ", 0, ".";
+		"Rrrrrrrrrr!";
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Let's just say I decided to be generous when handing out whoop-ass today.";
+		"A true soldier uses any weapon at hand.";
+		"You have all failed a crucial test here.";
+		"That ought to dampen your spirits a bit.";
+		"That one had your name AND address on it, ", 0, ".";
+	  "Alright! Fragbait by the bushel load!";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail"
 	{
@@ -260,7 +283,7 @@ chat "sarge"
 		"It'd be quicker if you just hold still, ", 1, ".";
 		"Does your mommy know you're here, ", 0, "?";
 		"You're not naturally bad, ", 0, ". What you got takes practice.";
-		"You want a piece of me?  You gotta take it the hard way!";
+		"You want a piece of me? You gotta take it the hard way!";
 		"Come and get me fragbait.";
 		"My old granny would be opening a can of whoopass here.";
 		"Smells like a latrine. Or is that ", 0, "'s cologne?";

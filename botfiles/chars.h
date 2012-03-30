@@ -2,15 +2,19 @@
 //
 // Name:			chars.h
 // Function:		bot characteristics
-// Programmer:		Mr Elusive (MrElusive@idsoftware.com)
-// Last update:		1999-09-08
+// Programmer:		Mr Elusive
+// Last update:		1999-12-20
 // Tab Size:		4 (real tabs)
 //===========================================================================
 
+//unless specified, the higher the number, the better the characteristic, or
+//the greater the likelyhood of the characteristic occuring.
+//also, if any characteristic is ommited, the default value will be used from
+//the file in /bots/default_c.c
 
 //========================================================
 //========================================================
-//name
+//name of character
 #define CHARACTERISTIC_NAME							0	//string
 //gender of the bot
 #define CHARACTERISTIC_GENDER						1	//string ("male", "female", "it")
@@ -27,7 +31,7 @@
 #define CHARACTERISTIC_VIEW_FACTOR					4	//float <0, 1]
 //maximum view angle change
 #define CHARACTERISTIC_VIEW_MAXCHANGE				5	//float [1, 360]
-//reaction time in seconds
+//reaction time in seconds--the lower the number the better
 #define CHARACTERISTIC_REACTIONTIME					6	//float [0, 5]
 //accuracy when aiming
 #define CHARACTERISTIC_AIM_ACCURACY					7	//float [0, 1]
@@ -57,33 +61,33 @@
 //========================================================
 //file with chats
 #define CHARACTERISTIC_CHAT_FILE					21	//string
-//name of the chat character
+//name of the character with respect to the name that appears when the bot chats
 #define CHARACTERISTIC_CHAT_NAME					22	//string
-//characters per minute type speed
+//type speed in characters per minute, good secretaries type about 350 cpm
 #define CHARACTERISTIC_CHAT_CPM						23	//integer [1, 4000]
 //tendency to insult/praise
 #define CHARACTERISTIC_CHAT_INSULT					24	//float [0, 1]
-//tendency to chat misc
+//tendency to chat about miscellaneous subject
 #define CHARACTERISTIC_CHAT_MISC					25	//float [0, 1]
 //tendency to chat at start or end of level
 #define CHARACTERISTIC_CHAT_STARTENDLEVEL			26	//float [0, 1]
 //tendency to chat entering or exiting the game
 #define CHARACTERISTIC_CHAT_ENTEREXITGAME			27	//float [0, 1]
-//tendency to chat when killed someone
+//tendency to chat when the character killed someone
 #define CHARACTERISTIC_CHAT_KILL					28	//float [0, 1]
-//tendency to chat when died
+//tendency to chat when the character died
 #define CHARACTERISTIC_CHAT_DEATH					29	//float [0, 1]
-//tendency to chat when enemy suicides
+//tendency to chat when enemy commits suicide
 #define CHARACTERISTIC_CHAT_ENEMYSUICIDE			30	//float [0, 1]
-//tendency to chat when hit while talking
+//tendency to chat when hit while chatting
 #define CHARACTERISTIC_CHAT_HITTALKING				31	//float [0, 1]
-//tendency to chat when bot was hit but didn't dye
+//tendency to chat when bot was hit but didn't die
 #define CHARACTERISTIC_CHAT_HITNODEATH				32	//float [0, 1]
-//tendency to chat when bot hit the enemy but enemy didn't dye
+//tendency to chat when bot hit the enemy but enemy didn't die
 #define CHARACTERISTIC_CHAT_HITNOKILL				33	//float [0, 1]
-//tendency to randomly chat
+//tendency to chat at random moments
 #define CHARACTERISTIC_CHAT_RANDOM					34	//float [0, 1]
-//tendency to reply
+//tendency to reply to chats
 #define CHARACTERISTIC_CHAT_REPLY					35	//float [0, 1]
 //========================================================
 //movement
@@ -97,7 +101,7 @@
 //tendency to jump using a weapon
 #define CHARACTERISTIC_WEAPONJUMPING				38	//float [0, 1]
 //tendency to use the grapple hook when available
-#define CHARACTERISTIC_GRAPPLE_USER					39	//float [0, 1]	//use this!!
+#define CHARACTERISTIC_GRAPPLE_USER					39	//float [0, 1]
 //========================================================
 //goal
 //========================================================
@@ -108,15 +112,15 @@
 //the self preservation of the bot (rockets near walls etc.)
 #define CHARACTERISTIC_SELFPRESERVATION				42	//float [0, 1]
 //how likely the bot is to take revenge
-#define CHARACTERISTIC_VENGEFULNESS					43	//float [0, 1]	//use this!!
+#define CHARACTERISTIC_VENGEFULNESS					43	//float [0, 1]
 //tendency to camp
 #define CHARACTERISTIC_CAMPER						44	//float [0, 1]
 //========================================================
 //========================================================
-//tendency to get easy frags
+//tendency to get easy frags (such as on chatting players)
 #define CHARACTERISTIC_EASY_FRAGGER					45	//float [0, 1]
 //how alert the bot is (view distance)
 #define CHARACTERISTIC_ALERTNESS					46	//float [0, 1]
-//how much the bot fires it's weapon
+//how long the bot fires it's weapon (continuous or bursts)
 #define CHARACTERISTIC_FIRETHROTTLE					47	//float [0, 1]
 

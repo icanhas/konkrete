@@ -1,21 +1,14 @@
 //===========================================================================
 //
-// Name:			syn.c
-// Function:		synonyms
-// Programmer:		Mr Elusive
-// Last update:		1999-11-20
-// Tab Size:		4 (real tabs)
-//
-// $Archive: /baseq3/botfiles/syn.c $
-// $Author: Paulj $ 
-// $Revision: 40 $
-// $Modtime: 11/20/99 12:19p $
-// $Date: 11/20/99 4:05p $
+// $Archive: /MissionPack/botfiles/syn.c $
+// $Author: Mrelusive $ 
+// $Revision: 6 $
+// $Modtime: 11/15/00 7:49a $
+// $Date: 11/15/00 7:49a $
 // 
 // Notes:			-
 //===========================================================================
 
-#include "game.h"
 #include "syn.h"
 
 
@@ -34,12 +27,17 @@ CONTEXT_NEARBYITEM
 	[("Plasma Gun", 1), ("plasma", 0.7), ("pg", 0)]
 	[("Railgun", 1), ("rail", 0.5), ("rg", 0), ("rail gun", 0)]
 	[("BFG10K", 1), ("bfg", 1), ("BFG", 1)]
+	[("Nailgun", 1), ("nail", 0), ("nail gun", 0)]
+	[("Prox Launcher", 1), ("proximity launcher", 0), ("prox", 0)]
+	[("Chaingun", 1), ("chain gun", 0)]
 	//powerups
 	[("Quad Damage", 1), ("quad", 0.7)]
 	[("Regeneration", 1), ("regen", 0.6)]
 	[("Battle Suit", 1), ("bs", 0), ("b suit", 0)]
 	[("Invisibility", 1), ("invis", 0)]
-	//[("Invulnerability", 1), ("invincebility", 1), ("invul", 0)] //not a q3 powerup
+	[("Invulnerability", 1), ("invincebility", 1), ("invul", 0)]
+	[("Kamikaze", 1), ("kamikazi", 0)]
+	[("Neutral Obelisk", 1), ("skull fountain", 0), ("center obelisk", 0)]
 } //end CONTEXT_NEARBYITEM
 
 //flags
@@ -53,6 +51,32 @@ CONTEXT_CTFBLUETEAM
 {
 	[("Red Flag", 0), ("enemy flag", 0), ("red base", 0), ("enemy base", 0)]
 	[("Blue Flag", 0), ("our base", 0), ("our flag", 0), ("blue base", 0), ("base", 0)]
+} //end CONTEXT_CTFBLUETEAM
+
+//obelisks
+CONTEXT_OBELISKREDTEAM
+{
+	[("Red Obelisk", 0), ("our base", 0), ("red base", 0), ("base", 1), ("our obelisk", 0)]
+	[("Blue Obelisk", 0), ("enemy base", 0), ("blue base", 0), ("enemy obelisk", 0)]
+} //end CONTEXT_CTFREDTEAM
+
+CONTEXT_OBELISKBLUETEAM
+{
+	[("Red Obelisk", 0), ("red base", 0), ("enemy base", 1), ("enemy obelisk", 0)]
+	[("Blue Obelisk", 0), ("our base", 0), ("blue base", 0), ("base", 1), ("our obelisk", 0)]
+} //end CONTEXT_CTFBLUETEAM
+
+//harvester
+CONTEXT_HARVESTERREDTEAM
+{
+	[("Red Obelisk", 0), ("our base", 0), ("red base", 0), ("base", 1), ("our obelisk", 0)]
+	[("Blue Obelisk", 0), ("enemy base", 0), ("blue base", 0), ("enemy obelisk", 0)]
+} //end CONTEXT_CTFREDTEAM
+
+CONTEXT_HARVESTERBLUETEAM
+{
+	[("Red Obelisk", 0), ("red base", 0), ("enemy base", 1), ("enemy obelisk", 0)]
+	[("Blue Obelisk", 0), ("our base", 0), ("blue base", 0), ("base", 1), ("our obelisk", 0)]
 } //end CONTEXT_CTFBLUETEAM
 
 CONTEXT_NORMAL
@@ -107,18 +131,18 @@ CONTEXT_NORMAL
 	[("we would", 1), ("we'd", 1)]
 	//have
 	[("I have", 1), ("I've", 0), ("Ive", 0)]
-	[("you have", 1), ("you've", 0), ("youve", 0)]					//conflicting with "you have" where contraction inappropriate
-//	[("he has", 1), ("he's", 1)]									//conflicting with "he is"
+	[("you have", 1), ("you've", 0), ("youve", 0)]
+//	[("he has", 1), ("he's", 1)]								//conflicting with "he is"
 //	[("she has", 1), ("she's", 1)]								//conflicting with "she is"
-//	[("it has", 1), ("it's", 1)]									//conflicting with "it is"
+//	[("it has", 1), ("it's", 1)]								//conflicting with "it is"
 	[("they have", 1), ("they've", 1), ("theyve", 0)]
 	[("we have", 1), ("we've", 1), ("weve", 0)]
 //	[("I had", 1), ("I'd", 1), ("Id")]							//conflicting with "I would"
-//	[("you had", 1), ("you'd", 1), ("youd", 1)]				//conflicting with "you would"
+//	[("you had", 1), ("you'd", 1), ("youd", 1)]					//conflicting with "you would"
 //	[("he had", 1), ("he'd", 1), ("hed", 1)]					//conflicting with "he would"
 //	[("she had", 1), ("she'd", 1)]								//conflicting with "she would"
-//	[("it had", 1), ("it'd", 1)]									//conflicting with "it would"
-//	[("we had", 1), ("we'd", 1)]									//conflicting with "we would"
+//	[("it had", 1), ("it'd", 1)]								//conflicting with "it would"
+//	[("we had", 1), ("we'd", 1)]								//conflicting with "we would"
 	//ing chops
 	[("being", 1), ("bein", 0)]
 	[("going", 1), ("goin", 0)]
@@ -141,7 +165,7 @@ CONTEXT_NORMAL
 	[("picture", 1), ("pic", 1)]
 	[("pictures", 1), ("pics", 1), ("pix", 0)]
 	[("everyone", 1), ("everybody", 1), ("all y'all", 0)]
-	[("see you", 1), ("cya", 0)]
+	[("see you", 1), ("cya", 0), ("cu", 0), ("c u", 0)]
 	[("father", 1), ("dad", 1), ("pa", 0), ("daddy", 0.6), ("poppa", 1)]
 	[("mother", 1), ("mom", 1), ("mommy", 1), ("mama", 1), ("momma", 1), ("muthah", 0)]
 	[("brother", 1), ("bro", 0.2), ("bruthah", 0)]
@@ -154,6 +178,9 @@ CONTEXT_NORMAL
 	//
 	[("waypoint", 1), ("way-point", 1), ("wp", 1)]
 	[("checkpoint", 1), ("check-point", 1), ("cp", 1)]
+	//
+	[("defense", 1), ("defence", 0)]
+	[("offense", 1), ("offence", 0)]
 	//numbers
 	[("0", 1), ("zero", 1)]
 	[("1", 1), ("one", 1)]
@@ -228,7 +255,7 @@ CONTEXT_NAMES
 	[("Patriot", 1),	("Blood Sucker", 0.5), ("Flaghead", 0.9), ("Leech", 0.2)]
 	[("Biker", 1),		("Lard Belly", 0.7), ("Fat-man", 0.5), ("Curly", 0.6)]
 	[("Lucy", 1),		("Lard Butt", 0.7), ("Pattie-Fattie", 0.2)]
-	[("Klesk", 1),		("Klesk", 1), ("Bug", 0.6), ("Scum-sucker", 0.5), ("corpse-gobbler", 0.2)]
+	[("Klesk", 1),		("Bug", 0.6), ("Scum-sucker", 0.5), ("corpse-gobbler", 0.2)]
 	[("Doom", 1),		("Mad Man", 0.4), ("Loony", 0.3), ("Schitzo", 0.35)]
 	[("Mynx", 1),		("Hotstuff", 0.2), ("Hardcore", 0.04), ("Hottie", 0.03), ("Sexy", 0.1), ("Wild Vixen", 0.05), ("Mynxie", 0.6)]
 	[("Gorre", 1),		("Jerk", 0.6), ("Al", 0.5), ("Flamer", 0.7), ("Pansy", 0.3), ("Wuss", 0.1)]

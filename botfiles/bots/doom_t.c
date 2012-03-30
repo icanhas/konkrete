@@ -244,8 +244,31 @@ chat "doom"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"And they call me crazy...";
+			"Oh the humanity ....";
+		"That's one way to perform an exorcism.";
+		"That thing leaves a crater the size of ", place, ".";
+		"I smell Hellrot at work in this.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"You and your little dog Toto too!";
+		"Messy, but very effective.";
+		"I coulda used me one these a looooong time ago.";
+		"Baby! Where have you been all my life?";
+		"Hahahahahahaha! I think I got me a new girlfriend!";
+	  "So ... beautiful ... ";
+		// 0 = enemy name
+	} //end type
+
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -262,7 +285,7 @@ chat "doom"
 	{
 		"It's better this way. No gore. No body parts lying... everywhere.";
 		"I think I have some of your face stuck to my glove, ", 0, "!";
-		"Need... Berserk pack... must... have... berserk pack!";
+		"Need... Berserk Pack... must... have... Berserk Pack!";
 		"Bwahahahahahaha!";
 		"I can't get enough of this!";
 		"Groovy!";
@@ -298,7 +321,7 @@ chat "doom"
 		"Brainless moro... oops... wait I CAN see your brain, ", 0, "!";
 		"Hahahahahah ... I just love my job!";
 		"I regret that ", 0, " only has ~one life to give for my country.";
-		"Don't worry. folks. ", 0, " won't do that again. ", 0, " doesn't have the guts!";
+		"~Don't worry. folks. ", 0, " won't do that again. ", 0, " doesn't have the guts!";
 		"That's ~one way to wipe the smile off someone's face.";
 		"Kiss my ammo belt.";
 		KILL_INSULT19;
@@ -339,7 +362,7 @@ chat "doom"
 		"The blood! Too much! ",4,"'s starting to look familiar."
 		"Join the ~Marines, see the universe... geez.";
 		"You're just jealous because the voices only talk to me, ", 0, ".";
-		"So, ", 0, ". Why don't we frag the ", fighter, "s, then duel it out?";
+		"So, ", 0, ". Why ~don't we frag the ", fighter, "s, then duel it out?";
 		"Everybody stop persecuting me!?";
 		MISC1;
 		MISC0;

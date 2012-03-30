@@ -4,7 +4,7 @@
 // Function:		chat lines for [Slash]
 // Programmer:		Jan Paul & J. Cash
 // Scripter:		Paul Jaquays
-// Last update:		09/21/99
+// Last update:		May 19, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -89,7 +89,7 @@ chat "slash"
 	{
 		"~One shot, ~one .... Ok, I guess I'll have to make it ~two shots.";
 		"You've been whoring the armor again, ", 0, ", haven't you?";
-		"Don't run off, ", 0, ", I've got more just like that for you.";
+		"~Don't run off, ", 0, ", I've got more just like that for you.";
 		//0 = opponent
 	} //end type
 
@@ -132,6 +132,8 @@ chat "slash"
 	{
 		"All that water and no hunky lifeguards. No beach either.";
 		"If I were meant to swim, I'd have gill implants.";
+		"Now all my ware is wet,";
+		"Like, terminal wet t-shirt contest!";
 		DEATH_DROWN0;
 	} //end type
 
@@ -153,7 +155,7 @@ chat "slash"
 	{
 		"So. Like, I suppose you never off yourself? Right?";
 		"Like, 'Ow.'";
-		"There is, like, no honor in wasting ~one's self like that.";
+		"There is, like, no fun in wasting ~one's self like that.";
 		DEATH_SUICIDE0;
 	} //end type
 
@@ -183,8 +185,31 @@ chat "slash"
 		D_PRAISE4;
 	} //end type
 
-	//================================================================
-	//================================================================
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+	"^1**[giggle]**";
+		"Y'know, like, that was totally gross.";
+		"Next time, ", 0, " ... my foot, your butt.";
+		"Like, was that the best you could do?";
+		"Those, like, oughta be illegal.";
+		"Wheee! My turn now!";
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"That is just too kewl!";
+		"Nice moves babe! The gib bounce at the end is the best.";
+		"Lady Slash goes off-line with a bang!";
+		"Yippeee!";
+		"One Neural Overload with sashimi to go!";
+	  "I'll bet that purged your hard drive!";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" 
 	{

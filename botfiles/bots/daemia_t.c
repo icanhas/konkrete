@@ -7,7 +7,7 @@
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
 // Author:			Seven Swords, R.A. Salvataore, Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		Oct. 8, 1999
+// Last update:		July 10, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -103,7 +103,7 @@ chat "daemia"
 
 	type "hit_nodeath" //bot is hit by an opponent's weapon attack; either praise or insult
 	{
-		"Ow! Don't make me come over there, ", 0, ".";
+		"Ow! ~Don't make me come over there, ", 0, ".";
 		"You are SO gonna wish you could take that back.";
 		"I was gonna go easy on you ... but no more, ~jerk.";
 		"Score ~one for ", 0, ". We'll put that on ", 0, "'s tombstone.";
@@ -181,7 +181,7 @@ chat "daemia"
 	type "death_gauntlet" //initiated when the bot is killed by a gauntlet attack
 	{
 		"Scratch a little lower, ", 0 ,".";
-		"I don't do 'patty-cake' on a first date, ~jerk.";
+		"I ~don't do 'patty-cake' on a first date, ~jerk.";
 		DEATH_GAUNTLET0;
 		DEATH_TELEFRAGGED3;
 		// 0 = enemy name
@@ -225,8 +225,29 @@ chat "daemia"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Madre de Dios!";
+		"Caramba! You sure know how to impress a girl.";
+		"I bet you don't get invited to many parties, ", 0, ".";
+		"So those weren't flying toasters after all.";
+		"So, ", 0, ". I see you are now buying the large economy cans of Whoop-Ass.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"Awesome. I never get to play with the big toys.";
+		"Oh. You meant don't press THAT button.";
+		"Sort of like a group telefrag.";
+		"That was a blast!";
+		"Ugh. Someone call housekeeping.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -269,7 +290,7 @@ chat "daemia"
 
 	type "kill_insult" //insult initiated when the bot killed someone
 	{
-		"Don't worry, that toe tag will let your mommy know who you are.";
+		"~Don't worry, that toe tag will let your mommy know who you are.";
 		"Who's your Mommy?";
 		"It's never too late for a change of career, ", 0, ".";
 		"Trust me when I say this: '", 0, ", you suck.'";

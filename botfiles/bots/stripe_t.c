@@ -4,9 +4,9 @@
 // Name:			Stripe
 // Function:		chat lines for Stripe
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			The Seven Swords & R.A. Salvatore
+// Author:			The Seven Swords, R.A. Salvatore, & Paul Jaquays
 //Editor:			Paul Jaquays
-// Last update:		October 13, 1999
+// Last update:		Mayy 22, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -93,7 +93,7 @@ chat "stripe"
 		"Either I'm getting slow or y'all're using a sloppy weapon.";
 		0, ", y'all are beginning to irritate me.";
 		"I must have a tracer on me.";
-		"Don't play games with me, ", 0, ".";
+		"~Don't play games with me, ", 0, ".";
 		"Y'all hit the man, he supposed to stay down. Y'all messed up.";
 		//0 = shooter
 	} //end type
@@ -171,7 +171,7 @@ chat "stripe"
 	{
 		"I didn't know I was within ~five feet of the fence.";
 		"That gun don't mess around.";
-		"Y'all put that thing down, ", 0, ". Don't go messing with what you can't handle.";
+		"Y'all put that thing down, ", 0, ". ~Don't go messing with what you can't handle.";
 		DEATH_RAIL1;
 		// 0 = enemy name
 	} //end type
@@ -202,8 +202,30 @@ chat "stripe"
 		// 0 = enemy name
 	} //end type
 
+			type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"~Y'all gonna eat that?";
+		"~Y'all better have another one o' them ready or yo' ass is grass.";
+		"~Y'all sure nurfed that one up good.";
+		"What the ... am I wearin' a red shirt today?";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Come an' get it!";
+		"~Y'all so smart, how come ~y'all dead then?";
+		"~Ain't nobody here gonna be shooting back too soon.";
+		"You can take THAT to the bank.";
+		"~Don't you say nothin' 'bout my momma.";
+	    "Yo! Superfly! Dodge THAT!";
+		"I see dead people.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -223,7 +245,7 @@ chat "stripe"
 
 	type "kill_telefrag" //initiated when the bot telefragged someone
 	{
-		"Get off my turf!";
+		"Get your sorry, ", fighter, " ~ass off my turf!";
 		"There's ~one monkey off my back.";
 		"Y'all can't nap in the stall like that, ", 0, ".";
 		"I figured y'all forgot to flush, ", 0, ". So I done it for y'all.";
@@ -281,6 +303,7 @@ chat "stripe"
 	{
 		"I can't believe I still have my safety on.";
 		"I could go for a big plate of ", food, ", the way my momma made it.";
+		"I ain't yo' brother.";
 		MISC6;
 		// 0 = name of randomly chosen player
 		// 1 = bot name

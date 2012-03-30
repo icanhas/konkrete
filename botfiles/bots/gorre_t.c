@@ -5,7 +5,7 @@
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
 // Author:			The Seven Swords & R. A. Salvatore
 // Editor:			Paul Jaquays
-// Last update:		Oct. 10, 1999
+// Last update:		April 9, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -51,7 +51,7 @@ chat "gorre"
 	{
 		"Awwww. I was having too much fun chopping you guys up.";
 		"Hey, ", 2, ", you got in my way. You're gonna be lunchmeat.";
-		"Okay, ", 3,", why don't you just let ", 2, " kill you again? You guys working together?";
+		"Okay, ", 3,", why ~don't you just let ", 2, " kill you again? You guys working together?";
 		LEVEL_END2;
 		// 0 = bot name
 		// 2 = opponent in first place
@@ -62,7 +62,7 @@ chat "gorre"
 	{
 		"Took me longer to learn how to tie my shoes than how to frag you pus balls.";
 		"Call housekeeping. Stains everywhere.";
-		"Don't cry, ", 3, ". Keep trying. I like stomping you.";
+		"~Don't cry, ", 3, ". Keep trying. I like stomping you.";
 		LEVEL_END_VICTORY1;
 		LEVEL_END_VICTORY4;
 		// 0 = bot name
@@ -97,7 +97,7 @@ chat "gorre"
 		"You've marred perfection, ", 0, ". You've made perfection mad. This is gonna hurt.";
 		"You can't take down this body with that little gun, pus ball.";
 		"Was I supposed to yell ouch? Ain't gonna happen, ", fighter, ".";
-		"Don't you go blaming your lack of skill on cheap guns and poor ammo.";
+		"~Don't you go blaming your lack of skill on cheap guns and poor ammo.";
 		"I'm immortal. Hitting me won't kill me.";
 		TAUNT3;
 		//0 = shooter
@@ -160,7 +160,7 @@ chat "gorre"
 		"Unfriggin'-believable.";
 		"Ain't what it seems... you bored me to death.";
 		"You see how it's done, ", 0, "? Okay, now you do it.";
-		"Don't laugh, ", 0, ", you're next!";
+		"~Don't laugh, ", 0, ", you're next!";
 		DEATH_SUICIDE4;
 		DEATH_SUICIDE1;
 		// 0 = enemy name
@@ -213,12 +213,32 @@ chat "gorre"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Big deal. I once wiped out fourty ", fighter, "s in a single blast with it.";
+		"^1**NUKED**";
+		"I like you, ", 0, ". Nobody else masters the cheap shot like you do.";
+		"You almost missed with that.";
+		"Bah. I should have expected a trick like that from you, ", 0, ".";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
 
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"I OWN you all!";
+		"Bow before my godlike power!";
+		"I RAWK BABY!!";
+		"You can keep the change!";
+		// 0 = enemy name
+	} //end type
+
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
-		"Don't whine about things you can't control, ", 0, ".";
+		"~Don't whine about things you can't control, ", 0, ".";
 		"I didn't even shoot that... I threw it.";
 		KILL_RAIL1;
 		KILL_RAIL2;
@@ -294,7 +314,7 @@ chat "gorre"
 	{	
 		"I am the god of frags, and ", 4, " is my temple!";
 		"Someone tell me what it's like to get fragged. I just can't imagine it.";
-		"Don't you EVER call me ~Al!";
+		"~Don't you EVER call me ~Al!";
 		"I just use the teddy bear to keep my knees in the proper position at night.";
 		"I practice with a mirror. I'm the only ~one good enough for me to learn from.";
 		"Mmmmmmm, ", food, ".";

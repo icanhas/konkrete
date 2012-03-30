@@ -6,7 +6,7 @@
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
 // Author:		R.A. Salvatore & The Seven Swords
 //Editor: 		Paul Jaquays
-// Last update:		Oct.05, 1999
+// Last update:		May 11, 2000 (PAJ)
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -120,8 +120,31 @@ chat "hunter"
 		//0 = opponent
 	} //end type
 
+			type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"The reptiloid kills this way. Have you no courage, no honor?";
+		"Ha! Our shattered corpse leaves you no trophies, ", 0, "!";
+		"You shame your tribe, your clan, and your family to strike in this way.";
+		"Pfahhh! We will gain no honor destroying one such as you, ", 0, ".";
+		0, ", we take pleasure knowing that you have joined us in destruction.";
+		"You are of Sorg lineage, no doubt.";
+		"The kamikaze is the coward's weapon.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"It was necessary. We take no joy in what we have done.";
+		"Know, oh ", fighter, "s, that we regret our recent action.";
+		"Gladly would we use this device against the vile Sorg! May they all die in agony.";
+		"Though we be judged for this action, we would do it again to gain victory!";
+		"Fear us, for we are Death's avatar made flesh.";
+		// 0 = enemy name
+	} //end type
 
 	type "death_telefrag" //initiated when the bot is killed by a telefrag
 	{
@@ -132,9 +155,9 @@ chat "hunter"
 
 	type "death_cratered" //initiated when the bot is killed by taking "normal" falling damage
 	{
-		"Catch us! our life has more worth than thine!";
+		"Catch us next time! Qur life has more worth than thine!";
 		"Aiyeeeeeee!";
-		"The fall is freeing, the ending... sucks.";
+		"The fall is freeing, the ending ... sucks.";
 		// 0 = eneour name
 	} //end type
 
@@ -142,7 +165,7 @@ chat "hunter"
 	{
 		"It does not kill us ... it but hardens our skin.";
 		"Our blood boils with anger, not pain.";
-		//"Perhaps we can alter the flow over the nearest Sorg village.";
+		"A fiery death intensifies our passion.";
 		// 0 = eneour name
 	} //end type
 
@@ -201,7 +224,7 @@ chat "hunter"
 	type "death_insult" //insult initiated when the bot died
 	{
 		"You do not deserve to wear our feathered crown, ", 0, "!";
-		"We have come to expect such vile tactics from sorg.";
+		"We have come to expect such vile tactics from Sorg.";
 		0, ", you are a newt! It won't get better.";
 		"Vile ", fighter, "! Treachery is not conquest, ", 0, ".";
 		"A starving wolf would spit out your rancid flesh, ", 0, ".";

@@ -201,8 +201,33 @@ chat "cadavre"
 		// 1 = random opponent
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"That just spread the goodness all around.";
+		"I've just been promoted from dumpster bait to air pollution.";
+		"Yeah? Well I love you too, ", 0, ".";
+		"Now I'm mad. You know how long it took to collect all them maggots the first time?";
+		"Now you've gone and scared my pretty little maggots.";
+		"Can I get back to you on that? I'm spread a little thin right now.";
+		"That's some temper you got there, ", fighter, ".";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		0, " isn't just a ", fighter, ", it's a tasty dessert topping too.";
+		"Heh. That was loud enough to wake the dead.";
+		"Bwahahahahahaa!";
+		"Yeah! Just sharing the love.";
+		"Bartender! Maggots for everyone!";
+		"Lunchtime!";
+		// 0 = enemy name
+	} //end type
+
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{

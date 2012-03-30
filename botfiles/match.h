@@ -2,14 +2,17 @@
 //
 // Name:			match.h
 // Function:		match template defines
-// Programmer:		Mr Elusive (MrElusive@idsoftware.com)
-// Last update:		1999-10-01
+// Programmer:		Mr Elusive
+// Last update:
 // Tab Size:		4 (real tabs)
 //
 //===========================================================================
 
+// make sure this is the same character as we use in chats in g_cmd.c
+#define EC	"\x19"
+
 //match template contexts
-#define MTCONTEXT_ENTERGAME				2
+#define MTCONTEXT_MISC					2
 #define MTCONTEXT_INITIALTEAMCHAT		4
 #define MTCONTEXT_TIME					8
 #define MTCONTEXT_TEAMMATE				16
@@ -19,6 +22,7 @@
 #define MTCONTEXT_CTF					256
 
 //message types
+#define MSG_NEWLEADER					1		//new leader
 #define MSG_ENTERGAME					2		//enter game message
 #define MSG_HELP						3		//help someone
 #define MSG_ACCOMPANY					4		//accompany someone
@@ -47,6 +51,11 @@
 #define MSG_RETURNFLAG					27		//return the flag
 #define MSG_WHATISMYCOMMAND				28		//ask the team leader what to do
 #define MSG_WHICHTEAM					29		//ask which team a bot is in
+#define MSG_TASKPREFERENCE				30		//tell your teamplay task preference
+#define MSG_ATTACKENEMYBASE				31		//attack the enemy base
+#define MSG_HARVEST						32		//go harvest
+#define MSG_SUICIDE						33		//order to suicide
+#define MSG_MAKELOVE					34		//
 //
 #define MSG_ME							100
 #define MSG_EVERYONE					101
@@ -56,9 +65,12 @@
 #define MSG_MINUTES						105
 #define MSG_SECONDS						106
 #define MSG_FOREVER						107
+#define MSG_FORALONGTIME				108
+#define MSG_FORAWHILE					109
 //
 #define MSG_CHATALL						200
 #define MSG_CHATTEAM					201
+#define MSG_CHATTELL					202
 //
 #define MSG_CTF							300		//ctf message
 
@@ -80,6 +92,11 @@
 #define ST_CAPTUREDFLAG					8192
 #define ST_RETURNEDFLAG					16384
 #define ST_TEAM							32768
+#define ST_1FCTFGOTFLAG					65535
+//ctf task preferences
+#define ST_DEFENDER						1
+#define ST_ATTACKER						2
+#define ST_ROAMER						4
 
 
 //word replacement variables

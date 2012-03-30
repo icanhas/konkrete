@@ -173,12 +173,25 @@ chat "angel"
 
 	type "death_bfg" //initiated when the bot died by a BFG
 	{
-		"Don't stand in a puddle when re-charging. Gotta write that down ...";
+		"~Don't stand in a puddle when re-charging. Gotta write that down ...";
 		"Hey, ", 0, ", Quit laughing. Half those sparks are coming from me!";
 		"Green. I hate green.";
 		DEATH_BFG0;
 		// 0 = enemy name
 	} //end type
+
+	//type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+//	{
+//		"What am I here? Guest of honor at the losers' convention?";
+//		"So you can light your farts, ", 0, ", big deal.";
+//		"Yeah ... that was fun ... NOT!";
+//		"Oh yeah, that took REAL skill.";
+//		"You ought to take something for that gas problem, ", 0, ".";
+//		"Score one for the No-Skill Express.";
+//		DEATH_KAMIKAZE1;
+		// 0 = enemy name
+//	} //end type
+
 
 	type "death_insult" //insult initiated when the bot died
 	{
@@ -203,7 +216,7 @@ chat "angel"
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
-		"This way I don't have to risk getting your guts all over me, ", 0, ".";
+		"This way I ~don't have to risk getting your guts all over me, ", 0, ".";
 		KILL_RAIL1;
 		// 0 = enemy name
 	} //end type
@@ -221,6 +234,15 @@ chat "angel"
 		TELEFRAGGED1;
 		// 0 = enemy name
 	} //end type
+
+		//type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+//	{
+//		"I can see you weren't expecting that!";
+//		"Awwww. Did the big bad boom scare the widdle ", fighter, "s?";
+//		"Now that was cooool.";
+//		"You're just mad 'cause I got to it first.";
+		// 0 = enemy name
+//	} //end type
 
 	type "kill_insult" //insult initiated when the bot killed someone
 	{
@@ -259,7 +281,7 @@ chat "angel"
 		"The hot wings made my fingers all sticky.";
 		"Robot?!?! I'm a synthetic humanoid, thank you very much.";
 		"Hi, my name is Angel, and yes, I am a fragaholic.";
-		"I don't dance, unless it's on ", 0, "'s head.";
+		"I ~don't dance, unless it's on ", 0, "'s head.";
 		"Pygmalion was a ~jerk.";
 		one_liners;
 		// 0 = name of randomly chosen player

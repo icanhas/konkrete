@@ -4,9 +4,9 @@
 // Name:			Ranger
 // Function:		chat lines for Ranger
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			Seven Swords & R.A. Salvatore
+// Author:			Seven Swords, R.A. Salvatore & Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		Oct. 08, 1999
+// Last update:		May 19. 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -206,15 +206,37 @@ chat "ranger"
 	type "death_praise" //praise initiated when the bot died
 	{
 		"Okay, ", 0, ", I'd salute you ... if I could find my head!";
-		"I'd give you my boots, but I don't think you could fill 'em!";
+		"I'd give you my boots, but I ~don't think you could fill 'em!";
 		"I can respect a shot like that, ", 0, ".";
 		"Pin me up and call me a target. An outstanding shot, ", 0, ".";
 		D_PRAISE6;
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"The medic's got medications that can help you cope with that, ", 0, ".";
+		"~Ranger to Base, enemy has deployed tactical nukes. Advise.";
+		"~Ranger to Base. Operation ", operation1, " ", operation2, " at risk. Advise.";
+		"All that training just to qualify as hazardous waste.";
+		0, ", I'm gonna make you eat the next one of those, ", 0, ".";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Quakin'!!!";
+		"Blast. I think I missed one of ya.";
+		"Airstrike!";
+		"Not this time sucker!";
+		"This is too much like fun. I gotta get out of the house more.";
+	  "Hey ", 0, "! Anybody tell you that you got a purty spleen?";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -227,7 +249,7 @@ chat "ranger"
 	type "kill_gauntlet" //initiated when the bot kills someone with gauntlet
 	{
 		"'Mr. Glove' just wanted to be friendly, ", 0, ".";
-		"See, U sed to have this axe....";
+		"See, I used to have this axe....";
 		"See how close I can get, ", 0, "? I can whisper in your ear.";
 		KILL_GAUNTLET2;
 		// 0 = enemy name
@@ -273,7 +295,7 @@ chat "ranger"
 
 	type "random_insult" //insult initiated randomly (just when the bot feels like it)
 	{
-		"You got 'retreat' down to a science, don't you, ", 0, "?";
+		"You got 'retreat' down to a science, ~don't you, ", 0, "?";
 		"Hey, ", 0, ", get that butt down. Oh, that's your head.";
 		"If I gave myself a sucking chest wound, you'd still lose, ", 1, ".";
 		"Surrender and it will go easier for you.";

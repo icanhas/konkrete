@@ -53,7 +53,7 @@ chat "crash"
 
 	type "level_end_victory" //initiated when a level ends and the bot is first in the rankings
 	{
-		"Don't go for a perfect record, ", 3, ". Try to win some matches.";
+		"~Don't go for a perfect record, ", 3, ". Try to win some matches.";
 		"If you can't beat me, it's time to take up something less challenging.";
 		"Do it again. But this time, with feeling.";
 		// 0 = bot name
@@ -62,7 +62,7 @@ chat "crash"
 	type "level_end_lose" //initiated when a level ends and the bot is last in the rankings
 	{
 		"I guess I had that coming.";
-		"Good luck. Don't be a stranger ... well at least not stranger than you already are.";
+		"Good luck. ~Don't be a stranger ... well at least not stranger than you already are.";
 		"Have fun storming the castle.";
 		"Good luck, ", 2, ". But I think Ranger is going to toast your biscuits.";
 		// 0 = bot name
@@ -137,7 +137,7 @@ chat "crash"
 	{
 		"After all this time, I ought to be more careful.";
 		"Even the best of us make the occasional foot fault.";
-		"Don't laugh, but we used to call ", androbot, ", 'King of the Lava Divers.'";
+		"~Don't laugh, but we used to call ", androbot, ", 'King of the Lava Divers.'";
 		// 0 = enemy name
 	} //end type
 
@@ -185,9 +185,32 @@ chat "crash"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Tactical nukes make poor neighbors.";
+		"Can't we all just get along?";
+		"You'll hear from the neighborhood association about this one.";
+		"That's a grand slam for the visitors.";
+		"Well, my headache's gone now.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
-	type "kill_rail" //initiated when the bot kills someone with rail gun
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"Awesome. I never get to play with the big toys.";
+		"Oh. You meant don't press THAT button.";
+		"Sort of like a group telefrag.";
+		"That was a blast!";
+		"Ugh. Someone call housekeeping.";
+		// 0 = enemy name
+	} //end type
+
+	
+type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
 		"I have a deep and abiding love for power tools.";
 		"Explosive decompression works for me.";
@@ -198,7 +221,7 @@ chat "crash"
 
 	type "kill_gauntlet" //initiated when the bot kills someone with gauntlet
 	{
-		"Oops. Don't know my own strength.";
+		"Oops. ~Don't know my own strength.";
 		"Well, I am stronger than I look.";
 		"If the glove don't fit...  Looks like it fit. Heh.";
 		"Whattayaknow, the batteries in that were still good.";
@@ -214,7 +237,7 @@ chat "crash"
 
 	type "kill_suicide" //initiated when the players kills self
 	{
-		"Don't give up so easily. I'm tough, but not THAT tough.";
+		"~Don't give up so easily. I'm tough, but not THAT tough.";
 		"And you had so much to live for.";
 		"I'm not cleaning that mess up.";
 		// 0 = enemy name
@@ -247,7 +270,7 @@ chat "crash"
 	"There must be worse nicknames than 'Ol' Harmless.'";
 	one_liners;
 	"Any time you want to start the fight, just let me know.";
-	"Big clue here. Don't quit your day job, ", 0, ".";
+	"Big clue here. ~Don't quit your day job, ", 0, ".";
 
 		// 0 = name of randomly chosen player
 		// 1 = last victim name

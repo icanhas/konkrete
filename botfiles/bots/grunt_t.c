@@ -181,7 +181,7 @@ chat "grunt"
 
 	type "enemy_suicide"
 	{
-		"Dang it, ", 0, ". I don't need your help to win here.";
+		"Dang it, ", 0, ". I ~don't need your help to win here.";
 		"That can't be good for your complexion ", 0, ".";
 		"Dr. Death would be so proud of you ", 0, ".";
 		//0 = enemy
@@ -235,8 +235,30 @@ chat "grunt"
 		D_PRAISE6;
 	} //end type
 
-	//================================================================
-	//================================================================
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Up until now, I thought you were one of the good guys, ", 0, ".";
+		"You got any more internal organs you'd like to share with us, ", 0, "?";
+		"I.";
+		"You almost missed with that.";
+		"Bah. I should have expected a trick like that from you, ", 0, ".";
+		DEATH_KAMIKAZE0;
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"I get the points whether you whine about it or not!";
+		"I am out of control here!";
+		"Anyone get a photo of that?";
+		"Yeah! Feel the burn, you ", fighter, "s!";
+		KILL_KAMIKAZE1;
+		// 0 = enemy name
+	} //end type
 	
 	type "random_insult"
 	{

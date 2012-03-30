@@ -90,7 +90,7 @@ chat "biker"
 	type "hit_nodeath" //bot is hit by an opponent's weapon attack; either praise or insult
 	{
 		"C'mon, dawg, I still gots ~one good eye!";
-		"Don't dirty the leathers, ", 0,"!";
+		"~Don't dirty the leathers, ", 0,"!";
 		"You cow-poker! I'll show you what's what!";
 		"OK, you gave it your best and now it's my turn.";
 		"I'm gonna hurt you, ", 0, ". I'm gonna hurt you bad.";
@@ -188,6 +188,18 @@ chat "biker"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"If you hit my bike with that ...!";
+		"Real funny, ", 0, ". You're like a one-man BFG.";
+		"Loser! You wait there so I can kick yer teeth in.";
+		"Get that carburetor checked out, ", 0, ". It's back-firing again.";
+		"I ain't impressed.";
+		"I hate that Commie-Cozy crap.";
+		DEATH_KAMIKAZE0;
+		// 0 = enemy name
+	} //end type 
+
 	type "death_insult" //insult initiated when the bot died
 	{
 		"I take my coffee stronger'n you, ", 0, ".";
@@ -245,6 +257,17 @@ chat "biker"
 		// 0 = enemy name
 	} //end type
 
+	type "kill_kamikaze" //insult initiated when bot kills with the kmikaze
+	{
+		"That one's for lookin' at my bike, ", 0, ".";
+		"That wuz real pretty.";
+		"Who sez I never give you nuthin'?";
+		"You is just like bugs on my windscreen!";
+		"Dang. I wuz savin' that for Lucy's birthday!";
+		"You want fries with that?";		
+		// 0 = enemy name
+	} //end type
+
 	type "kill_insult" //Insult initiated when the bot killed someone
 	{
 		"I'm gonna bury ", 0, " face down so I got a place to park my bike.";
@@ -288,7 +311,7 @@ chat "biker"
 		"Anybody got a ~six-pack on 'em?";
 		"Okay, any o' you pretty ladies want a ride on my hawg?";
 		one_liners;
-		"Don't go tellin' Lucy I was here ... she'll whip my butt.";
+		"~Don't go tellin' Lucy I was here ... she'll whip my butt.";
 		femalebot, " better git her ass back in the kitchen and finish making me that chicken pot pie!"; 
 		MISC0;
 		MISC8;

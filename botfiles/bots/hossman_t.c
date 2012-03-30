@@ -207,7 +207,7 @@ chat "hossman"
 	{
 		"Hate to admit it, ", 0, ", but from ~one pro to another, good shot!";
 		"Looks like you got a little talent there kid. Use it.";
-		"Okay, you win this ~one, ", 0, ". Don't get cocky.";
+		"Okay, you win this ~one, ", 0, ". ~Don't get cocky.";
 		"Not bad for an amateur.";
 		"And a round of applause goes to ", 0, ", for a fine performance.";
 		"I've seen a lot worse from a lot better.  Good shot, ", 0, ".";
@@ -216,8 +216,31 @@ chat "hossman"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"They don't pay me enough to put up with this kinda junk.";
+		"Punk";
+		"I am at a lost for words.";
+		"I guess you gotta use weapons that match your skill level, ", 0, ".";
+		"No-skill, kamikaze-lovin' twerp.";
+		"I bet you post anonymously on message boards too, ", 0, ".";
+		DEATH_KAMIKAZE3;
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+	"Cheap or not, points are points!";
+	"I'm selling death and destruction at wholesale prices!";
+	"I told you to keep away from me, ", 0, ". But you wouldn't listen.";
+	"I bet they could feel that one all the way to ", place, "!";
+	KILL_KAMIKAZE1;
+	// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -300,7 +323,7 @@ chat "hossman"
 	{
 		"I'm passing out free trips to hell. Apply in person.";
 		"Will someone wake up ", 0, ". I have to use up my ammo by the expiration date.";
-		"So, ", 0, ". Don't you think we oughta smoke ", 1, ", and then have us a little chat?";
+		"So, ", 0, ". ~Don't you think we oughta smoke ", 1, ", and then have us a little chat?";
 		"This is my kind of happy hour.";
 		"I don't have Mynx's phone number. Try the restroom walls in ", level_title, ".";
 		MISC1;

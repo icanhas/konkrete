@@ -2,13 +2,12 @@
 //
 // Name:			weapons.c
 // Function:		weapon configuration
-// Programmer:		Mr Elusive (MrElusive@idsoftware.com)
+// Programmer:		Mr Elusive
 // Last update:		1999-09-08
 // Tab Size:		4 (real tabs)
 //===========================================================================
 
 #include "inv.h"
-#include "game.h"
 
 #define VEC_ORIGIN						{0, 0, 0}
 //projectile flags
@@ -21,17 +20,6 @@
 #define DAMAGETYPE_RADIAL			2		//radial damage
 #define DAMAGETYPE_VISIBLE			4		//damage to all entities visible to the projectile
 #define DAMAGETYPE_IGNOREARMOR	8		//projectile goes right through armor
-
-#define WEAPONINDEX_GAUNTLET			1
-#define WEAPONINDEX_MACHINEGUN			2
-#define WEAPONINDEX_SHOTGUN				3
-#define WEAPONINDEX_GRENADE_LAUNCHER	4
-#define WEAPONINDEX_ROCKET_LAUNCHER		5
-#define WEAPONINDEX_LIGHTNING			6
-#define WEAPONINDEX_RAILGUN				7
-#define WEAPONINDEX_PLASMAGUN			8
-#define WEAPONINDEX_BFG					9
-#define WEAPONINDEX_GRAPPLING_HOOK		10
 
 //===========================================================================
 // Gauntlet
@@ -60,7 +48,7 @@ weaponinfo //Gauntlet
 projectileinfo //for Machinegun
 {
 	name				"machinegunbullet"
-	damage				8
+	damage				7
 	damagetype			DAMAGETYPE_IMPACT
 }
 
@@ -142,7 +130,7 @@ weaponinfo //Rocket Launcher
 projectileinfo //for Lightning
 {
 	name				"lightning"
-	damage				24
+	damage				8
 	damagetype			DAMAGETYPE_IMPACT
 }
 
@@ -202,8 +190,8 @@ weaponinfo //Plasma Gun
 
 projectileinfo //for BFG10K
 {
-	name				"bfgexploision"
-	damage				40
+	name				"bfgexplosion"
+	damage				100
 	radius				100
 	damagetype			$evalint(DAMAGETYPE_IMPACT|DAMAGETYPE_RADIAL)
 }
@@ -212,8 +200,69 @@ weaponinfo //BFG10K
 {
 	name				"BFG10K"
 	number				WEAPONINDEX_BFG
-	projectile			"bfgexploision"
+	projectile			"bfgexplosion"
+	numprojectiles		1
+	speed				2000
+} //end weaponinfo
+
+//===========================================================================
+// Nailgun
+//===========================================================================
+
+projectileinfo //for Nailgun
+{
+	name				"nail"
+	damage				30
+	damagetype			$evalint(DAMAGETYPE_IMPACT)
+}
+
+weaponinfo //Nailgun
+{
+	name				"Nailgun"
+	number				WEAPONINDEX_NAILGUN
+	projectile			"nail"
+	numprojectiles		13
+	speed				0
+} //end weaponinfo
+
+//===========================================================================
+// Prox Launcher
+//===========================================================================
+
+projectileinfo //for Prox launcher
+{
+	name				"mine"
+	damage				0
+	damagetype			$evalint(DAMAGETYPE_RADIAL)
+}
+
+weaponinfo //Nailgun
+{
+	name				"Prox Launcher"
+	number				WEAPONINDEX_PROXLAUNCHER
+	projectile			"mine"
 	numprojectiles		1
 	speed				0
 } //end weaponinfo
+
+//===========================================================================
+// Chaingun
+//===========================================================================
+
+projectileinfo //for Chaingun
+{
+	name				"chaingunbullet"
+	damage				7
+	damagetype			$evalint(DAMAGETYPE_IMPACT)
+}
+
+weaponinfo //Nailgun
+{
+	name				"Chaingun"
+	number				WEAPONINDEX_CHAINGUN
+	projectile			"chaingunbullet"
+	numprojectiles		1
+	speed				0
+} //end weaponinfo
+
 

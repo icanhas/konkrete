@@ -3,9 +3,10 @@
 // Name:		Anarki_c.c
 // Function:      chat lines for Anarki
 // Programmer:	MrElusive (MrElusive@idsoftware.com)
-// Last update:	October 11, 1999
-//Author:	R.A. Salvatore & The Seven Swords
-//Editor:		Paul Jaquays
+// Last update:	April 30, 2000
+// Author:	R.A. Salvatore & The Seven Swords
+// Missionpack Update: Paul Jaquays
+// Editor:		Paul Jaquays
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -34,6 +35,7 @@ chat "anarki"
 		"Cya, ", 1, ". I'm looking for some real talent.";
 		"I ride in kewler circles, lamer. CU L8r.";
 		4, " rocks, but I gotta buzz outa here.";
+		"Hangin' with railbait like you is gonna lower my rep.";
 		// 0 = bot name
 		//4 = level's title
 	} //end type
@@ -219,6 +221,19 @@ chat "anarki"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+		{
+		"Whooaaaa, trippin'!";
+		"You like totally wasted my bandwidth with that one ~d00d!";
+		"Like, total roadkill, ", 0, "!";
+		"That was ~major unfriendly-like, ~d00d.";
+		"K1cK1n!";
+		"Whoaaa, old ~d00d. ~Don't strain yer M4d 5k1LL2 on my account.";
+		"That one reformatted my hard drive!";
+		DEATH_KAMIKAZE0;
+		// 0 = enemy name
+	} //end type
+
 	//======================================================
 	//======================================================
 	type "kill_rail" //initiated when the bot kills someone with rail gun
@@ -264,7 +279,7 @@ chat "anarki"
 	type "kill_insult" //insult initiated when the bot killed someone
 	{
 		"Speedbump.";
-		"Don't bleed so much, ", 0, " ~d00d. Makes the road slippery.";
+		"~Don't bleed so much, ", 0, " ~d00d. Makes the road slippery.";
 		"You've got Virus, ", 0, ".";
 		0, " at dead dot com. ";
 		"I'm ~lightning and you got no surge protector, ", 0, ".";
@@ -286,6 +301,18 @@ chat "anarki"
 		"Good fight, ", 0, " ~d00d. Next time we'll run together.";
 		"I'll high-five you, ", 0, " ... if you re-attach your hand.";
 		"~D00000d, I almost feel bad! ";
+		// 0 = enemy name
+	} //end type
+
+	type "kill_kamikaze" //insult initiated when bot kills with the kamikaze
+	{
+		"That totally kicks 455!";
+		"H4rdc0r3!";
+		"Anarki has got game 2-NITE!.";
+		"Splat, splat, splat!";
+		"Call me 'Mr. System Overload!'";
+		"Bet ya didn't see that one coming ol' buddy.";		
+		"That wiped your drive for sure, ", 0, ".";
 		// 0 = enemy name
 	} //end type
 

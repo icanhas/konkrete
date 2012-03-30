@@ -64,7 +64,7 @@ chat "phobos"
 	type "level_end_victory" //initiated when a level ends and the bot is first in the rankings
 	{
 		"A true leader will always finish first!";
-		"A ~Marine finds a way! Don't whine, don't complain, just find a way!";
+		"A ~Marine finds a way! ~Don't whine, ~don't complain, just find a way!";
 		"Careful planning and good execution are the keys to victory.";
 		"I win ... and no ~one is surprised.";
 		"Pfah! I think I still have ", 3, "'s entrails on me!";
@@ -77,7 +77,7 @@ chat "phobos"
 	type "level_end_lose" //initiated when a level ends and the bot is last in the rankings
 	{	
 		"~One promise: this is not going to happen again.";
-		"I do what I do to preserve the human way of life. Do not question me.";
+		"I do what I do to preserve the human way of life. ~Do ~not question me.";
 		"I no longer trust ", 2, " to fight fairly.";
 		"This was not an acceptable outcome to this mission.";
 		LEVEL_END_LOSE0;
@@ -219,8 +219,30 @@ chat "phobos"
 		// 0 = enemy name
 	} //end type
 
+
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Soldier, the penalties for war crimes like that are severely permanent.";
+		"In other circumstances, that act would make you a hero, ", 0, ".";
+		"Soldier, you're a disgrace to that uniform.";
+		"War just hasn't been the same since.";
+		"These are not acceptable casualty figures.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"I'll bet that took the crease out of your trousers, ", 0, ".";
+		"I must be crazier than I thought.";
+		"That's a small price to pay for a clear victory.";
+		"Assessing peripheral damage now.";
+		"Simply awe-inspiring.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -272,6 +294,7 @@ chat "phobos"
 	{
 		"My heart aches when such a worthy adversary must perish.";
 		"Touche'! Be proud, ", 0, ", you died bravely.";
+		"Nice gibs there, honey.";
 		PRAISE4;
 		// 0 = enemy name
 	} //end type

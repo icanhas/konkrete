@@ -3,7 +3,7 @@
 // Name:		Bones_c.c
 // Function:    chat lines for Bones
 // Programmer:	MrElusive (MrElusive@idsoftware.com)
-// Last update:	November 14, 1999
+// Last update:	July 19, 2000
 //Author:		Paul Jaquays
 //Editor:		Paul Jaquays
 // Tab Size:		3 (real tabs)
@@ -187,7 +187,31 @@ chat "bones"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"It is a good day to die.";
+		"Anyone find a left tibia? I'm missing a left tibia here.";
+		"Ashes to ashes, dust to dust.";
+		"You see that babe on the explosion? What a hottie!";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"I'm just bad to the bone.";
+		"I've been dying to try this out. Dying I tell you.";
+		"Call me MR. Death today.";
+		"All the destruction, half the romantic poetry.";
+		"And it even has my picture on it ... ";
+	    "Personalized death, discount prices.";
+		// 0 = enemy name
+	} //end type
+
+//======================================================
 	//======================================================
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -247,7 +271,7 @@ chat "bones"
 		0, " you are a dead man walking.";
 		"Oh drop dead already, ", 1, ".";
 		"Good thing I don't lose frags for being bored to death.";
-		"Don't roll the ~bones with death and expect to win. His dice are loaded.";
+		"~Don't roll the ~bones with death and expect to win. His dice are loaded.";
 		
 		// 0 = name of randomly chosen player
 		// 1 = last victim name

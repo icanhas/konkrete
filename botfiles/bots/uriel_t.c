@@ -3,8 +3,8 @@
 // Name:			Uriel_c.c
 // Function:		chat lines for Uriel
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Last update:		1999-09-25
-// Author:			R.A. Salvatore & the Seven Swords
+// Last update:		May 22, 2000
+// Author:			R.A. Salvatore, the Seven Swords, and Paul Jaquays
 // Editor:			Paul Jaquays
 // Tab Size:		3 (real tabs)
 //===========================================================================
@@ -212,8 +212,30 @@ chat "uriel"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Though our blood and ichor co-mingle, we are not brothers, you and I, ", 0, ".'";
+		"I am spread to the winds, a fine mist, floating upon fate's dark vapours.";
+		"Tis no honor to slay your foes thusly.";
+		"The shadow stain upon you soul flees, yet you remain unclean.";
+		"Again? How tragic.";
+		"Poor little ", fighter, ". What will you do when you must rely upon skill alone?";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Here, ", 0, ", I share with you the darkness that cloaks my soul.";
+		"Pity. Twas but a moment's fleeting distraction, now gone.";
+		"Alas it is done. What glory was there in this ephemeral event?";
+		"Hmmmmph. I gain so little pleasure from the deaths of so many.";
+		"Mark my words, there will be gnashing of teeth and wailing unto heaven over this.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{

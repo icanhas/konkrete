@@ -49,7 +49,7 @@ chat "razor"
 	type "level_end" //initiated when a level ends and the bot is not first and not last in the rankings
 	{
 		"All this fighting doesn't leave much time for my boys to practice their dancing.";
-		"Don't smile, ", 2, ". You just got a whole convoy looking for your sorry behind.";
+		"~Don't smile, ", 2, ". You just got a whole convoy looking for your sorry behind.";
 		"Here's a career pointer, ", 3, "... Learn to cook.";
 		// 0 = bot name
 		// 2 = opponent in first place
@@ -209,8 +209,31 @@ chat "razor"
 		// 1 = opponent's weapon
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Did anyone get the license number off that ~eighteen wheeler?";
+		"My bike! Where's my .... awwww crap.";
+		"Becoming one with the universe sucks.";
+		"How long before we can look back on this and laugh?";
+		"How nice for you, ", 0, ". You've finally found a weapon to match your skill.";
+		"Roadhog!";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Fore!";
+		"Clear the road!";
+		"Why yes. I DO own the road.";
+		"You are all bug-splats on my windscreen.";
+		"Actual mileage may vary!";
+	  "Did I miss seeing the warning label on this ~kamikaze thing?";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
@@ -276,7 +299,7 @@ chat "razor"
 		"Nothing personal ... well, seeing you, ", 0, ", it becomes personal.";
 		0, ", you smell too wretched to even think of hiding.";
 		"If owning the road means having ", 0, " as a tenant, I'm giving the road back!";
-		"The bigger they are the harder they fall ... and you look about redwood-sized.";
+		"The bigger they are, the harder they fall ... and you look about redwood-sized.";
 		"Prepare to be stomped!";
 		"You don't look so scary to me.";
 		// 0 = name of randomly chosen player
@@ -292,9 +315,12 @@ chat "razor"
 		"So this is what you rogues call entertainment.";
 		"I'd keep an eye on that storm coming in, if I were you.";
 		"A rather studious looking ensemble, if I do say so myself.";
-		"ohmigod.";
+		"ohmigawd.";
 		"You've just violated my third law of fairness, ", 0, ".";
-		"Threedy Relmz? Oh, you mean ol' Duke!'";
+		"Threedy Relmz? Oh, you must mean ol' Duke!'";
+		"That should put a nasty wrench in your gearbox.";
+		"Must my trusty metal steed and I pummel some sense into your skull?";
+		"This place is being over-run by Raster-farians.";
 		MISC0;
 		MISC11;
 		MISC14;

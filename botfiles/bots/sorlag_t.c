@@ -6,7 +6,7 @@
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
 // Authors:			The Seven Swords, R. A. Salvatore, Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		October 11, 1999
+// Last update:		May 22, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -134,7 +134,7 @@ chat "sorlag"
 	type "death_drown" //initiated when the bot drowns
 	{
 		"Sss-sorg not fissss-sh. This-sss bad!";
-		"Sss-sorg Reptiloid … not Amiphibian.";
+		"Sss-sorg Reptiloid ... not Amiphibian.";
 		// 0 = enemy name
 	} //end type
 
@@ -181,8 +181,31 @@ chat "sorlag"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Chewer of Droppings-sss!!";
+		"Was-sss-teful. Can harvessst nothing!";
+		"Ruiner of Joy take you.";
+		0, " lacks-sss skill to sss-succeed.";
+		"Ssss, For dog-meat only us sss-sell you, ", 0, ".";
+		"Only ~Hunter female deserves-ss sss-such a death.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"For dogmeat us will collect you all.";
+		"Sss-sorry am us to waste ss-such fine mechandis-ssse.";
+		"Better to des-sss-troy evidence.";
+		"S-ssorry is us to use this-ssss.";
+		"Chew droppings-sss and terminate now!";
+	    "Meat animals inferior quality. This-ss bes-ssst way to thin herd.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{

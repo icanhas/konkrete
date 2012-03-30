@@ -3,9 +3,9 @@
 // Name:			Tankjr
 // Function:		chat lines for Tankjr
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			The Seven Swords & R.A. Salvatore
+// Author:			The Seven Swords, R.A. Salvatore, & Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		Oct. 12, 1999
+// Last update:		May 22, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -203,12 +203,35 @@ chat "tankjr"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"WARNING: 'Emergency escape systems indicating failure ... all systems down.'";
+		"CALCULATING: 35% of body mass has reached escape velocity.";
+		"PLAYBACK RECORDING: 'I'll be back.'";
+		"PLAYBACK RECORDING: 'Yo Mama.'"
+		"Enemy has resorted to weapons of desperation. Victory imminent.";
+		"Daisy, daisy ....";
+		"STATUS REPORT: 'Revising threat evaluation programming.'";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
 
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"SENSOR FEEDBACK: 'Opposing units neutralized.";
+		"Exterminate! Exterminate!";
+		"Death to biological units!";
+		"Galactic Cyborg Domination now imminent.";
+		"WARNING: 'Biological insurrection will not be tolerated.";
+		// 0 = enemy name
+	} //end type
+
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
-		"Don't die, ", 0, ", Tankjr must run over you a few times.";
+		"~Don't die just yet, ", 0, ", Tankjr must run over you a few times.";
 		"STATUS: 'Terminal Penetration of Opponent acheived.'";
 		"TARGET TERMINATED";
 		// 0 = enemy name

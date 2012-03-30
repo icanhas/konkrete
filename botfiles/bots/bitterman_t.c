@@ -51,7 +51,7 @@ chat "bitterman"
 
 	type "level_end" //initiated when a level ends and the bot is not first and not last in the rankings
 	{	
-		"Don't you be thinkin' you good ol' boys got me runnin'.";
+		"~Don't you be thinkin' you good ol' boys got me runnin'.";
 		"Dang! Whumped by a carpet-baggin' Yankee ", fighter, ".";
 		"The South will rise again!";
 		"Hey there, ", 3, ". Wear all that blood like a badge of honor.";
@@ -65,7 +65,7 @@ chat "bitterman"
 		"Looks like this bronco is done kickin!";
 		LEVEL_END_VICTORY2;
 		LEVEL_END_VICTORY3;
-		"Shoot, I don't even need my dog to flush you city folk.";
+		"Shoot, I ~don't even need my dog to flush you city folk.";
 		3, ", thanks again. Y'all made some really great targets.";
 		// 0 = bot name
 		// 3 = opponent in last place
@@ -73,7 +73,7 @@ chat "bitterman"
 
 	type "level_end_lose" //initiated when a level ends and the bot is last in the rankings
 	{
-		"Don't push me, ", fighter, ". I've been to hell and back, and back I'll be!";
+		"~Don't push me, ", fighter, ". I've been to hell and back, and back I'll be!";
 		"I've seen tougher, killed 'em too.";
 		LEVEL_END_LOSE2;
 		LEVEL_END_LOSE1;
@@ -104,7 +104,7 @@ chat "bitterman"
 	type "hit_nokill" //bot hits an opponent but does not kill it
 	{
 		"Just my way of sayin' 'howdy', Amigo.";
-		"Don't y'all be hiding, ", 0, ". I got your blood trail now.";
+		"~Don't y'all be hiding, ", 0, ". I got your blood trail now.";
 		"Looks like ", 0, " has sprung a few leaks.";
 		TAUNT;
 		PRAISE2;
@@ -184,6 +184,19 @@ chat "bitterman"
 		// 0 = enemy name
 	} //end type
 
+	
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"~Y'all need to deal with that anger problem, ", 0, ".";
+		"Just my luck, I show up in time for the fireworks.";
+		"If ~y'all want me to quit talking, just say so.";
+		"~Y'all gonna do that here, then ~y'all gonna clean up the mess.";
+		"I ain't impressed.";
+		"Y'all got yourself a special talent for blowin' up like that, ", 0, ".";
+		DEATH_KAMIKAZE1;
+		// 0 = enemy name
+	} //end type 
+
 	type "death_insult" //insult initiated when the bot died
 	{	
 		"How about that. ", 0, " CAN pull a trigger!";
@@ -229,7 +242,19 @@ chat "bitterman"
 	type "kill_suicide" //initiated when the player kills self
 	{
 		"Y'all'd do anything to collect insurance, wouldn't you?";
-		"Y'all think I'm gonna hold my shot now, don't you?";
+		"Y'all think I'm gonna hold my shot now, ~don't you?";
+		// 0 = enemy name
+	} //end type
+
+	type "kill_kamikaze" //insult initiated when bot kills with the kmikaze
+	{
+		"All ~y'all understand that I had to do that, right?";
+		"Now that's some firecracker! Wahoooo!";
+		"Ooops. Sorry. Wrong button.";
+		"Bet that blew all ~y'all to ", place, ", didn't it?";
+		"Sorry 'bout the mess.";
+		"~Y'all come back now, hear?";		
+		"After that, I need me a cold ", liquid, ". Anyone want to join me?";
 		// 0 = enemy name
 	} //end type
 
@@ -242,7 +267,6 @@ chat "bitterman"
 		KILL_INSULT6;
 		// 0 = enemy name
 	} //end type
-
 
 
 	type "kill_praise" //praise initiated when the bot killed someone

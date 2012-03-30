@@ -4,9 +4,9 @@
 // Name:			Lucy_c.c
 // Function:		chat lines for Lucy
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			The Seven Swords & R.A. Salvatore
+// Author:			The Seven Swords, R.A. Salvatore, & Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		October 6, 1999
+// Last update:		May 11, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -199,7 +199,6 @@ chat "lucy"
 
 	type "death_praise" //praise initiated when the bot died
 	{	
-		//"You should be a C.O."
 		"Alright, you've convinced me to go on a diet.";
 		"So, ", 0, ", you think you've got my moves figured out?";
 		"OK, ", 0, ". You're buying the first round tonight.";
@@ -207,8 +206,29 @@ chat "lucy"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"You trying to tell me something, ", 0, "? Is it my breath?.";
+		"Yeah. I thought I saw you sneaking something into your cell, ", 0,".";
+		0, ", you just became a grease stain on the pages of history.";
+		"Blast it, ", 0, "! I told you not to put batteries in that thing!.";
+		"Jailbreak!!";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"I needed to lose a couple pounds anyway.";
+		"I hope to hell I took some of you with me.";
+		"Whew! That had more kick than I thought it would!";
+		"OK everyone. You can start whining now. Big bad Lucy is done letting off steam.";
+		"Just call me 'Ms. Spontaneous Human Combustion!'";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{	

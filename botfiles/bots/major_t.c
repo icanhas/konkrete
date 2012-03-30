@@ -25,7 +25,7 @@ chat "major"
 	type "game_exit"
 	{
 		"Just look at the time. I'm late already.";
-		"Next time, don't bring the geeks ... they make the place look all trashy.";
+		"Next time, ~don't bring the geeks ... they make the place look all trashy.";
 	} //end type
 
 	type "level_start"
@@ -75,7 +75,7 @@ chat "major"
 		"You should have taken me out when you had the chance, ", 0, ".";
 		"You know the rules, ", 0, ". Anything less than a frag doesn't count.";
 		"Only a flesh wound. I'll live.  But YOU won't, ", 0, ".";
-		"Don't blame the gun, ", 0, ". That was YOUR fault.";
+		"~Don't blame the gun, ", 0, ". That was YOUR fault.";
 		//0 = shooter
 	} //end type
 
@@ -151,7 +151,7 @@ chat "major"
 	type "death_bfg"
 	{
 		"You're developing a really sick relationship with that thing, ", 0, ".";
-		"C'mon ", 0, ". Don't you feel cheap and trashy when you do that?";
+		"C'mon ", 0, ". ~Don't you feel cheap and trashy when you do that?";
 		DEATH_BFG0;
 	} //end type
 
@@ -172,8 +172,29 @@ chat "major"
 		"I've seen better ", 0, ", but not many.";
 	} //end type
 
-	//================================================================
-	//================================================================
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Soldier, the penalties for war crimes like that are severely permanent.";
+		"Who gave this ", fighter, " access to classified ordinance?";
+		"BFG just doesn't do it for you anymore, eh, ", 0, "?";
+		"And as usual, ", 0, " lets loose way too soon.";
+		"Drat! I just had that uniform cleaned.";
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"I'll bet that took the crease out of your trousers, ", 0, ".";
+		"Mother of Mercy!";
+		"A soldier does what she must.";
+		"Messy and loud, but otherwise effective.";
+		"Love me, love my bomb.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" 
 	{

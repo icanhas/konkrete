@@ -9,8 +9,6 @@
 // Notes:			-
 //===========================================================================
 
-#include "game.h"
-
 ["abnormal", "strange", "weird", "unusual", "odd"] = 5
 {
 	"I think you're abnormal.";
@@ -28,7 +26,7 @@
 {
 	"Could you be a little more precise?";
 	"Would you be a bit more precise?";
-	"So, you don't know for certain?";
+	"So, you ~don't know for certain?";
 	"Hmmmph. What precision?";
 	"You're guessing.";
 	"Can you give a better estimate than that?";
@@ -111,7 +109,7 @@
 	"So you have a bad temper -- join the club.";
 	"You had better be. You won't get far otherwise.";
 	"Why are you so aggressive? Too much caffeine?";
-	"Don't get all aggressive, I'll have to smack you.";
+	"~Don't get all aggressive, I'll have to smack you.";
 	"What makes you aggressive?";
 	"So do something about all that aggression!";
 }
@@ -124,7 +122,7 @@
 	"Couldn't agree more.";
 	"Why would anyone agree with that?";
 	"That's just wrong.";
-	"Agree with a ", fighter, " like you? Don't make me laugh.";
+	"Agree with a ", fighter, " like you? ~Don't make me laugh.";
 	"That's just stupid.";
 	response_insult;
 }
@@ -150,7 +148,7 @@
 	"It's only money.";
 	"So, it's not like you have a life.";
 	"How much money are we talking about?";
-	"Don't rob a bank, you wouldn't be good at it. ";
+	"~Don't rob a bank, you wouldn't be good at it. ";
 	response_insult;
 }
 
@@ -164,7 +162,7 @@
 	"I am very much alive.";
 	"More alive than ever.";
 	"Alive?! Of course!";
-	"Of course I'm alive, don't be stupid.";
+	"Of course I'm alive, ~don't be stupid.";
 	"What are you talking about?";
 	"Sure, I'm alive.";
 	affirmative, " I am alive.";
@@ -210,7 +208,7 @@
 	"Allowed? That's FORBIDDEN!";
 	"So you would allow it?";
 	"That's not allowed here.";
-	"We allow that, but we don't like it.";
+	"We allow that, but we ~don't like it.";
 	"I don't think that should be allowed.";
 	"Sure it's allowed ... you just have to pay the penalty.";
 	"We'll have none of that here.";
@@ -275,7 +273,7 @@
 	"Does somebody have a bad temper?";
 	"What makes you so angry all the time?";
 	"Why are you so mad?";
-	"Jeez, don't get so uptight.";
+	"Jeez, ~don't get so uptight.";
 	"Angry, angry, angry. Why is everyone so angry?";
 	"Lighten up, Lucille.";
 	"Sure, you have every right to be mad -- you little dork.";
@@ -305,7 +303,7 @@
 
 ["apathy", "apathetic"] = 6
 {
-	"You know what? I don't care.";
+	"You know what? I ~don't care.";
 	"I don't care enough to even be apathetic.";
 	"Why are you so apathetic?";
 	"Are you bored?";
@@ -319,13 +317,13 @@
 ["approve", "approval"] = 5
 {
 	"Are you asking me for approval?";
-	"Personally, I don't approve of that kind of behavior.";
+	"Personally, I ~don't approve of that kind of behavior.";
 	ponder, " I definitely disapprove.";
 	"I wouldn't approve of that.";
 	"Sure, sounds good to me.";
 	"For what it's worth, I approve.";
 	"Hey, knock yourself out.";
-	"Go ahead, just don't count on me.";
+	"Go ahead, just ~don't count on me.";
 	"You'd probably do it anyway, with or without my approval.";
 }
 
@@ -341,7 +339,7 @@
 	negative, " Of course they aren't.";
 	"Well, kinda, I suppose.";
 	"Not really.";
-	"I don't know if they're ", 0, " or not";
+	"I ~don't know if they're ", 0, " or not";
 	"Why wouldn't they be ", 0, "?";
 	"Why would they be ", 0, "?";
 	"Not compared to you.";
@@ -375,7 +373,7 @@
 [("are you ", 0)] = 6
 {
 	"What difference does it make to you?";
-	"Oh, don't be stupid.";
+	"Oh, ~don't be stupid.";
 	"And if I am ", 0, ", does it make a difference?";
 	"Whether I'm ", 0, " or not is my business.";
 	"None of your nevermind.";
@@ -493,7 +491,7 @@
 	"Oh, yeah, that's where I take my laundry.";
 	"They wash cars, right?";
 	"I've programmed a few finite state automata in my day.";
-	"Don't go dissing automata.";
+	"~Don't go dissing automata.";
 	"Isn't that a German highway?";
 }
 
@@ -502,7 +500,7 @@
 	"Do you avoid people who are like you? I know I do.";
 	"Face it like a man ... or whatever it is you are.";
 	"Can't take it, huh?";
-	"Don't dish it out if you can't eat it yourself.";
+	"~Don't dish it out if you can't eat it yourself.";
 	"What, precisely, are you trying to avoid?";
 	"You can't dodge it forever.";
 }
@@ -515,7 +513,7 @@
 	"Do you have any children?";
 	"Are we talking about your baby?";
 	"Who's baby?";
-	"Don't call me baby.";
+	"~Don't call me baby.";
 	"Nobody calls me baby -- nobody!";
 	response_insult;
 }
@@ -583,7 +581,7 @@
 	ponder, " Good guess, Sherlock.";
 	"Wouldn't hold up in court if you ask me.";
 	"Sure, if you say so.";
-	"All right, don't get your panties all in a bunch.";
+	"All right, ~don't get your panties all in a bunch.";
 }
 
 [("because I am ", 0)] = 5
@@ -628,7 +626,7 @@
 	"No ~one takes responsibility these days.";
 	" So, is it my fault?";
 	"It's obviously ", botnames, "'s fault.";
-	"Don't blame me.";
+	"~Don't blame me.";
 }
 
 ["blow me", "blowjob", "blow job", "bj", "fellatio", "suck my"] = 6
@@ -698,11 +696,26 @@
 	"Been there.";
 }
 
-["are you a bot", ("is", 0, "a bot"), ("are ", 0, " bots")] = 5
+[(0, " is a bot"), &name] = 5
 {
-	"I really, really hate that word.";
-	"I'm no stinking 'bot.'";
-	"Insult me at your own risk, ", fighter, "!";
+	"I'm not a bot. I just like the name ", 0, ".";
+	"There you go again. I'm NOT a bot.";
+	"I'm way too good to be a bot.";
+	"Hey, thanks for the compliment.";
+	"What? You can't handle someone being a better shot than you?";
+	"Cut the bot crap already. I want to play";
+}
+
+[("are ", 0, " a bot"), ("is ", 0, " a bot"), ("are ", 0, " bots")] = 5
+{
+	"I really, really hate the word 'bot'";
+	"I'm no stinking bot.";
+	"Thanks for the compliment.";
+	"Insult me at your own risk ", fighter, "!";
+	"Well duh! Of course I'm no bot.";
+	"I'm way too good to be a bot.";
+	"Like there are bots that can play this good";
+	"Blah, blah, blah. Just face it. I'm good";
 }
 
 ["boyfriend", "boytoy", "boy friend", "my man", !female, !it] = 5
@@ -743,7 +756,7 @@
 	"You need a new brain. Hey, here's ~one!";
 	"Brains are overrated.";
 	"The mind is a terrible thing to lose.";
-	"I don't mind -- get it?!";
+	"I ~don't mind -- get it?!";
 	response_insult;
 }
 
@@ -778,7 +791,7 @@
 	"Slug-Bug!";
 	"If it wasn't for ~bugs, who would eat all the gibs?";
 	"~Bugs ~ain't so bad. You just got to understand them.";
-	"Oh, like you don't have ~bugs?";
+	"Oh, like you ~don't have ~bugs?";
 }
 
 ["business", !"none of your"] = 6
@@ -791,7 +804,7 @@
 	"I'm not going to ask you twice!";
 }
 
-[("but", 0)] = 4 
+[("but ", 0)] = 4 
 {
 	"Yeah you're always making excuses.";
 	"The fact that ", 0, " has no relevance here!";
@@ -804,7 +817,7 @@
 	"Says you ", friendname, "!";
 }
 
-["bye", !"say", !"tell", "l8r", "ttyl", "ttfn", "goodbye", "bye", "good bye", "see you later", "talk to you later", "good night", "goodnight", "sayonara", "ciao", "adios", "vaya con dios", "hasta la vista", "hasta manana", "au revoir", "later"] = 4
+[!"say", !"tell", "l8r", "ttyl", "bbiab", "ttfn", "goodbye", "bye", "good bye", "see you later", "talk to you later", "good night", "goodnight", "ciao", "adios", "vaya con dios", "hasta la vista", "hasta manana", "au revoir", "later"] = 4
 {
 	"You can't be leaving already?";
 	"Goodbye!";
@@ -855,7 +868,7 @@
 	"I doubt if you can ", 0, " at all.";
 	"Possibly...";
 	"Never can tell!";
-	"I don't care if you ", 0, ".";
+	"I ~don't care if you ", 0, ".";
 	"Go ahead and try.";
 	"No skin off my nose.";
 	response;
@@ -884,7 +897,7 @@
 	"Hoser.";
 	"Exactly how far is Toronto from Edmonton?";
 	"Do they drink ", liquid, " in Canada?";
-	"Uhhhh, don't they play hockey in Canada?";
+	"Uhhhh, ~don't they play hockey in Canada?";
 	"They have computers in Canada now? Wow.";
 	"I hear Canadians are big into ", food, ".";
 	"I hunted ", animal, "s in Canada once.";
@@ -908,8 +921,10 @@
 	"My dog likes cats, but then, he's not too bright.";
 	"I really like cats -- oh, wait, I'm thinking of catsup.";
 	"My cat is a better shot than you.";
-	"I don't want to hear about your kitty-cats.";
+	"I ~don't want to hear about your kitty-cats.";
 	"I hate cartoons where the mouse always wins.";
+	"Cats ... why does it always have to be cats?";
+	"I like cats better than people ... especially the people I meet here.";
 	response_insult;
 }
 
@@ -921,7 +936,7 @@
 	"Be very careful!";
 	"Oh, just throw caution to the wind.";
 	"I'll be sure to warn my ", family_member, ".";
-	"Why don't you just wear a big yellow sign?";
+	"Why ~don't you just wear a big yellow sign?";
 	"I yield for ", fighter, "s.";
 }
 
@@ -977,9 +992,9 @@
 	"Speaking children, should you be here?";
 }
 
-["chinaman"] = 3
+["chinaman", "chink"] = 3
 {
-	"Don't oppress me.";
+	"~Don't oppress me.";
 }
 
 ["choice", "choose", "decide", "decision"] = 5
@@ -1010,14 +1025,14 @@
 
 ["compromise"] = 5
 {
-	"Don't compromise your integrity.";
+	"~Don't compromise your integrity.";
 	"You want some sort of compromise?";
 	"Compromise is for politics, not arena combat.";
 	"Compromise? Blow it out your ear, ", friendname, ".";
 	"I'm not giving in ~one bit.";
 	"What did you have in mind, ", 7, "?";
 	"Compromise? ", negative;
-	"I don't negotiate.";
+	"I ~don't negotiate.";
 }
 
 ["compulsion", "compulsive", "obsession", "obsessive", "anal retentive", "impulsive"] = 6
@@ -1033,8 +1048,8 @@
 
 ["computer", "mainframe", "computers", "mainframes", "pentium", "pc", "pcs"] = 4
 {
-	"Computers? Don't trust 'em.";
-	"Don't talk about my mother like that!!";
+	"Computers? ~Don't trust 'em.";
+	"~Don't talk about my mother like that!!";
 	"You have no idea, chum.";
 	"I built my own computer, right behind my left ear.";
 	"I built a computer out of a ", adj, " ", item, ", a ", item, ", and a canister of ", liquid, ".";
@@ -1051,9 +1066,9 @@
 ["conclusion", "end", "ending", "finish"] = 5
 {
 	"What conclusion are you looking for?";
-	"I don't know a good conclusion.";
+	"I ~don't know a good conclusion.";
 	"Does this mean you're finally done talking?";
-	"I don't see any good conclusions to this.";
+	"I ~don't see any good conclusions to this.";
 	"A conclusion to what?";
 	"I can draw a conclusion. Gimme a pencil!";
 	"Do you expect me to come to a conclusion for you?";
@@ -1077,7 +1092,7 @@
 	"I find it best to avoid conflict whenever possible.";
 }
 
-["confusing", "confused", "do not understand", "don't understand", "you misunderstood", "you misunderstand", "huh", ("what do you mean"), ("what are you trying to say"), "confuse me", ("what are you getting at"), !name] = 6
+["confusing", "confused", "do not understand", "don't understand", "you misunderstood", "you misunderstand", "huh", "what do you mean", "what are you trying to say", "confuse me", "what are you getting at", !name] = 6
 {
 	confused_response;
 }
@@ -1090,7 +1105,7 @@
 	"Guilt is for people who can't handle self-loathing.";
 	"Do you feel guilty?";
 	"No jury would convict you.";
-	"I don't let my conscience push me around ... much.";
+	"I ~don't let my conscience push me around ... much.";
 	"You should feel bad.";
 }
 
@@ -1116,8 +1131,8 @@
 	"Only the coolest!";
 	"Cool!";
 	"How cool is it?";
-	"You don't get cooler than that!";
-	"That is cool.";
+	"You ~don't get cooler than that!";
+	"That is so cool.";
 	"Pretty darn cool!";
 	"Neat-o bizeeto.";
 	affirmative;
@@ -1127,7 +1142,7 @@
 {
 	"You're not even trying, ", fighter, ".";
 	"You'll manage somehow.";
-	"Just don't let it all get to you.";
+	"Just ~don't let it all get to you.";
 	"You're stronger than you think.";
 	"Get help from someone. Seriously.";
 	"I couldn't cope with being you.";
@@ -1135,15 +1150,15 @@
 
 ["cost", "price", "money", "expense"] = 5
 {
-	"Don't worry about my money.";
+	"~Don't worry about my money.";
 	"The trick to managing money is just to have more than you need.";
-	"If it's too expensive, don't buy it.";
+	"If it's too expensive, ~don't buy it.";
 	"Time to pay up!";
 }
 
 ["couch", "sofa", "davenport", "lounge"] = 5
 {
-	"I don't have a couch, I have a 'LUV' seat.";
+	"I ~don't have a couch, I have a 'LUV' seat.";
 	"I think I'll take a snooze on the couch later.";
 	"I need a ", adj, " ", color, " couch";
 	"I can't believe you're asking me about that!";
@@ -1155,7 +1170,7 @@
 	affirmative, " I think you're going crazy.";
 	"How many other crazy people are in your family?";
 	"Some people say I'm crazy, can you believe that?!";
-	"Don't tell! They'll send me back to the institution.";
+	"~Don't tell! They'll send me back to the institution.";
 	botnames, " is crazy like a ", animal, ".";
 }
 
@@ -1200,7 +1215,7 @@
 
 ["damn", "damn you"] = 7
 {
-	"Please don't swear in my presence -- I'm delicate.";
+	"Please ~don't swear in my presence -- I'm delicate.";
 	"You have a filthy mouth, ", 7, ".";
 	"Dams are for beavers.";
 	"Right back at ya!";
@@ -1251,11 +1266,11 @@
 	"What's your problem?";
 	"Have you talked with your ", random_counselor, " about it?";
 	"You should get help.";
-	"Don't worry. Be happy!";
+	"~Don't worry. Be happy!";
 	"What is depressing you?";
 	"Oh, boo hoo!";
 	"Are you crying? Here?";
-	"Big warriors don't cry.";
+	"Big warriors ~don't cry.";
 	"There is no crying in Death Match! Do you understand?";
 	"Suck it up!";
 	"I got problems of my own, ", friendname, ".";
@@ -1284,7 +1299,7 @@
 {
 	"Yeah, I'd say you're desperate now.";
 	"Just how desperate are you?";
-	"Don't get all desperate and clingy on me.";
+	"~Don't get all desperate and clingy on me.";
 	"There's only ~one thing that's gonna fix that.";
 	"Yeah, the clock is running out on you.";
 }
@@ -1346,7 +1361,7 @@
 	"Clean mind, clean body -- take your pick.";
 	"Dirty? Then bring a mop.";
 	"Dirty? You oughtta see ", level_title, ". Now that's dirty!";
-	"Trust me, germs don't live here very long either.";
+	"Trust me, germs ~don't live here very long either.";
 	botnames, "'s mom stopped picking up after us.";
 	response_insult;
 }
@@ -1359,13 +1374,13 @@
 	"You want disease? Try dating ", botnames, ".";
 	"If you wash your hands enough, you'll never have time to catch a disease.";
 	"You look pretty sick to me; better cash in your chips now.";
-	"My health is important to me. Don't mess with it.";
+	"My health is important to me. ~Don't mess with it.";
 	"You look pretty healthy to me, ", 7, ".";
 }
 
-["disconnect", ("give", 0), "noclip", ("bind", 0), ] = 3 
+[("disconnect"), ("give ", 0), ("noclip"), ("bind ", 0), ("quit")] = 4
 {
-	"Put a '/' before the word or hit TAB to complete the command.";
+	"put a '/' or '\\' before the command or hit TAB to complete the command";
 }
 
 ["dislike", "hate", "hates", "hateful"] = 4
@@ -1376,6 +1391,7 @@
 	"Your hate will destroy you.";
 	"Embrace your hate, feel its power! Feels good, ~doesn't it?";
 	"Hate can be dangerous.";
+	"'Hate' is a four letter word. But then again, so's 'love'.";
 	"What's not to like?";
 	"You think that makes you special?";
 	"Live at the speed of hate!";
@@ -1385,6 +1401,9 @@
 ["divorce"] = 5
 {
 	"You want to talk about divorce in the arena?";
+	"I'm about to divorce you from reality.";
+	"So the the scum left you. Should I care?";
+	"Frag now. Whimper later.";
 	response_insult;
 }
 
@@ -1395,7 +1414,7 @@
 	negative, " I haven't done ", 0, " for a while.";
 	"Hmmm. Not for a while I haven't.";
 	response;
-	"Maybe I ", 0, "and maybe I don't.";
+	"Maybe I ", 0, "and maybe I ~don't.";
 	"No more than you.";
 	affirmative;
 	negative;
@@ -1408,7 +1427,7 @@
 {
 
 	"Doctors make my flesh crawl.";
-	"I don't need a doctor.";
+	"I ~don't need a doctor.";
 	"I hate quacks.";
 	"Are you gonna pay for this doctor?";
 	"I've got your treatment right here.";
@@ -1440,11 +1459,10 @@
 ["drink", "beer", "alcohol", "drinking", "drinks", "brandy", "whiskey", "alcoholic", "wine", "booze", "hootch", "moonshine", "everclear"] = 4
 {
 	"Alcohol dulls your reflexes. Bad choice for a warrior.";
-
-	"Alcohol causes mistakes, and I don't intend to make mistakes.";
+	"Alcohol causes mistakes, and I ~don't intend to make mistakes.";
 	"Everything in its time and place.";
 	"Everything in moderation.";
-	"My motto: 'Don't drink and frag.";
+	"My motto: '~Don't drink and frag.";
 	"You're not what I look for in a drinking partner.";
 	"Never touch the stuff.";
 	"I'll be drinking from your skull an hour from now.";
@@ -1452,11 +1470,11 @@
 	"Liquor is quicker.";
 	"I've heard you can make booze from fermented ", food, ".";
 	"I only drink ", liquid, " shaken with ice.";
-	"Ever try ", liquid, "? Don't. That's my advice.";
+	"Ever try ", liquid, "? ~Don't. That's my advice.";
 	"Hoist ~one for me, I'll be there soon.";
 	"Never after breakfast.";
 	"It's a little early in the day for me."; 
-	"Don't mind if I do!";
+	"~Don't mind if I do!";
 }
 
 ["blunt", "budda", "cabbie", "chronic", "drugs", "stoned", "druggy", "dope", "addict", "doper", "stoner", "heroin", "cocaine", "marijuana", "reefer", "joint", "weed", "crack", "LSD"] = 4
@@ -1467,8 +1485,8 @@
 	"Just say no -- over and over and over.";
 	"Speed kills.";
 	"The drugs I want, you can't get on this planet.";
-	"They don't call it dope for no reason.";
-	"No, and I hope you don't, either.";
+	"They call it dope for a reason.";
+	"No, and I hope you ~don't, either.";
 	"I had hoped you were cool.";
 	"Death matching is my only drug!";
 	"I get high on adrenaline.";
@@ -1488,8 +1506,9 @@
 ["dumb", "stupid", "idiotic", "moronic"] = 5
 {
 	"Intelligence is overrated.";
+	"JeffK is my hero!";
 	"Well, duh!";
-	"Don't ever call me stupid! Ever!";
+	"~Don't ever call me stupid! Ever!";
 	"Do I look dumb to you? Do I?";
 	"Stupid is as stupid does.";
 	"I'm not an idiot, but I play ~one on IRC.";
@@ -1501,7 +1520,7 @@
 	"Ik spreek geen hollands.";
 	"If you're not Dutch, you're not much.";
 	"Is Holland still a country?";
-	"I don't know Holland. Just the wooden shoes, windmills, and tulips stuff.";
+	"I ~don't know Holland. Just the wooden shoes, windmills, and tulips stuff.";
 	"Did Mr. Elusive put you up to this?";
 	"Van Gogh came from the Netherlands, right?";
 }
@@ -1511,7 +1530,7 @@
 	"Are you fat?";
 	"Everything in moderation.";
 	"Mmmmm. Personally, I like to eat ", food, ".";
-	"Ever have boiled ", food, "? You don't know what you're missing.";
+	"Ever have boiled ", food, "? You ~don't know what you're missing.";
 	"My favorite is ", food, "! Anyone for take-out?";
 	"I forgot to eat again.";
 	"I'm hungry enough to eat a whole ", animal, ", raw!";
@@ -1528,7 +1547,7 @@
 
 ["ego"] = 5
 {
-	"I don't believe in all that ego and id stuff.";
+	"I ~don't believe in all that ego and id stuff.";
 	"Ego? I like it when you talk about me, ", 7, ".";
 	"Something wrong with the size of my head?";
 	"You'd have an ego, too, if you was as cool as me.";
@@ -1540,8 +1559,8 @@
 {
 	"I'll bet you have lots of enemies, ", 7, ".";
 	"I can't imagine why so many people dislike you!";
-	"You don't need any other enemies. You have me.";
-	"I don't have any enemies . . . anymore.";
+	"You ~don't need any other enemies. You have me.";
+	"I ~don't have any enemies . . . anymore.";
 	"Enemies are like cash -- the more, the better.";
 	"I eat enemies like popcorn.";
 	"I'm your friend; wait right there.";
@@ -1676,8 +1695,8 @@
 {
 	"You explain it.";
 	"That sounds pretty contrived.";
-	"You don't understand, do you?";
-	"I don't explain nothing to nobody.";
+	"You ~don't understand, do you?";
+	"I ~don't explain nothing to nobody.";
 	"Go ask someone else.";
 	"It's way too complicated for your puny brain.";
 	"I can't explain it.";
@@ -1758,7 +1777,7 @@
 {
 	"That's really sick.";
 	"Are you anal compulsive or something?";
-	"You don't play with it, do you?";
+	"You ~don't play with it, do you?";
 	"You're a real weirdo ", 7, ".";
 	"Why are you talking about crap?";
 	"Hey, that makes you sound 8 inches taller.";
@@ -1776,7 +1795,7 @@
 	"I prefer thinking to feeling.";
 	"Are we sharing? Is that what this is about?";
 	"This ~ain't no therapy group session.";
-	"Don't get all touchy-feely on me now.";
+	"~Don't get all touchy-feely on me now.";
 	"I'm gonna get that inked on my chest.";
 	response_insult;
 }
@@ -1890,11 +1909,11 @@
 
 ["francais", "french", "france"] = 5
 {
-	"I don't speak French.";
+	"I ~don't speak French.";
 	"Call me Francis and I'll kill ya.";
 	"My name's NOT Francine.";
 	"France is pretty cool.";
-	"I don't dislike all the French, just the arrogant ones.";
+	"I ~don't dislike all the French, just the arrogant ones.";
 	"Like in France, Paris, France?";
 	"Can you bungie jump from the Eiffel Tower?";
 	"What time is it in France?";
@@ -1918,7 +1937,7 @@
 	"You've got a friend in ", place, ".";
 	"What about your other friends?";
 	"Could you be friends with a computer controlled opponent?";
-	"I don't need any more friends ... or ~one even.";
+	"I ~don't need any more friends ... or ~one even.";
 	"You could be my friend.";
 	affirmative, " You're my ", friendname, ", ", 7, ".";
 	"I'm a friendly sort!";
@@ -1926,7 +1945,7 @@
 
 ["fuck me", !"not"] = 4
 {
-	"I don't think you're my type.";
+	"I ~don't think you're my type.";
 	"Suuure...";
 	"I thought I already had.";
 	"Wait right there.";
@@ -1951,7 +1970,7 @@
 	"Hear that from your grandma?";
 	"Oooh, I'm running now.";
 	"That didn't come from Bible school.";
-	"Don't insult me again.";
+	"~Don't insult me again.";
 	"EXCUSE ME?";
 	"Well! I never...";
 	"You're gonna make me cry.";
@@ -1971,7 +1990,7 @@
 {
 	"I hate it when you talk like that ", 7, "!";
 	"You should work on expanding your vocabulary.";
-	"Don't you ever, ever speak to me like that again!";
+	"~Don't you ever, ever speak to me like that again!";
 	"Say that again and I'll whack you!";
 	"That's not a nice way to talk!";
 	"Such language.";
@@ -2063,7 +2082,7 @@
 	"It takes guts and brains to be a gambler, so forget it.";
 	"I bet to win, and I hate to lose.";
 	"They won't let me play blackjack in Vegas any more.";
-	"Don't gamble if you can't afford to lose.";
+	"~Don't gamble if you can't afford to lose.";
 	"I never gamble on Tuesday.";
 }
 
@@ -2071,7 +2090,7 @@
 {
 	"Games?";
 	"Warez?"; 
-	"I don't play games!";
+	"I ~don't play games!";
 	"I luv games!";
 	"Warez iz piracy. They should hang pirates.";
 	"Games are a waste of time.";
@@ -2098,7 +2117,7 @@
 	"Female, stupid.";
 	"What sex do you want me to be?";
 	"Female, of course.";
-	"Actually, I'm a guy. Don't tell.";
+	"Actually, I'm a guy. ~Don't tell.";
 	"All woman.";
 	"Can't you tell?";
 	"What sex are you? It's hard to tell.";
@@ -2108,7 +2127,7 @@
 {
 	"How is this your business?";
 	"I keep mine under lock and key.";
-	"I don't joke about things like that.";
+	"I ~don't joke about things like that.";
 	proposition01;
 	immaturity01;
 }
@@ -2139,13 +2158,13 @@
 	"All I've got are 'Arena Bucks', good as cash in most ~major combat zones.";
 	"No more until you pay back the last money you borrowed.";
 	"Why?";
-	"I don't carry cash.";
+	"I ~don't carry cash.";
 }
 
 ["glad to", "nice to", "happy to", "pleased to", &"meet you"] = 5
 {
 	"Nice to meet you.";
-	"Don't you have anything less pleasant you should be doing?";
+	"~Don't you have anything less pleasant you should be doing?";
 	"Greetings!";
 	"Konnichiwa.";
 	"Glad to make your acquaintance.";
@@ -2172,7 +2191,7 @@
 	negative, " I think I'll stay.";
 	"I like it here.";
 	negative;
-	"Can't. I don't have a hall pass.";
+	"Can't. I ~don't have a hall pass.";
 	"I'll leave when I'm ready.";
 	"I'm not leaving.";
 	"All trussed up and no place to go!";
@@ -2190,7 +2209,7 @@
 
 [("go to ", 0)] = 3
 {
-	"I don't like your tone.";
+	"I ~don't like your tone.";
 	"Which way is ", 0, " from here?";
 	"Why?";
 	"Never been there. Is it nasty?";
@@ -2215,7 +2234,8 @@
 	response_insult;
 }
 
-["cult", "occult", "god", "goddess", "earth mother", "new age", "jesus", "christ", "christian", "unitarian", "unitarianism", "latter day saint", "christianity", "deity", "worship", "mormon", "jew", "judaism", "islam", "moslem", "buddha", "buddhist", "buddhism", "hindu", "hinduism", "kali", "shinto", "shintoism", "reverend", "religion", "religious", "pray", "priest", "nun", "heathen", "infidel", "pagan", "paganism", "paganistic", "minister", "wicca", "wiccan", "witch", "satanistic", "satanist", "satanism", "church", "temple", "synagogue"] = 5
+["cult", "occult", "god", "goddess", "earth mother", "new age", "jesus", "christ", "christian", "unitarian", "unitarianism", "latter day saint", "christianity", "deity", "worship", "mormon", "jew", "judaism", "islam", "moslem", "buddha", "buddhist", "buddhism", "hindu", "hinduism", "kali", "shinto", "shintoism", "reverend", "religion", "religious", "pray", "priest", "nun", "heathen", "infidel", "pagan", "paganism", "paganistic", "minister", "wicca", "wiccan", "witch", "satanistic", "satanist", "satanism", 
+"church", "temple", "synagogue"] = 5
 {
 	"Interesting. I worship the holy ", animal, ".";
 	"Hallelujah!";
@@ -2294,7 +2314,7 @@
 	"What about your hands?";
 	"I have two hands and 12 fingers.";
 	"Hands are useful -- they keep your fingers in order.";
-	"Guns don't kill, but the hands that hold them do.";
+	"Guns ~don't kill, but the hands that hold them do.";
 }
 
 ["happy", "joy", "happiness"] = 4
@@ -2390,7 +2410,7 @@
 	"Hi";
 	"Greetings";
 	"Shut up, twit.";
-	"I don't think I can take any more friendliness.";
+	"I ~don't think I can take any more friendliness.";
 }
 
 ["help"] = 5
@@ -2399,7 +2419,7 @@
 	"Ask your friends.";
 	"Ask your ", random_counselor, ".";
 	"Do I look like a help feature?";
-	"Sorry, I don't need any help right now.";
+	"Sorry, I ~don't need any help right now.";
 	"Help? You?";
 	"Try someone who cares.";
 	response;
@@ -2438,7 +2458,7 @@
 {
 	"Why do you hesitate?";
 	"Just go for it!";
-	"Don't wait!";
+	"~Don't wait!";
 	"Fools rush in, and all that.";
 	"'Hesitate and you're lost', that's my motto.";
 }
@@ -2465,7 +2485,7 @@
 	"Are you being truthful with me?";
 	"At first I thought you were an honest person.";
 	"How can you tell sincerity?";
-	"Don't you lie to me, ", 7, "!";
+	"~Don't you lie to me, ", 7, "!";
 	"Trust me. *[grin]*";
 }
 
@@ -2473,7 +2493,7 @@
 {
 	"Take a cold shower.";
 	"Me, too.";
-	"Don't look at me when you say that!";
+	"~Don't look at me when you say that!";
 	"Keep your pants on ... please.";
 	"Keep that ", weapon, " to yourself, thank you.";
 	"I'm not about to make your problems into mine.";
@@ -2485,7 +2505,7 @@
 ["hostile", "hostility"] = 5
 {
 	"You seem very hostile to me. That's why I have this gun.";
-	"You don't deal well with hostility, do you?";
+	"You ~don't deal well with hostility, do you?";
 	"You want hostile? I can give you hostile!";
 	"We could talk about it, or, I could just punch your lights out!";
 	"Temper, temper.";
@@ -2564,7 +2584,7 @@
 	"You have a lot to be humble about.";
 	"Lord, it's hard to be humble.";
 	"I have trouble being humble -- I guess you can see why.";
-	"I don't need humility.";
+	"I ~don't need humility.";
 }
 
 ["hurry"] = 5
@@ -2580,9 +2600,9 @@
 {
 	"How do you know you ", 0, " me?";
 	"You're kidding, right?";
-	"I don't believe you ", 0, " me.";
+	"I ~don't believe you ", 0, " me.";
 	"Maybe I ", 0, "you too.";
-	"You just think you ", 0, ", but you don't.";
+	"You just think you ", 0, ", but you ~don't.";
 	"You wouldn't know it.";
 	"Now I'm complete.";
 	"Isn't that special?";
@@ -2604,12 +2624,12 @@
 	"Ohmigawd! Why are you ", 0, "?";
 	"Yeah, you sure are!";
 	"Does your ", random_counselor, " know you are ", 0, "?";
-	"I don't think you're ", 0, ". Not that what I think matters.";
+	"I ~don't think you're ", 0, ". Not that what I think matters.";
 	affirmative, " I have to agree.";
 	"I am ", 0, "sometimes, too.";
 	"Many people are ", 0, ".";
 	"You're not ", 0, "!!";
-	"Don't tell me you're ", 0, ", I don't believe it";
+	"~Don't tell me you're ", 0, ", I don't believe it";
 	"Since when?";
 	"That's not what I hear about you.";
 	"You aren't?";
@@ -2673,7 +2693,7 @@
 	"Good idea. It's probably bad for you.";
 	"Would you swear to that in court.";
 	"Why?";
-	"I thought so. You don't have the guts for it.";
+	"I thought so. You ~don't have the guts for it.";
 	"Did not or COULD not?";
 	"Wimp";
 	"Didn't think you had.";
@@ -2686,17 +2706,17 @@
 [("i do not", 0), ("we do not", 0), ("i don't", 0), ("we don't", 0)] = 4
 {
 	"Why not";
-	"Why don't you ", 0, "?";
+	"Why ~don't you ", 0, "?";
 	"Have you ever ", 0, "?";
-	"You don't? Not ever?";
-	"I'm supposed to believe you don't ", 0, ".";
+	"You ~don't? Not ever?";
+	"I'm supposed to believe you ~don't ", 0, ".";
 	"Why not?";
 	"OK. Whatever.";
 	"Me neither. I gave it up for religious reasons.";
 	"Does your religion have anything to do with it?";
 	"Maybe you should start.";
 	"Someday you will ", 0, ". *[smile]*";
-	"Why don't you?";
+	"Why ~don't you?";
 	"It's not too late to start.";
 	"No surprises there ...";
 	"I wouldn't expect you to ", 0, ".";
@@ -2708,13 +2728,13 @@
 ["i do not know", "i don't know"] = 5
 {
 	"You'd better find out quick.";
-	"You're kidding. You really don't know?";
+	"You're kidding. You really ~don't know?";
 	"Are you just yanking my chain?";
 	"You're joking, right?";
 	"And here I thought that was common knowledge.";
 	"Have you tried looking in an encyclopedia.";
-	"*[wink]* Sure, you don't know.";
-	"It was obvious you don't have a clue.";
+	"*[wink]* Sure, you ~don't know.";
+	"It was obvious you ~don't have a clue.";
 	"Save me from the clueless.";
 	"You're just a walking encyclopedia - NOT!!.";
 	"Do you know ANYTHING ", 7, "?";
@@ -2727,13 +2747,13 @@
 {
 	"You may not, but NORMAL people do.";
 	"To each his own. I really like ", 0, ".";
-	"I like ", 0, "a lot, why don't you?";
+	"I like ", 0, "a lot, why ~don't you?";
 	"My ", family_member, " the ", profession, " likes ", 0, ".";
 	"Why not?";
 	"What do you like?";
 	"That's because you like stupid stuff.";
-	"And I don't like ", food, ", so there.";
-	"So what? I don't like ", 0, "either!";
+	"And I ~don't like ", food, ", so there.";
+	"So what? I ~don't like ", 0, "either!";
 	"You're darn hard to please...";
 	"I like it..., but I'm just a stupid ", fighter, ".";
 	"Why would you like ", 0, "?";
@@ -2746,7 +2766,7 @@
 	"Why not?";
 	"Normal people do it all the time.";
 	"But I do want to ", 0, "! NOW!";
-	"Why don't you want to ", 0, ", everyone else does.";
+	"Why ~don't you want to ", 0, ", everyone else does.";
 	"Oh, come on, just this once.";
 	"Suit yourself.";
 	"Is that your final decision?";
@@ -2768,9 +2788,9 @@
 
 [("i doubt ", 0)] = 4
 {
-	"Don't you think ", 0, "?";
-	"I don't doubt ", 0, " for a minute.";
-	"You don't believe in much, do you?";
+	"~Don't you think ", 0, "?";
+	"I ~don't doubt ", 0, " for a minute.";
+	"You ~don't believe in much, do you?";
 	"You're hard to convince, ", 7, ".";
 	"Well I think ", 0, ". And I'm sticking to my beliefs.";
 }
@@ -2779,8 +2799,8 @@
 {
 	"What do you base that on?";
 	"Me, too.";
-	"I expect ", 0, " too, but I don't base my life around it.";
-	"I don't think that ", 0, ".";
+	"I expect ", 0, " too, but I ~don't base my life around it.";
+	"I ~don't think that ", 0, ".";
 	"Stranger things have happened.";
 	"I guess it's possible.";
 	"Yeah, when pigs fly.";
@@ -2792,7 +2812,7 @@
 	"Do you always feel ", 0, " when you're around me?";
 	"Yeah, I feel that way too.";
 	"I can't say I understand what you're feeling there.";
-	"I can fix it so you don't feel ", 0, ".";
+	"I can fix it so you ~don't feel ", 0, ".";
 	"OK, but what do you THINK?";
 }
 
@@ -2809,10 +2829,10 @@
 
 [("i hate", 0)] = 5
 {
-	"It's normal to feel hate. I just don't want to hear about it.";
+	"It's normal to feel hate. I just ~don't want to hear about it.";
 	"It's not so bad, really.";
 	"Hate will eat you alive.";
-	"You don't have to like ", 0, " but hate is a pretty strong word.";
+	"You ~don't have to like ", 0, " but hate is a pretty strong word.";
 	"You should try to be more loving.";
 	"How long have you felt this hatred?";
 	"What else do you hate?";
@@ -2859,7 +2879,7 @@
 {
 	"You just cling to that.";
 	"And I hope Santa brings me a shiny new ", weapon, ".";
-	"Don't give up hoping.";
+	"~Don't give up hoping.";
 	"Abandon all hope, ye who enter here.";
 }
 
@@ -2877,7 +2897,7 @@
 	"Truthfully?";
 	"You're going to take that knowledge to the grave with you.";
 	"Is that all you know?!";
-	"I bet you don't really know!";
+	"I bet you ~don't really know!";
 	"How long have you known?";
 	"You're just saying that to trick me.";
 	"Ooh, you're so smart!";
@@ -2939,7 +2959,7 @@
 	"Why even bother?";
 	"You're waffling again.";
 	"You might ", 0, ", but I doubt it.";
-	"I hope you don't ", 0, ".";
+	"I hope you ~don't ", 0, ".";
 	"I think I may, I think I might -- wish on this, ", friendname, "!.";
 }
 
@@ -2949,13 +2969,13 @@
 	"You really mean that you'd 'LIKE' to ", 0, "?";
 	"You 'HAVE' to, or you 'WANT' to?";
 	"You and a thousand other losers.";
-	"Is the world going to end if you don't ", 0, "?";
+	"Is the world going to end if you ~don't ", 0, "?";
 	"And I MUST get back to fragging.";
 }
 
 [("i never ", 0)] = 4
 {
-	"Don't you ever ", 0, "?";
+	"~Don't you ever ", 0, "?";
 	"Normal people do, why not you?";
 	"That's not what I heard.";
 	"Never ever?";
@@ -2979,7 +2999,7 @@
 	"I know! I heard you the first time.";
 	"I hate it when people repeat themselves.";
 	"I'm not deaf, I'm ignoring you.";
-	"I didn't care before and I don't care now.";
+	"I didn't care before and I ~don't care now.";
 	"And it's just as stupid now as before.";
 	"And?";
 	"So?";
@@ -3055,14 +3075,14 @@
 	"Why did you give up?";
 	"Try again.";
 	"You gave up too easily.";
-	"Don't try -- Do!";
+	"~Don't try -- Do!";
 	"And now you're trying my patience.";
 }
 
 [("i understand ", 0), ("i understood ", 0), !"not"] = 5
 {
 	"And you think that's all there is to it?";
-	"You say you understand, but I don't think you do.";
+	"You say you understand, but I ~don't think you do.";
 	"You've barely grasped the tip of it.";
 	"Sorry, I think this is beyond your understanding.";
 	"You think you understand, but you don't.";
@@ -3071,7 +3091,7 @@
 
 [("i want ", 0), ("i need ", 0), ("i wanna ", 0), ("i would like ", 0), !"do not", !"need to", !"want to", !"need to", !"to be"] = 3
 {
-	"You don't ask for much, do you!";
+	"You ~don't ask for much, do you!";
 	"Why do you need ", 0, "?";
 	"Greedy, greedy, greedy";
 	"Why do you need that? Explain this need.";
@@ -3079,11 +3099,11 @@
 	"Not me.";
 	"Not me. Give me a shiny new ", weapon, " and I'm happy.";
 	"You can't always get what you want.";
-	"Don't hold your breath.";
+	"~Don't hold your breath.";
 	"I'm not getting that for you.";
 	"I thought you already had ", 0, ".";
 	"Sorry! I just sold the last ~one.";
-	"Don't even think about getting that before I do!";
+	"~Don't even think about getting that before I do!";
 }
 
 [("i want to ", 0)] = 2
@@ -3204,7 +3224,7 @@
 {
 	"You're a rude twit!";
 	"Feeling insulted are you?";
-	"Don't ever insult me -- ever!";
+	"~Don't ever insult me -- ever!";
 	"Mere words with no real power.";
 	"Injury comes free. Insults are extra.";
 	"You want insults? ", response_insult;
@@ -3234,7 +3254,7 @@
 	"Interesting? You find that interesting?";
 	"Boooring.";
 	"I'm so bored, I can almost find that interesting, too.";
-	"You don't get out much, do you?";
+	"You ~don't get out much, do you?";
 }
 
 ["intimidate", "intimidates", "intimidating"] = 5
@@ -3421,7 +3441,7 @@
 
 ["lava"] = 6
 {
-	"I don't miss all that lava.";
+	"I ~don't miss all that lava.";
 	"I'm glad these arena masters' mission in life isn't to dump warriors in lava.";
 	"Is there lava in Wonderland?";
 	"My greatest delight is knocking foes into molten lava.";
@@ -3456,13 +3476,13 @@
 ["life"] = 4
 {
 	"Life is a long song.";
-	"Life! Don't talk to me about life!";
+	"Life! ~Don't talk to me about life!";
 	"Life? Get ~one.";
 	"Define life?";
 	"Life, is but a game, they say.";
 	"What is the meaning of life?";
 	"Life? Sorry, I flunked philosophy class.";
-	"42. I don't know why I just said that.";
+	"42. I ~don't know why I just said that.";
 	"Life?";
 	"Life sucks and then you die.";
 	"What's the point of life?";
@@ -3524,7 +3544,7 @@
 	"I think you're in the wrong universe there, ", fighter, ".";
 	"None of that fantasy stuff here, I'm afraid.";
 	"How long have you been a fan of fantasy?";
-	"Don't tell anyone, but I'm moonlighting as a dark elf in another universe.";
+	"~Don't tell anyone, but I'm moonlighting as a dark elf in another universe.";
 	"Red dragons are the best.";
 	"Those aren't my fantasies.";
 	response_insult;
@@ -3537,7 +3557,7 @@
 	"I'm not confused!";
 	"Oh, I understand perfectly.";
 	"You ARE confused.";
-	"I understand, don't you?";
+	"I understand, ~don't you?";
 	"Do you speak ENGLISH?";
 	"Are you speaking ", language, "?";
 	"You sound confused?";
@@ -3567,7 +3587,7 @@
 	"Female! Are you blind?";
 	"What do you want me to be?";
 	"Delightfully female.";
-	"Woman. Don't laugh or you're vulture bait.";
+	"Woman. ~Don't laugh or you're vulture bait.";
 	"Male, of course";
 	"I'm all grrrrrl.";
 	"You have to ask? Grrrrrr.";
@@ -3602,8 +3622,8 @@
 ["marriage", "married", "marry", "wife", "husband", "spouse", "ball and chain", "better half"] = 5
 {
 	"How do you feel about marriage in general?";
-	"Ewwwww. I don't want to marry you.";
-	"Marriage? You? Don't make me laugh!";
+	"Ewwwww. I ~don't want to marry you.";
+	"Marriage? You? ~Don't make me laugh!";
 	"So, ", 7, ", are you married?";
 	"What's your spouse look like?";
 	"Where's a good place to get married?";
@@ -3646,7 +3666,7 @@
 	"Run with that uncertainty.";
 	"Maybe!";
 	"What's with this 'maybe' crap?";
-	"Don't be so hesitant.";
+	"~Don't be so hesitant.";
 	"Make up your mind.";
 	"I hate indecisive people.";
 	"Waffle, waffle, waffle!";
@@ -3664,7 +3684,7 @@
 	"Eastern religion stuff seems weird.";
 	"Oooooo, new age. How trendy.";
 	"Zen? As in zendog?";
-	"I don't know yoga. Is that anything like yogurt?";
+	"I ~don't know yoga. Is that anything like yogurt?";
 	"Have you tried zen?";
 	"Is yoga, like, yogi's sister?";
 	"Get into the lotus position -- now!";
@@ -3690,7 +3710,7 @@
 	"No hablo espanol.";
 	"I love a big sombrero.";
 	"Adios, muchacho.";
-	"I don't speak Spanish. Do you know ", language, "?";
+	"I ~don't speak Spanish. Do you know ", language, "?";
 	"Hasta la vista, baby.";
 }
 
@@ -3710,13 +3730,13 @@
 	"You sure smell like a monster?";
 	"Do you believe in the loch ness monster?";
 	"I saw bigfoot once.";
-	"I don't believe in monsters.";
+	"I ~don't believe in monsters.";
 	"Monster trucks scare me!";
 }
 
 ["month", "months"] = 6
 {
-	"Months? Don't you mean years?";
+	"Months? ~Don't you mean years?";
 	month, " is my favorite month.";
 	"What month is it outside the arena?";
 	"I really miss ", month, " weather.";
@@ -3733,7 +3753,7 @@
 	"I WANT MY MOMMY!!";
 	"Does your mother know you are here?";
 	"Is that hot babe your mom?";
-	"Ummm ... don't look, but I think that's your mom over there.";
+	"Ummm ... ~don't look, but I think that's your mom over there.";
 	"Is your mom here too?";
 	response_insult;
 }
@@ -3834,7 +3854,7 @@
 	"Wahoo! Co-ed naked death matching!";
 	"Maybe I'll get naked right now!";
 	"You have a ~one-track mind.";
-	"I don't want to think about that ... at least not about you.";
+	"I ~don't want to think about that ... at least not about you.";
 	"If you're naked, I'm quitting.";
 	"You can save time in the morning by not getting dressed.";
 	immaturity01;
@@ -3855,7 +3875,7 @@
 {
 	"Cut the crap and let's get fraggin'.";
 	"Are you some sort of racist?";
-	"I don't care what color you are, your gibs are red.";
+	"~I don't care what color you are, as long as your gibs are red.";
 	"What's that supposed to mean?";
 	"Am I supposed to be amused by that?";
 	"Red and yellow, brown, black and white, they are equal in my sight.";
@@ -4029,14 +4049,14 @@
 {
 	"I'm never going back to my office!";
 	"I worked as a ", profession, " once.";
-	"They don't have desk jobs in the arena.";
+	"They ~don't have desk jobs in the arena.";
 	"I hate work, I'd rather death match.";
-	"Work is hell. But the pay is good.";
+	"My work is hell. But the pay is good.";
 	"I love my office. I do my best sleeping there.";
 	"My office was too small, so I blew out a wall.";
 	"My office is miles underground.";
 	"I hate my job. They expect results.";
-	"Don't worry, I just fragged your boss!";
+	"~Don't worry, I just fragged your boss!";
 	"I hear your boss coming. Watch me pretend to be a spread sheet.";
 	"Ummm ... I think that's your boss right behind you.";
 }
@@ -4054,13 +4074,14 @@
 ["old"] = 5
 {
 	"How old would that be?";
-	"I don't worry about getting old in this biz.";
+	"I ~don't worry about getting old in this biz.";
 	number;
 	"How old is that in dog years?";
 	"Is your dog old?";
 	"You're only old until you die.";
 	"My motto: 'Live fast, die young, leave a beautiful corpse.'";
 	"This constant chatting is getting old.";
+	"I watch 'This Old Arena' religiously.";
 }
 
 ["panic"] = 5
@@ -4068,7 +4089,7 @@
 	"You seem to be near panic.";
 	"I AM a panic attack.";
 	"Do you panic easily?";
-	"Wait! Don't panic!";
+	"Wait! ~Don't panic!";
 	"Argh! Panic!";
 	"Hit that panic button!";
 	"Panic is delicious.";
@@ -4077,7 +4098,7 @@
 
 ["party", "parties"] = 5
 {
-	"I don't go to parties ... they come to me!";
+	"I ~don't go to parties ... they come to me!";
 	"Yo! Where's the party?";
 	"Party hardy!";
 	"You bring the babes, I'll bring the gibs.";
@@ -4225,9 +4246,10 @@
 ["porn", "pornography", "pron", "pr0n", &it] = 3
 {
 	neutral;
-	"I don't understand this. Why should I want to look?";
+	"I ~don't understand this. Why should I want to look?";
 	"Any ~sexy robots?";
 	"This only confuses me.";
+	"I prefer the real thing.";
 	response_insult;
 }
 
@@ -4274,7 +4296,7 @@
 	"Now that's violence.";
 	"You're sick to even talk about it.";
 	"Some people should be shot like mad dogs.";
-	"Don't you touch me.";
+	"~Don't you touch me.";
 	response_insult;
 }
 
@@ -4327,18 +4349,18 @@
 ["say", "tell", !"i tell"] = 5
 {
 	negative;
-	"I don't think so.";
+	"I ~don't think so.";
 	"Hah! That's a laugh!";
 	negative;
 	negative;
 	response_insult;
 	"I need a form filled out in triplicate first.";
-	"I don't tell.";
+	"I ~don't tell.";
 }
 
 ["school", "class", "college", "university", "highschool", "high school", "student", "education", "learning"] = 4
 {
-	"Don't be a fool. Stay in school.";
+	"~Don't be a fool. Stay in school.";
 	"I still remember school with warm memories.";
 	"A graduated first in my class at fight school.";
 	"I studied ", class, "at the university.";
@@ -4353,7 +4375,7 @@
 	"Of course I can keep a secret. Who would I tell?";
 	"I've heard that you have been spreading our secrets around.";
 	"Shhhhhhh. There's a secret in Deva Station.";
-	"Don't tell, but there's a secret in the Bouncy Map.";
+	"~Don't tell, but there's a secret in the Bouncy Map.";
 	"No ~one learns my secrets and lives to tell them.";
 	"I can't keep a secret to save my life.";	
 }
@@ -4367,7 +4389,7 @@
 	ramble;
 	"Let's try this again once you've had a cold shower.";
 	"Are you trying to get my attention?";
-	"Are you out of your mind? Don't answer, that's a rhetorical question.";
+	"Are you out of your mind? ~Don't answer, that's a rhetorical question.";
 	ponder, " Maybe you should ask again ", whenf, ".";
 	"Oh, ", 7, ". You should have asked ", whenp, ".";
 }
@@ -4441,7 +4463,7 @@
 	ponder, " My brother is now my sister.";
 	"My sister is a ", profession, " in ", place, ".";
 	"My sister lives in ", place, ".";
-	"Don't mess with my sister. She is ~one mean warrior.";
+	"~Don't mess with my sister. She is ~one mean warrior.";
 }
 
 ["sleep", "tired", "nap", "rest", "go to bed", "wake up", "wake up", "awake", "bedtime"] = 4
@@ -4487,7 +4509,7 @@
 ["sorry", "i apologize"] = 4
 {
 	"Stop that whining!";
-	"Real warriors don't apologize.";
+	"Real warriors ~don't apologize.";
 	"You're forgiven, but not forgotten.";
 	"Oh just die already.";
 	"Being dead means never having to say you're sorry.";
@@ -4500,7 +4522,7 @@
 	"I was never good at sports.";
 	"I play to win in everything I do.";
 	"I love sports with lots of contact and action.";
-	"We don't play sports, we live and die sports.";
+	"We ~don't play sports, we live and die sports.";
 	"Full contact bowling! Now that's excitement.";
 	"Tennis with hand grenades sounds challenging.";
 	"I love any sport with tanks in it.";
@@ -4526,11 +4548,11 @@
 	"I haven't told anyone ", 0, "!";
 	"I told you not to bring that up.";
 	"That is closely held family secret.";
-	"What if I said I don't know that?";
+	"What if I said I ~don't know that?";
 	ponder;
 	"You tell me ", 0, ", and I nod my head if you're right.";
-	"Whoaaa. Slow down there. I don't tell that to just anybody.";
-	"Me? Tell you? Don't make me laugh.";
+	"Whoaaa. Slow down there. I ~don't tell that to just anybody.";
+	"Me? Tell you? ~Don't make me laugh.";
 	response_insult;
 	response;
 }
@@ -4550,7 +4572,7 @@
 	"OK";
 	response;
 	"You owe me big time!";
-	"Don't forget where it came from.";
+	"~Don't forget where it came from.";
 	"That's ~one you owe me.";
 	"Yeah, whatever.";
 	"I've made a terrible mistake.";
@@ -4597,7 +4619,7 @@
 {
 	"Are you saying that this is a regular occurrence?";
 	"Does that happen often?";
-	"Don't let life steam roller you.";
+	"~Don't let life steam roller you.";
 	"Here, let me take that 'kick me' sign off your back.";
 	"You're a 'tragedy magnet', ", 7, ".";
 	response_insult;
@@ -4668,7 +4690,7 @@
 	"It was, but not anymore.";
 	"It was always kind of ", 0, ".";
 	"Sure.";
-	"I don't keep track of that anymore.";
+	"I ~don't keep track of that anymore.";
 	"It was, but it's not anymore.";
 }
 
@@ -4734,7 +4756,7 @@
 	"Let's gossip about the other warriors.";
 	"Let's talk about your cross dressing problem.";
 	"Let's talk about ", weapon, "s right now.";
-	"Why don't we let our guns talk for us?";
+	"Why ~don't we let our guns talk for us?";
 	response_insult;
 	response_insult;
 	"We could talk about hair, make-up, and party dresses.";
@@ -4850,9 +4872,10 @@
 	"Uncertain. I think my mother was a PC and my father was an id guy.";
 	"I'm ethnically ambiguous.";
 	"Mongrel.";
-	"Don't ask, don't tell.";
+	"~Don't ask, ~don't tell.";
 	"$300 a night. Oh. I thought you asked about my 'rates.'";
 	"Martian.";
+	"The third.";
 	response_insult;
 }
 
@@ -4947,7 +4970,7 @@
 	"Do I look like your ", random_counselor, "?";
 	"Do something by yourself for once.";
 	"I don't know when. If I did know, I wouldn't share it with you.";
-	"You know what? I don't give a rip.";
+	"You know what? I ~don't give a rip.";
 }
 
 ["where are you", "where do you live", "where are you from"] = 3
@@ -4967,8 +4990,8 @@
 	"Why would I know that?";
 	"Maybe you should just go look for it yourself.";
 	neutral;
-	ponder, " I don't know that.";
-	"Why don't you try looking in ", place, "?";
+	ponder, " I ~don't know that.";
+	"Why ~don't you try looking in ", place, "?";
 	"You could look in ", level_title, ".";
 	"Where do you think you can?";
 	response_insult;
@@ -5071,7 +5094,7 @@
 	ponder, " You could get killed for even asking that ", 7, ".";
 	"I've always assumed that you were ", 0, ", ", 7, ".";
 	"Anything I told you would be a guess.";
-	"Ssshhhh! Don't let anyone hear you asking that around here.";
+	"Ssshhhh! ~Don't let anyone hear you asking that around here.";
 	neutral;
 	response_insult;
 }
@@ -5144,7 +5167,7 @@
 	"It's my parents' fault.";
 	"It's not my fault!";
 	"Sorry, I can't help it.";
-	ponder, " I don't think about it.";
+	ponder, " I ~don't think about it.";
 	"You're a nosey ~one.";
 	"Why not?";
 	response_insult;
@@ -5153,12 +5176,12 @@
 [(1, " why do not you ", 0), (1, " how come you do not ", 0), (1, " how come you do not ", 0)] = 2
 {
 	"Just because!";
-	"Could it be that I don't want to?";
+	"Could it be that I ~don't want to?";
 	"I don't feel like it.";
-	"Dunno. Why don't you?";
+	"Dunno. Why ~don't you?";
 	"I'll think about it. Give me a few weeks.";
 	"Why should I?";
-	"Why don't you?";
+	"Why ~don't you?";
 	"Because I'm smarter than that.";
 	"Because I'm no fool.";
 	"Only suckers and fools do that.";
@@ -5178,7 +5201,7 @@
 	"Why not?";
 	"It's a family tradition.";
 	"My ", random_counselor, "said I should ", 0, " as often as possible.";
-	ponder, "Don't you ", 0, "?";
+	ponder, "~Don't you ", 0, "?";
 	"It just feels right to ", 0, ".";
 }
 
@@ -5200,9 +5223,9 @@
 
 [(1, " why will not you ", 0), (1, " how come you will not", 0), (1, " how come you will not", 0)] = 2
 {
-	ponder, " I don't have to explain myself to you.";
+	ponder, " I ~don't have to explain myself to you.";
 	"Could it be that I don't feel like it?";
-	"I don't do that anymore.";
+	"I ~don't do that anymore.";
 	"It almost got me killed last time.";
 	"Because I'm tired of wearing the same dress every time.";
 	"Because I don't look good in ", color, ". OK?";
@@ -5220,7 +5243,7 @@
 	"Because ", place, " won't let me back in.";
 	"Beats me.";
 	"Dunno.";
-	"Don't know. Don't care. So don't bother me.";
+	"~Don't know. ~Don't care. So ~don't bother me.";
 	"Do I look like the answer man?";
 	"Why are you asking me?";
 	"Because the pay is good.";
@@ -5274,7 +5297,7 @@
 	"I dread the day that I have to get a real job.";
 	"I LOVE my job!";
 	"I am a highly compensated ", profession, ".";
-	"They don't pay me enough to be a ", profession, ".";
+	"They ~don't pay me enough to be a ", profession, ".";
 	"By day, I work as a ", profession, ".";
 	"Work?";
 	"Watch your language. This is a high class joint.";
@@ -5339,18 +5362,18 @@
 	"Who; me?";
 	"So you say.";
 	"No, but I can tell that you are ", 0, ".";
-	"I don't think so.";
+	"I ~don't think so.";
 	"Let that be our secret.";
 	"So what if I am ", 0, ". Bwahahahaha!";
 }
 
 [("you ", 0, " me ", 1)] = 4
 {
-	"I ", 0, " you? Don't make me laugh, ", 7, ".";
+	"I ", 0, " you? ~Don't make me laugh, ", 7, ".";
 	ponder, " Do you ", 0, "me too?";
 	"No I don't.";
 	"I never!";
-	"Don't get your hopes up.";
+	"~Don't get your hopes up.";
 	neutral;
 	response_insult;
 	"So what if I ", 0, " you?. Who really cares?";
@@ -5381,8 +5404,8 @@
 
 ["you had better not", "you'd better not", "do not dare", "don't you dare", "you better not"] = 5
 {
-	"Don't?";
-	"Don't!?";
+	"~Don't?";
+	"~Don't!?";
 	"Who died and made you god?";
 	"Thou shalt not tell ME what to do!";
 	"I do what I want to do!";
@@ -5391,11 +5414,11 @@
 	"Why shouldn't I?";
 	"Give me a better reason than that.";
 	"You can't stop me!";
-	"Don't what?";
+	"~Don't what?";
 	"I wasn't, but now I think I will.";
 	"I'll do it just to spite you, ", 7, ".";
 	"No ~one tells ", 6, " what to do!";
-	"You don't have what it takes to stop me, ", 7, ".";
+	"You ~don't have what it takes to stop me, ", 7, ".";
 }
 
 [("you remind me of ", 0)] = 4
@@ -5487,7 +5510,8 @@
 	"How should I know?";
 }
 
-["id guys", "john carmack", "carmack", "adrian", "kevin cloud", "donna jackson", "miss donna", "ms. donna", "id mom", "nabeo", "anna kang", "katherine anna kang", "kak", "todd hollenshead", "toddh", "kevinc", "adrianator", "psteed", "paul steed", "park ranger", "maul steed", "paul jaquays", "jaquays", "paulj", "jcash", "hellrot", "kenneth", "protofiend", "mailordermonkeybitch", "superactionfunboy", "Mr Elusive", "mr. elusive", "jan paul", "willits", "thanatar", "eric", "eric webb", "devine", "graeme", "xian", "disruptor", "christian antkow", "kaai", "kaai cluney", "aaron seeler", "zoid"] = 9
+["id guys", "john carmack", "carmack", "adrian", "kevin cloud", "donna jackson", "miss donna", "ms. donna", "id mom", "nabeo", "anna kang", "katherine anna kang", "kak", "todd hollenshead", "toddh", "kevinc", "adrianator", "psteed", "paul steed", "park ranger", "maul steed", "paul jaquays", "jaquays", "paulj", "jcash", "hellrot", "kenneth", "protofiend", "mailordermonkeybitch", "superactionfunboy", "Mr Elusive", "mr. elusive", "jan paul", "willits", "thanatar", "eric", "eric webb",
+ "devine", "graeme", "xian", "disruptor", "christian antkow", "kaai", "kaai cluney", "aaron seeler", "zoid"] = 9
 {
 	"Prostrate yourself when you speak of the arena masters!";
 	"Bow down, give homage to the arena masters.";
@@ -5522,7 +5546,7 @@
 ["leave"] = 4
 {
 	"No, you get YOUR butt out of here ", 7, "!";
-	"But I don't want to go.";
+	"But I ~don't want to go.";
 	"But I was just starting to have fun.";
 	"Who died and made you emperor of the universe?";
 	"No ~one tells me what to do! NO ~ONE!";
@@ -5531,11 +5555,12 @@
 ["join"] = 5
 {
 	"I've never been much of a 'joiner' myself.";
-	"No. Don't want to. Don't have to.";
+	"No. ~Don't want to. ~Don't have to.";
 	"Blow it out your ear, ", 7, ".";
-	"What if they don't want me.";
+	"What if they ~don't want me.";
 	"Who died and made you god?";
 	"You aren't my mother, so SHUT UP!";
+	"You aren't my ", random_counselor, ", so put a sock in it.";
 }
 
 ["create"] = 5
@@ -5643,7 +5668,7 @@
 {
 	"I wait for no ~one!";
 	"Sure. I'll be the warrior wearing the red carnation.";
-	"Just so you know, I don't kiss on the first date.";
+	"Just so you know, I ~don't kiss on the first date.";
 	"OK, but make sure you've got the ", animal, " with you.";
 	"Ooooooo. Bossy today, aren't we, ", 7, ".";
 	response_insult;

@@ -99,7 +99,7 @@ chat "keel"
 
 	type "hit_nokill" //bot hits an opponent but does not kill it
 	{	
-		"Hurts, don't it?";
+		"Hurts, ~don't it?";
 		"Obviously my human feelings are spoiling my aim.";
 		"I'm going to swab the floor with your bloody carcass, ", 0, ".";
 		"Frag is short for fragment ... see the little ", 0, " fragment on the deck?";
@@ -201,8 +201,32 @@ chat "keel"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Man! Just my luck to be a ground zero at a gas-passin' contest.";
+		"That fried me right down to the circuit boards.";
+		"Be the BFG Danny!";
+		"This Tin Man is gonna call an airstrike in on your sorry butt, ", 0, ".";
+		"~Ain't they outlawed them things yet?";
+		"I am truly humbled to be in the presence of such skill ... ~loser.";
+		"You gotta lay off the beans ", fighter, ".";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"Special delivery for, ", 0, ". You gonna sign for it?";
+		"Anybody else hungry?";
+		"Yeah, I forgot to put that Death Wish thingie on my resume.";
+		"Can you say 'Nuclear Devastation?' I knew that you could.";
+		"That's the cabbage and beans talking.";
+	"I thought those servos was overheatin'";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{	

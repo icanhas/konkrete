@@ -2,8 +2,7 @@
 //
 // Name:			fw_items.c
 // Function:		file to start with for fuzzy logic interbreeding sessions
-// Programmer:		Mr Elusive (MrElusive@idsoftware.com)
-// Last update:		1999-09-08
+// Programmer:		Mr Elusive
 // Tab Size:		4 (real tabs)
 // Notes:			-
 //===========================================================================
@@ -26,91 +25,152 @@
 #define AMMO_SCALE(v)			balance($evalfloat(MZ(v)), $evalfloat(MZ(v-BR_AMMO)), $evalfloat(MZ(v+BR_AMMO)))
 #define POWERUP_SCALE(v)		balance($evalfloat(MZ(v)), $evalfloat(MZ(v-BR_POWERUP)), $evalfloat(MZ(v+BR_POWERUP)))
 
+#ifndef W_NAILGUN
+#define W_NAILGUN			40
+#define GWW_NAILGUN			40
+#endif
+#ifndef W_PROXLAUNCHER
+#define W_PROXLAUNCHER		40
+#define GWW_PROXLAUNCHER	40
+#endif
+#ifndef W_CHAINGUN
+#define W_CHAINGUN			40
+#define GWW_CHAINGUN		40
+#endif
+#ifndef W_KAMIKAZE
+#define W_KAMIKAZE			200
+#endif
+#ifndef W_INVULNERABILITY
+#define W_INVULNERABILITY	100
+#endif
+#ifndef W_PORTAL
+#define W_PORTAL			40
+#endif
+#ifndef W_SCOUT
+#define W_SCOUT				40
+#endif
+#ifndef W_GUARD
+#define W_GUARD				40
+#endif
+#ifndef W_DOUBLER
+#define W_DOUBLER			40
+#endif
+#ifndef W_AMMOREGEN
+#define W_AMMOREGEN			40
+#endif
+#ifndef W_REDCUBE
+#define W_REDCUBE			100
+#endif
+#ifndef W_BLUECUBE
+#define W_BLUECUBE			100
+#endif
+
 //=============================================
 // ARMOR
 //=============================================
 
 weight "item_armor_shard"
 {
-	switch(INVENTORY_ARMOR)
+	switch(INVENTORY_SCOUT)
 	{
-		case 10: return ARMOR_SCALE(20);
-		case 20: return ARMOR_SCALE(20);
-		case 30: return ARMOR_SCALE(20);
-		case 40: return ARMOR_SCALE(20);
-		case 50: return ARMOR_SCALE(20);
-		case 60: return ARMOR_SCALE(15);
-		case 70: return ARMOR_SCALE(15);
-		case 80: return ARMOR_SCALE(15);
-		case 90: return ARMOR_SCALE(15);
-		case 100: return ARMOR_SCALE(15);
-		case 110: return ARMOR_SCALE(10);
-		case 120: return ARMOR_SCALE(10);
-		case 130: return ARMOR_SCALE(10);
-		case 140: return ARMOR_SCALE(10);
-		case 150: return ARMOR_SCALE(10);
-		case 160: return ARMOR_SCALE(10);
-		case 170: return ARMOR_SCALE(10);
-		case 180: return ARMOR_SCALE(10);
-		case 190: return ARMOR_SCALE(10);
-		case 200: return ARMOR_SCALE(10);
-		default: return ARMOR_SCALE(1);
+		case 1:
+		{
+			switch(INVENTORY_ARMOR)
+			{
+				case 10: return ARMOR_SCALE(20);
+				case 20: return ARMOR_SCALE(20);
+				case 30: return ARMOR_SCALE(20);
+				case 40: return ARMOR_SCALE(20);
+				case 50: return ARMOR_SCALE(20);
+				case 60: return ARMOR_SCALE(15);
+				case 70: return ARMOR_SCALE(15);
+				case 80: return ARMOR_SCALE(15);
+				case 90: return ARMOR_SCALE(15);
+				case 100: return ARMOR_SCALE(15);
+				case 110: return ARMOR_SCALE(10);
+				case 120: return ARMOR_SCALE(10);
+				case 130: return ARMOR_SCALE(10);
+				case 140: return ARMOR_SCALE(10);
+				case 150: return ARMOR_SCALE(10);
+				case 160: return ARMOR_SCALE(10);
+				case 170: return ARMOR_SCALE(10);
+				case 180: return ARMOR_SCALE(10);
+				case 190: return ARMOR_SCALE(10);
+				case 200: return ARMOR_SCALE(10);
+				default: return ARMOR_SCALE(1);
+			} //end switch
+		} //end case
+		default: return 0;
 	} //end switch
 } //end weight
 
 weight "item_armor_combat"
 {
-	switch(INVENTORY_ARMOR)
+	switch(INVENTORY_SCOUT)
 	{
-		case 10: return ARMOR_SCALE(60);
-		case 20: return ARMOR_SCALE(60);
-		case 30: return ARMOR_SCALE(60);
-		case 40: return ARMOR_SCALE(60);
-		case 50: return ARMOR_SCALE(60);
-		case 60: return ARMOR_SCALE(50);
-		case 70: return ARMOR_SCALE(50);
-		case 80: return ARMOR_SCALE(50);
-		case 90: return ARMOR_SCALE(50);
-		case 100: return ARMOR_SCALE(50);
-		case 110: return ARMOR_SCALE(40);
-		case 120: return ARMOR_SCALE(40);
-		case 130: return ARMOR_SCALE(40);
-		case 140: return ARMOR_SCALE(40);
-		case 150: return ARMOR_SCALE(40);
-		case 160: return ARMOR_SCALE(40);
-		case 170: return ARMOR_SCALE(40);
-		case 180: return ARMOR_SCALE(40);
-		case 190: return ARMOR_SCALE(40);
-		case 200: return ARMOR_SCALE(40);
-		default: return ARMOR_SCALE(1);
+		case 1:
+		{
+			switch(INVENTORY_ARMOR)
+			{
+				case 10: return ARMOR_SCALE(60);
+				case 20: return ARMOR_SCALE(60);
+				case 30: return ARMOR_SCALE(60);
+				case 40: return ARMOR_SCALE(60);
+				case 50: return ARMOR_SCALE(60);
+				case 60: return ARMOR_SCALE(50);
+				case 70: return ARMOR_SCALE(50);
+				case 80: return ARMOR_SCALE(50);
+				case 90: return ARMOR_SCALE(50);
+				case 100: return ARMOR_SCALE(50);
+				case 110: return ARMOR_SCALE(40);
+				case 120: return ARMOR_SCALE(40);
+				case 130: return ARMOR_SCALE(40);
+				case 140: return ARMOR_SCALE(40);
+				case 150: return ARMOR_SCALE(40);
+				case 160: return ARMOR_SCALE(40);
+				case 170: return ARMOR_SCALE(40);
+				case 180: return ARMOR_SCALE(40);
+				case 190: return ARMOR_SCALE(40);
+				case 200: return ARMOR_SCALE(40);
+				default: return ARMOR_SCALE(1);
+			} //end switch
+		} //end case
+		default: return 0;
 	} //end switch
 } //end weight
 
 weight "item_armor_body"
 {
-	switch(INVENTORY_ARMOR)
+	switch(INVENTORY_SCOUT)
 	{
-		case 10: return ARMOR_SCALE(90);
-		case 20: return ARMOR_SCALE(90);
-		case 30: return ARMOR_SCALE(90);
-		case 40: return ARMOR_SCALE(90);
-		case 50: return ARMOR_SCALE(90);
-		case 60: return ARMOR_SCALE(50);
-		case 70: return ARMOR_SCALE(50);
-		case 80: return ARMOR_SCALE(50);
-		case 90: return ARMOR_SCALE(50);
-		case 100: return ARMOR_SCALE(50);
-		case 110: return ARMOR_SCALE(20);
-		case 120: return ARMOR_SCALE(20);
-		case 130: return ARMOR_SCALE(20);
-		case 140: return ARMOR_SCALE(20);
-		case 150: return ARMOR_SCALE(20);
-		case 160: return ARMOR_SCALE(20);
-		case 170: return ARMOR_SCALE(20);
-		case 180: return ARMOR_SCALE(20);
-		case 190: return ARMOR_SCALE(20);
-		case 200: return ARMOR_SCALE(20);
-		default: return ARMOR_SCALE(1);
+		case 1:
+		{
+			switch(INVENTORY_ARMOR)
+			{
+				case 10: return ARMOR_SCALE(90);
+				case 20: return ARMOR_SCALE(90);
+				case 30: return ARMOR_SCALE(90);
+				case 40: return ARMOR_SCALE(90);
+				case 50: return ARMOR_SCALE(90);
+				case 60: return ARMOR_SCALE(50);
+				case 70: return ARMOR_SCALE(50);
+				case 80: return ARMOR_SCALE(50);
+				case 90: return ARMOR_SCALE(50);
+				case 100: return ARMOR_SCALE(50);
+				case 110: return ARMOR_SCALE(20);
+				case 120: return ARMOR_SCALE(20);
+				case 130: return ARMOR_SCALE(20);
+				case 140: return ARMOR_SCALE(20);
+				case 150: return ARMOR_SCALE(20);
+				case 160: return ARMOR_SCALE(20);
+				case 170: return ARMOR_SCALE(20);
+				case 180: return ARMOR_SCALE(20);
+				case 190: return ARMOR_SCALE(20);
+				case 200: return ARMOR_SCALE(20);
+				default: return ARMOR_SCALE(1);
+			} //end switch
+		} //end case
+		default: return 0;
 	} //end switch
 } //end weight
 
@@ -376,6 +436,69 @@ weight "weapon_bfg"
 	} //end switch
 } //end weight
 
+weight "weapon_nailgun"
+{
+	switch(INVENTORY_NAILGUN)
+	{
+		case 1: return WEAPON_SCALE(W_NAILGUN);
+		default:
+		{
+#ifdef WEAPONS_STAY
+			switch(INVENTORY_NAILS)
+			{
+				case 16: return WEAPON_SCALE(GWW_NAILGUN);
+				case 200: return WEAPON_SCALE(GWW_NAILGUN - 10);
+				default: return balance(5, 3, 7);
+			} //end switch
+#else
+			return 1;
+#endif			
+		} //end default
+	} //end switch
+} //end weight
+
+weight "weapon_prox_launcher"
+{
+	switch(INVENTORY_PROXLAUNCHER)
+	{
+	case 1: return WEAPON_SCALE(W_PROXLAUNCHER);
+		default:
+		{
+#ifdef WEAPONS_STAY
+			switch(INVENTORY_MINES)
+			{
+				case 16: return WEAPON_SCALE(GWW_PROXLAUNCHER);
+				case 200: return WEAPON_SCALE(GWW_PROXLAUNCHER - 10);
+				default: return balance(5, 3, 7);
+			} //end switch
+#else
+			return 1;
+#endif			
+		} //end default
+	} //end switch
+} //end weight
+
+weight "weapon_chaingun"
+{
+	switch(INVENTORY_CHAINGUN)
+	{
+		case 1: return WEAPON_SCALE(W_CHAINGUN);
+		default:
+		{
+#ifdef WEAPONS_STAY
+			switch(INVENTORY_BELT)
+			{
+				case 16: return WEAPON_SCALE(GWW_CHAINGUN);
+				case 200: return WEAPON_SCALE(GWW_CHAINGUN - 10);
+				default: return balance(5, 3, 7);
+			} //end switch
+#else
+			return 1;
+#endif			
+		} //end default
+	} //end switch
+} //end weight
+
 //=============================================
 // AMMO
 //=============================================
@@ -524,6 +647,78 @@ weight "ammo_bfg"
 	} //end switch
 } //end weight
 
+weight "ammo_nails"
+{
+	switch(INVENTORY_NAILS)
+	{
+		case 20: return AMMO_SCALE(20);
+		case 40: return AMMO_SCALE(20);
+		case 60: return AMMO_SCALE(20);
+		case 80: return AMMO_SCALE(20);
+		case 100: return AMMO_SCALE(20);
+		case 120: return AMMO_SCALE(20);
+		case 140: return AMMO_SCALE(20);
+		case 160: return AMMO_SCALE(20);
+		case 180: return AMMO_SCALE(20);
+		case 200: return AMMO_SCALE(20);
+		default: return 0;
+	} //end switch
+} //end weight
+
+weight "ammo_nails"
+{
+	switch(INVENTORY_NAILS)
+	{
+		case 20: return AMMO_SCALE(20);
+		case 40: return AMMO_SCALE(20);
+		case 60: return AMMO_SCALE(20);
+		case 80: return AMMO_SCALE(20);
+		case 100: return AMMO_SCALE(20);
+		case 120: return AMMO_SCALE(20);
+		case 140: return AMMO_SCALE(20);
+		case 160: return AMMO_SCALE(20);
+		case 180: return AMMO_SCALE(20);
+		case 200: return AMMO_SCALE(20);
+		default: return 0;
+	} //end switch
+} //end weight
+
+weight "ammo_mines"
+{
+	switch(INVENTORY_MINES)
+	{
+		case 20: return AMMO_SCALE(20);
+		case 40: return AMMO_SCALE(20);
+		case 60: return AMMO_SCALE(20);
+		case 80: return AMMO_SCALE(20);
+		case 100: return AMMO_SCALE(20);
+		case 120: return AMMO_SCALE(20);
+		case 140: return AMMO_SCALE(20);
+		case 160: return AMMO_SCALE(20);
+		case 180: return AMMO_SCALE(20);
+		case 200: return AMMO_SCALE(20);
+		default: return 0;
+	} //end switch
+} //end weight
+
+weight "ammo_belt"
+{
+	switch(INVENTORY_BELT)
+	{
+		case 20: return AMMO_SCALE(20);
+		case 40: return AMMO_SCALE(20);
+		case 60: return AMMO_SCALE(20);
+		case 80: return AMMO_SCALE(20);
+		case 100: return AMMO_SCALE(20);
+		case 120: return AMMO_SCALE(20);
+		case 140: return AMMO_SCALE(20);
+		case 160: return AMMO_SCALE(20);
+		case 180: return AMMO_SCALE(20);
+		case 200: return AMMO_SCALE(20);
+		default: return 0;
+	} //end switch
+} //end weight
+
 
 //=============================================
 // POWERUPS
@@ -537,27 +732,180 @@ weight "holdable_teleporter"
 		{
 			switch(INVENTORY_MEDKIT)
 			{
-				case 1: return POWERUP_SCALE(W_TELEPORTER);
-				default: return 0; //already has a medkit
+				case 1:
+				{
+					switch(INVENTORY_PORTAL)
+					{
+						case 1:
+						{
+							switch(INVENTORY_KAMIKAZE)
+							{
+								case 1:
+								{
+									switch(INVENTORY_INVULNERABILITY)
+									{
+										case 1: return POWERUP_SCALE(W_TELEPORTER);
+										default: return 0; //already has a medkit
+									} //end switch
+								} //end case
+								default: return 0; //already has a holdable
+							} //end switch
+						} //end case
+						default: return 0; //already has a holdable
+					} //end switch
+				} //end case
+				default: return 0; //already has a holdable
 			} //end switch
 		} //end case
-		default: return 0; //already has a personal teleporter
+		default: return 0; //already has a holdable
 	} //end switch
 } //end weight
 
 weight "holdable_medkit"
 {
-	switch(INVENTORY_MEDKIT)
+	switch(INVENTORY_TELEPORTER)
 	{
 		case 1:
 		{
-			switch(INVENTORY_TELEPORTER)
+			switch(INVENTORY_MEDKIT)
 			{
-				case 1: return POWERUP_SCALE(W_MEDKIT);
-				default: return 0; //already has a personal teleporter
+				case 1:
+				{
+					switch(INVENTORY_PORTAL)
+					{
+						case 1:
+						{
+							switch(INVENTORY_KAMIKAZE)
+							{
+								case 1:
+								{
+									switch(INVENTORY_INVULNERABILITY)
+									{
+										case 1: return POWERUP_SCALE(W_MEDKIT);
+										default: return 0; //already has a holdable
+									} //end switch
+								} //end case
+								default: return 0; //already has a holdable
+							} //end switch
+						} //end case
+						default: return 0; //already has a holdable
+					} //end switch
+				} //end case
+				default: return 0; //already has a holdable
 			} //end switch
 		} //end case
-		default: return 0; //already has a medkit
+		default: return 0; //already has a holdable
+	} //end switch
+} //end weight
+
+weight "holdable_kamikaze"
+{
+	switch(INVENTORY_TELEPORTER)
+	{
+		case 1:
+		{
+			switch(INVENTORY_MEDKIT)
+			{
+				case 1:
+				{
+					switch(INVENTORY_PORTAL)
+					{
+						case 1:
+						{
+							switch(INVENTORY_KAMIKAZE)
+							{
+								case 1:
+								{
+									switch(INVENTORY_INVULNERABILITY)
+									{
+										case 1: return POWERUP_SCALE(W_KAMIKAZE);
+										default: return 0; //already has a holdable
+									} //end switch
+								} //end case
+								default: return 0; //already has a holdable
+							} //end switch
+						} //end case
+						default: return 0; //already has a holdable
+					} //end switch
+				} //end case
+				default: return 0; //already has a holdable
+			} //end switch
+		} //end case
+		default: return 0; //already has a holdable
+	} //end switch
+} //end weight
+
+weight "holdable_portal"
+{
+	switch(INVENTORY_TELEPORTER)
+	{
+		case 1:
+		{
+			switch(INVENTORY_MEDKIT)
+			{
+				case 1:
+				{
+					switch(INVENTORY_PORTAL)
+					{
+						case 1:
+						{
+							switch(INVENTORY_KAMIKAZE)
+							{
+								case 1:
+								{
+									switch(INVENTORY_INVULNERABILITY)
+									{
+										case 1: return POWERUP_SCALE(W_PORTAL);
+										default: return 0; //already has a holdable
+									} //end switch
+								} //end case
+								default: return 0; //already has a holdable
+							} //end switch
+						} //end case
+						default: return 0; //already has a holdable
+					} //end switch
+				} //end case
+				default: return 0; //already has a holdable
+			} //end switch
+		} //end case
+		default: return 0; //already has a holdable
+	} //end switch
+} //end weight
+
+weight "holdable_invulnerability"
+{
+	switch(INVENTORY_TELEPORTER)
+	{
+		case 1:
+		{
+			switch(INVENTORY_MEDKIT)
+			{
+				case 1:
+				{
+					switch(INVENTORY_PORTAL)
+					{
+						case 1:
+						{
+							switch(INVENTORY_KAMIKAZE)
+							{
+								case 1:
+								{
+									switch(INVENTORY_INVULNERABILITY)
+									{
+										case 1: return POWERUP_SCALE(W_INVULNERABILITY);
+										default: return 0; //already has a hodable
+									} //end switch
+								} //end case
+								default: return 0; //already has a holdable
+							} //end switch
+						} //end case
+						default: return 0; //already has a holdable
+					} //end switch
+				} //end case
+				default: return 0; //already has a holdable
+			} //end switch
+		} //end case
+		default: return 0; //already has a holdable
 	} //end switch
 } //end weight
 
@@ -589,6 +937,126 @@ weight "item_regen"
 weight "item_flight"
 {
 	return 0;//POWERUP_SCALE(W_FLIGHT);
+} //end weight
+
+weight "item_scout"
+{
+	switch(INVENTORY_SCOUT)
+	{
+		case 1:
+		{
+			switch(INVENTORY_GUARD)
+			{
+				case 1:
+				{
+					switch(INVENTORY_DOUBLER)
+					{
+						case 1:
+						{
+							switch(INVENTORY_AMMOREGEN)
+							{
+								case 1: return POWERUP_SCALE(W_SCOUT);
+								default: return 0; //already has a persistant powerup
+							} //end switch
+						} //end case
+						default: return 0; //already has a persistant powerup
+					} //end switch
+				} //end case
+				default: return 0; //already has a persistant powerup
+			} //end switch
+		} //end case
+		default: return 0; //already has a persistant powerup
+	} //end switch
+} //end weight
+
+weight "item_guard"
+{
+	switch(INVENTORY_SCOUT)
+	{
+		case 1:
+		{
+			switch(INVENTORY_GUARD)
+			{
+				case 1:
+				{
+					switch(INVENTORY_DOUBLER)
+					{
+						case 1:
+						{
+							switch(INVENTORY_AMMOREGEN)
+							{
+								case 1: return POWERUP_SCALE(W_GUARD);
+								default: return 0; //already has a persistant powerup
+							} //end switch
+						} //end case
+						default: return 0; //already has a persistant powerup
+					} //end switch
+				} //end case
+				default: return 0; //already has a persistant powerup
+			} //end switch
+		} //end case
+		default: return 0; //already has a persistant powerup
+	} //end switch
+} //end weight
+
+weight "item_doubler"
+{
+	switch(INVENTORY_SCOUT)
+	{
+		case 1:
+		{
+			switch(INVENTORY_GUARD)
+			{
+				case 1:
+				{
+					switch(INVENTORY_DOUBLER)
+					{
+						case 1:
+						{
+							switch(INVENTORY_AMMOREGEN)
+							{
+								case 1: return POWERUP_SCALE(W_DOUBLER);
+								default: return 0; //already has a persistant powerup
+							} //end switch
+						} //end case
+						default: return 0; //already has a persistant powerup
+					} //end switch
+				} //end case
+				default: return 0; //already has a persistant powerup
+			} //end switch
+		} //end case
+		default: return 0; //already has a persistant powerup
+	} //end switch
+} //end weight
+
+weight "item_ammoregen"
+{
+	switch(INVENTORY_SCOUT)
+	{
+		case 1:
+		{
+			switch(INVENTORY_GUARD)
+			{
+				case 1:
+				{
+					switch(INVENTORY_DOUBLER)
+					{
+						case 1:
+						{
+							switch(INVENTORY_AMMOREGEN)
+							{
+								case 1: return POWERUP_SCALE(W_AMMOREGEN);
+								default: return 0; //already has a persistant powerup
+							} //end switch
+						} //end case
+						default: return 0; //already has a persistant powerup
+					} //end switch
+				} //end case
+				default: return 0; //already has a persistant powerup
+			} //end switch
+		} //end case
+		default: return 0; //already has a persistant powerup
+	} //end switch
 } //end weight
 
 //=============================================
@@ -646,4 +1114,29 @@ weight "team_CTF_blueflag" //Blue Flag
 		} //end default
 	} //end switch
 } //end weight
+
+weight "team_CTF_neutralflag" //Neutral Flag
+{
+	return FLAG_WEIGHT;
+} //end weight
+
+weight "item_redcube" //Red Cube
+{
+	return W_REDCUBE;
+} //end weight
+
+weight "item_bluecube" //Blue Cube
+{
+	return W_BLUECUBE;
+} //end weight
+
+//=============================================
+// bot roam goal
+//=============================================
+
+weight "item_botroam"
+{
+	return 1;
+} //end weight
+
 

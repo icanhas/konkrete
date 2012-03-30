@@ -3,9 +3,9 @@
 // Name:			Mynx_c.c
 // Function:		chat lines for Mynx
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Author:			The Seven Swords & R.A. Salvatore
+// Author:			The Seven Swords, R.A. Salvatore, & Paul Jaquays
 // Editor:			Paul Jaquays
-// Last update:		October 7, 1999
+// Last update:		May 16, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -161,7 +161,7 @@ chat "mynx"
 	{
 		"I don't feel like skinny-dipping, ", 0, ".";
 		"Hey, at least turn on the jacuzzi bubbles.";
-		"Don't worry, I brought my own floatation devices.";
+		"~Don't worry, I brought my own floatation devices.";
 		// 0 = enemy name
 	} //end type
 
@@ -205,10 +205,10 @@ chat "mynx"
 
 	type "death_insult" //insult initiated when the bot died
 	{
-		"Don't pity me. It's better than having to keep looking at ", 0, ".";
+		"~Don't pity me. It's better than having to keep looking at ", 0, ".";
 		"When I said, 'Over my dead body,' this wasn't what I meant.";
 		"My corpse, is the best you'll ever get, ", 0, ".";
-		"Don't flatter yourself, ", 0, ", I can fake this too.";
+		"~Don't flatter yourself, ", 0, ", I can fake this too.";
 		DEATH_FEM_INSULT1;
 		// 0 = enemy name
 	} //end type
@@ -222,12 +222,33 @@ chat "mynx"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Are you always this good, or is today just special?";
+		"Dammit. You always do that before I'm ready.";
+		"Next time, ", 0, ", wait for me.";
+		"Omigod. Let me catch my breath.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
 
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"I want you to know that I charge extra for that.";
+		"It's always more fun with a group.";
+		"Drat. I wasn't protected this time.";
+		"Of course it's not safe, but that's part of the fun.";
+		"Did the earth move for you too?";
+	  "The first sample is always free.";
+		// 0 = enemy name
+	} //end type
+
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{
-		"What's the matter, ", 0, "? Don't you like my kisses?";
+		"What's the matter, ", 0, "? ~Don't you like my kisses?";
 		"I did it because I couldn't bear to get closer to you, ", 0, ".";
 		KILL_RAIL2;
 		// 0 = enemy name
@@ -301,7 +322,7 @@ chat "mynx"
 
 	type "random_misc" //miscellanous chats initiated randomly
 	{
-		"Am I... distracting you, ", 0, "?";
+		"Am I ... distracting you, ", 0, "?";
 		"Let me show you some real '~Quad Damage.'";
 		"Who was the interior decorator here? Boris Karloff?";
 		"Hey everybody! ", 0, "'s still shooting blanks.";

@@ -178,8 +178,32 @@ chat "orbb"
 		D_PRAISE5;
 	} //end type
 
-	//================================================================
-	//================================================================
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+		{
+		"WOW! Too much fun!";
+		"Danger! Danger! Danger!";
+		"No disassemble this unit, ", 0, ".";
+		"That was definitely ", different, ", than the last time, you ", fighter, ".";
+		"Next time you warn this unit. Send postcard.";
+		one_liners;
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Jackpot!!";
+		"Better luck next time, ", friendname, ".";
+		affirmative, " This unit likes kamikaze.";
+		"Too bad for ", fighter, "s. Move too slow.";
+		"Can you dig it?";
+	  "He shoots! He SCORES! The fans go wild!";
+	  ramble;
+		// 0 = enemy name
+	} //end type
 
 	type "kill_Rail" 
 	{

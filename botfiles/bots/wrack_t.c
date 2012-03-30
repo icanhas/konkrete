@@ -3,7 +3,8 @@
 // Name:			Wrack
 // Function:		chat lines for Wrack
 // Programmer:		MrElusive (MrElusive@idsoftware.com)
-// Last update:		1999-09-08
+// Writer:			RA SAlvatore, the Seven Swords, Paul Jaquays
+// Last update:		May 22, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -62,9 +63,9 @@ chat "wrack"
 
 	type "level_end_victory" //initiated when a level ends and the bot is first in the rankings
 	{
-		"They don't train 'em like the used to.";
+		"They ~don't train 'em like the used to.";
 		"",4," always was sweet to me.";
-		"Don't take it personally,", 1, ", I was doing this when you were in diapers.";
+		"~Don't take it personally,", 1, ", I was doing this when you were in diapers.";
 		// 1 = random opponent
 		// 3 = opponent in last place
 		// 4 = Level's title
@@ -76,7 +77,7 @@ chat "wrack"
 		"Yeah. Technology over tactics. Big guns over good moves.";
 		"You proud, ", 2, "? You shouldn't be proud! That was lame!";
 		"They've changed this place. I remember ", 4, " before they messed it up.";
-		"I don't care what it freakin' says. ^1I DON'T LOSE.";
+		"I ~don't care what it freakin' says. ^1I DON'T LOSE.";
 		// 1 = random opponent
 		// 2 = opponent in first place
 		// 4 = Level's title
@@ -88,7 +89,7 @@ chat "wrack"
 
 	type "hit_talking" //bot is hit while chat balloon is visible; lecture attacker on poor sportsmanship
 	{
-		"Don't they teach etiquette in your clan, ", fighter, ".";
+		"~Don't they teach etiquette in your clan, ", fighter, ".";
 		"I really hope that ", 1, " just misfired.";
 		"I remember when ", fighter, "s like you had better manners.";
 		// 1 = weapon used by shooter
@@ -155,7 +156,7 @@ chat "wrack"
 	{
 		"I can't hear! Why can't I hear?";
 		"We had gills when I was a boy!";
-		"Hey, ", 0, ", throw me a lifesaver. And I don't mean candy!";
+		"Hey, ", 0, ", throw me a lifesaver. And I ~don't mean candy!";
 		"Course I can swim.  Just didn't feel like it then.";
 		"This doesn't look like the well of wishes...";
 		DEATH_DROWN0;
@@ -215,8 +216,32 @@ chat "wrack"
 		// 0 = enemy name
 	} //end type
 
+	type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"What happened, ", fighter, "? Your backpack explode?";
+		"Never had to put up with that kind of crap that I can remember.";
+		"Either quit eatin' beans, ", 0, ", or find yourself some other opponents.";
+		"I'm gonna pretend I didn't see you do that, ", 0, ".";
+		"You work for Shub, right, ", 0, "?";
+		"You're not licensed for that weapon, are you ", 0, ".";
+	    DEATH_KAMIKAZE0;
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Yeah, there'll be guys complaining about this one til the end of time.";
+		"Heh. Guess I'm not ready to retire just yet.";
+		"**SIGH**  Whatever happened to weapons you had to aim?";
+		"No whining! There is no whining in the arena!";
+	    KILL_KAMIKAZE0;
+		KILL_KAMIKAZE1;
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{

@@ -10,8 +10,6 @@
 // notes:			-
 //===========================================================================
 
-#include "game.h"
-
 //===========================================================================
 //		GROUP A RANDOM MESSAGES ,,, orignal Initial Chat messages
 //		The messages in this sub-grouping are intended as responses to specific
@@ -43,6 +41,48 @@ DEATH_BFG3 = {
 	"Are you roasting marshmellows over there, Mr. Camper?";
 	"Who allowed ", 0," to play with daddy's gun?";
 }
+
+//+++++++++++++++++++++++++++++++++++++++++
+//KAMIKAZE INSULTS
+//+++++++++++++++++++++++++++++++++++++++++
+
+DEATH_KAMIKAZE0 = {
+	"Kamikaze wuss!";
+	"No skill there.";
+	"I gotta learn to run faster.";
+	"That was lame and you know it, ", 0, "!";
+}
+
+DEATH_KAMIKAZE1 = {
+	"That's a cheap shot!";
+	"That was over quick.";
+	"Messy, messy.";
+	"So, you fish with dynamite in your free time!";
+}
+
+DEATH_KAMIKAZE3 = {
+	fighter, "s like you, ", 0, ", you are ruining this sport.";
+    "I thought those were against the law in most places.";
+	"So that's what those flying skulls mean.";
+	"An ant-acid might cure that.";
+}
+
+KILL_KAMIKAZE0 = {
+	"I own you all!";
+	"Who's got a bodycount?";
+	"Dodge that ", fighter, "s.";
+	"OK, I admit that was lame. What are you gonna do about it?";
+}
+
+KILL_KAMIKAZE1 = {
+	"... and nobody's left to clean up the mess!";
+	"I am Devastation incarnate!";
+	"Now that's what I call fun!";
+	"Did I miss anyone?";
+}
+
+
+//++++++++++++++++++++++++++++++++++++++++++
 
 DEATH_INSULT0 = {
 	"That cheap frag is gonna cost you big time, ", 0, "!";
@@ -116,7 +156,7 @@ DEATH_FEM_INSULT = {
 DEATH_FEM_INSULT1 = {
 	"Mmmmmm, you get a lot of mileage out of your tiny gun.";
 	"GREAT! Now my boobs need another implant.";
-	"I don't do the dance with losers like you, ", 0, ".";
+	"I ~don't do the dance with losers like you, ", 0, ".";
 	"HA! You can't really kill me, ", 0,". Not permanently.";
 }
 
@@ -179,14 +219,14 @@ D_PRAISE = {
 	"Yeah, Baby, YEAH!";
 	"You win the prize for that ~one.";
 	"You go, ", friendname, "!";
-	"Rockin' shot, ", 0, ". Just don't do it again.";
+	"Rockin' shot, ", 0, ". Just ~don't do it again.";
 	"That ~one almost blew me to ", place, "!";
 }
 
 D_PRAISE1 = {
 	":)";
 	"Nice ~one, ", 0, "!";
-	"Figures. Fragged on the day I don't wear clean underwear.";
+	"Figures. Fragged on the day I ~don't wear clean underwear.";
 	"OK ", 0, " let's dance ~one more time!";
 	"Let's dance that tune again ... but this time I lead.";
 }
@@ -229,7 +269,7 @@ D_PRAISE6 = {
 	"I'd take a bow but I can't find my legs.";
 	"Looks like all the legends about ", 0, " are true.";
 	"That was bellisimo, baby!"; 
-	"They don't come much better than that.";
+	"They ~don't come much better than that.";
 }
 
 LEVEL_END0 = {
@@ -491,7 +531,7 @@ KILL_INSULT8 = {
 
 KILL_INSULT9 = {
 	"Somebody wanna clean this mess up?";
-	"Why don't you just give up ", 0, "?";
+	"Why ~don't you just give up ", 0, "?";
 	"I'm filing a protest. I deserve better opponents than this.";
 	"I'm far too good to be fighting you.";
 }
@@ -553,7 +593,7 @@ KILL_INSULT17 = {
 
 KILL_INSULT18 = {
 	"I'm simply unstoppable.";
-	"Don't mind me. I'm just takin' out the trash.";
+	"~Don't mind me. I'm just takin' out the trash.";
 	"Bang, yer dead!";
 	"Hey ", 0, ", you make a great throw rug.";
 }
@@ -620,7 +660,7 @@ KILL_INSULT26 = {
 KILL_INSULT27 = {
 	"The TimCo Fragamatic! It slices! It dices!";
 	"Can I get a doggy bag for that?";
-	"Don't point that gun at me ", 0, ", unless you know how to use it.";
+	"~Don't point that gun at me ", 0, ", unless you know how to use it.";
 }
 
 KILL_INSULT28 = {
@@ -971,7 +1011,7 @@ TAUNT_FEM2 = {
 		
 TAUNT_FEM3 = {
 	"The lips says 'no' ... but my ", weapon, " says 'Hell NO.'";
-	"I don't have to pad it to flaunt it.";
+	"I ~don't have to pad it to flaunt it.";
 	"Oh ... that WAS a rocket launcher in your pocket.";
 }
 		
@@ -988,14 +1028,14 @@ TAUNT_FEM5 = {
 }
 		
 TAUNT_FEM6 = {
-	"Don't call me 'girl.' I am nobody's 'girl.'";
+	"~Don't call me 'girl.' I am nobody's 'girl.'";
 	"A ", weapon, " is a grrrl's best friend!";
 	"Chicks rule. Loozerz drool.";
 	"Mmmmmmmm...baby!";
 }
 
 TAUNT_FEM7 = {
-	"I don't date losers ... I frag them.";
+	"I ~don't date losers ... I frag them.";
 	"So ", 0, " show me what you think you got.";
 	"What a cute outfit ", 0, ". Did you dress up just for me?";
 }
@@ -1080,7 +1120,7 @@ DEATH_SUICIDE3 = {
 
 DEATH_SUICIDE4 = {
 	"I can't believe I did that.";
-	"I don't plan on repeating this.";
+	"I ~don't plan on repeating this.";
 	"I did that to even the odds ... looked like ", 0, " needed the help.";
 }
 
@@ -1153,7 +1193,7 @@ KILL_GAUNTLET2 = {
 
 DEATH_GAUNTLET0 = {
 	"Get that thing outta my face ", 0,"!";
-	"Don't you ever touch me with that again ", 0,".";
+	"~Don't you ever touch me with that again ", 0,".";
 	"This is starting to piss me off ", 0,"!";
 }
 
@@ -1231,9 +1271,9 @@ LEVEL_END_VICTORY4 = {
 }
 
 LEVEL_END_LOSE0 = {
-	"Great match. Just don't expect to repeat it the next time, ", 2, ".";
+	"Great match. Just ~don't expect to repeat it the next time, ", 2, ".";
 	"Of course I lost, I was playing hurt!";
-	"Don't get used to it, ", 2, "-- ~lightning doesn't strike twice.";
+	"~Don't get used to it, ", 2, "-- ~lightning doesn't strike twice.";
 }
 
 LEVEL_END_LOSE1 = {
@@ -1266,7 +1306,7 @@ good = {"good"; "gooood"; "so good"; "sooo goood";}
 looser = {"sucker"; "loser"; "sckr"; "loosr";}
 nerd = {"pizza"; "nerdy"; "nerd";}
 boyz = {"boyz"; "boyz & grllz"; "girlies";}
-ramble = {ramble; one_liners;} //warning this is a repointer variable
+ramble = {ramblelist; one_liners;} //warning this is a repointer variable
 response = {affirmative; negative; neutral; response_insult;} //warning this is a repointer variable
 
 list_sort = { //points at other random key lists ... be wary of recursion
@@ -1336,14 +1376,20 @@ ponder = {
 	"That doesn't sound right.";
 	"What?";
 	"How charming.";
+	"*[ROLLS EYES]*";
+	"That makes no sense.";
+	"That makes sense.";
+	"That's just stupid.";
+	"Huh.";
 	"Bah!";
-	"Don't give me that.";
+	"~Don't give me that.";
 	"Horse-puckey!";
 	"Bull!";
 	"Here we go again.";
 	"Not again.";
 	"Oh come off it.";
 	"That's bull and you know it.";
+	"Sounds like a conspiracy.";
 	"That's ridiculous.";
 }
 
@@ -1396,7 +1442,7 @@ response_insult = {
 	"You wanna keep it down? I'm trying to frag here!";
 	"Ohboy. Non-moving target!";
 	"Somebody shut this ", fighter, " up!";
-	"I don't wanna argue! I wanna fight!";
+	"I ~don't wanna argue! I wanna fight!";
 	"Somebody kill this ", fighter ," before we're all bored to death.";
 	"Gahhh! You just yakked my ear off!";
 	"Gahhh!";
@@ -1426,6 +1472,7 @@ random_counselor = { //nice people who listen, counsel or give advice
 	"radio talk show host";
 	"mother";
 	"grandmother";
+	"granny";
 	family_member;
 	"mommy";
 	"priest";
@@ -1465,6 +1512,7 @@ friendname = {
 	"buddy";
 	"chum";
 	"chummer";
+	"comrade";
 	"dude";
 	"friend";
 	"guy";
@@ -1509,6 +1557,11 @@ different = {
 	"younger";
 	"better off";
 	"worse off";
+	"prettier";
+	"worse looking";
+	"better smelling";
+	"better groomed";
+	"better dressed";
 }
 
 fighter = {
@@ -1574,7 +1627,9 @@ femalebot = {
 "Mynx";
 "Angel";
 "Slash";
-"Daemia";}
+"Daemia";
+"Pi";
+}
 
 androbot = {
 "Xaero";
@@ -1595,7 +1650,9 @@ androbot = {
 "Wrack";
 "Phobos";
 "Mr. Elusive";
-"Cadavre";}
+"Cadavre";
+"Fritzkrieg";
+}
 
 neuterbot = {
 "Orbb";
@@ -1634,6 +1691,8 @@ botnames = {
 "Stripe";
 "Wrack";
 "Phobos";
+"Pi";
+"Friztkrieg";
 "Mr. Elusive";
 "Cadavre";}
 
@@ -1646,8 +1705,8 @@ negative = {
 "Nahhhhh!";
 "Not on your life!";
 "Of course not.";
-"I don't think so.";
-"Homey don't play that.";
+"I ~don't think so.";
+"Homey ~don't play that.";
 "Sure ... NOT!.";
 "No.";
 "Negative.";
@@ -1718,7 +1777,7 @@ neutral = {
 "I could tell you, but then I would have to kill you.";
 "I will never tell!";
 "I have no idea!";
-"Don't ask me.";
+"~Don't ask me.";
 "What is this, 20 questions?";
 "No ~one said there would be a test.";
 "I thought YOU knew!";
@@ -1730,7 +1789,7 @@ neutral = {
 "What?!";
 "Do what?";
 "Huh?";
-"I don't know that!";
+"I ~don't know that!";
 "Sorry, dunno!";
 "I am clueless here!";
 "I'm too sleepy to think straight.";
@@ -1739,15 +1798,15 @@ neutral = {
 "That's for me to know and you to find out.";
 "*[confused]*";
 "I am not knowing.";
-"I really don't know.";
+"I really ~don't know.";
 "No idea.";
 "Haven't the foggiest.";
 "Can I get back to you later?";
 "Errrrrrrr.";
-"Don't know.";
+"~Don't know.";
 "Whatever.";
 "Definitely ... maybe.";
-"I don't know ... what do you think?";
+"I ~don't know ... what do you think?";
 "Whatever does it for you.";
 "Uhhh . . .";
 }
@@ -1760,10 +1819,10 @@ confused_response = {
 	"Sorry confusion caused you.";
 	"I understand perfectly.";
 	"Maybe you have weasels in your brain.";
-	"I understand, don't you?";
+	"I understand, ~don't you?";
 	"Do ... you ... speak ... English?!";
 	"Are you confused?";
-	"What don't you understand?";
+	"What ~don't you understand?";
 	"I understand everything";
 	"I think you understand perfectly well.";
 	"Did I speak too fast for you?";
@@ -1773,7 +1832,7 @@ confused_response = {
 	response_insult;
 }
 
-ramble = { 
+ramblelist = { 
 ":-(";
 ":-)";
 "I'm falling asleep here.";
@@ -1814,6 +1873,7 @@ ramble = {
 "La de dah.";
 "Really.";
 "School sucks.";
+"La la la la. I'm not listening!";
 "So what shall we talk about?";
 "That's nice.";
 "Tsk tsk tsk.";
@@ -1827,6 +1887,7 @@ item = {
 "aluminum can";
 "athletic supporter";
 "bar code reader";
+"bag of cat litter";
 "belly button stud";
 "bongo set";
 "bucket of money";
@@ -1852,6 +1913,7 @@ item = {
 "gold coin";
 "goldfish";
 "hard drive";
+"hedge trimmer";
 "joystick";
 "kielbasa sausage";
 "mouse ears";
@@ -1937,7 +1999,6 @@ place = {
 "Java";
 "Kalamazoo";
 "Kansas";
-"Kansas";
 "Katmandu"; 
 "Kentucky";
 "Lake Geneva";
@@ -1958,6 +2019,7 @@ place = {
 "Mississipi";
 "Missouri";
 "Montana";
+"Moscow";
 "my parent's basement";
 "Nebraska";
 "Nevada";
@@ -1985,11 +2047,13 @@ place = {
 "prison";
 "Rhode Island";
 "Rotterdam";
+"Russia";
 "San Jose";
 "Scotland";
 "Seattle";
 "South Carolina";
 "South Dakota";
+"South Africa";
 "Spain";
 "St. Etienne";
 "St. Paul";
@@ -2205,6 +2269,7 @@ profession = {
 "hair dresser";
 "mercenary soldier";
 "sailor";
+"telephone sanitizer";
 }
 
 namez = { 
@@ -2277,6 +2342,7 @@ immaturity01 = {
 "Disgusting.";
 "Immature little pervert.";
 "You're sick, leave me alone.";
+"Ugh. I think I'm going to throw up.";
 }
 
 proposition01 = {
@@ -2288,6 +2354,7 @@ botnames, " may go for that , but not me.";
 "You might want to take a moment and get ready.";
 "Again?";
 "Sure. Meet me in ", level_title, ". I'll be wearing the Battle Suit.";
+"So .... what are you wearing?";
 }
 
 male_one_liners = {
@@ -2353,7 +2420,7 @@ one_liners = {
 "Paper, scissors, ROCKET!";
 "I'm bad to your ~bones.";
 "Your mom should have warned you about me.";
-"I don't like to speak ill of the dead, but you suck.";
+"I ~don't like to speak ill of the dead, but you suck.";
 "Pain clears the mind.";
 "I can take away your pain.";
 "You're runnin' with the big dogs now.";
@@ -2369,11 +2436,14 @@ one_liners = {
 "I swear, you got no sense O' humor.";
 "Ping! Found you!";
 "What's the sound of one hand slapping?";
-"I don't know which came first, you or the egg.";
+"I ~don't know which came first, you or the egg.";
 "I can't carry all this ammo. You want some?";
 "I got blisters on my trigger finger!";}
 
 adj = { 
+"scary";
+"furry";
+"colorful";
 "old";
 "new";
 "greasy";
@@ -2823,9 +2893,10 @@ teamchat_03 = {
 
 teamchat_04 = {
 	"No need to panic,";
-	"Don't get excited,";
-	"Don't get your panties in a bunch,";
+	"~Don't get excited,";
+	"~Don't get your panties in a bunch,";
 	"Calm down, ";
+	"Take a deep breath,";
 	"Whoaaa there pardner,";
 	"Chill,";
 	"Back off,";
@@ -2842,7 +2913,7 @@ playtips = {
 "The Personal Teleporter can save you from a falling death.";
 "Some weapons do a 'splash' radius damage. An effective tactic is to fire at walls or floors near your foe.";
 "Use the ~railgun against foes bouncing in the air.";
-"Learn to use all weapons equally well. Don't rely on favorites.";
+"Learn to use all weapons equally well. ~Don't rely on favorites.";
 "Use a combination of weapons to make frags happen faster.";
 "At close range, the shotgun delivers an extremely powerful attack.";
 "Never turn your back on the enemy. Run backwards and shoot.";
@@ -2852,8 +2923,9 @@ playtips = {
 "Jumping frequently can help avoid enemy shots.";
 "Change directions frequently when moving.";
 "Develop paths that let you harvest or control items."; 
-"Don't be predictable.";
-"Don't use splash weapons, like the rocket launcher, in close quarters.";
+"~Don't be predictable.";
+"~Don't be a monkey.";
+"~Don't use splash weapons, like the rocket launcher, in close quarters.";
 "Fire grenades into rooms containing multiple enemies.";
 "Hunt down your enemies rather than letting them hunt you.";
 "Keep Hunter away from the ~lightning gun.";
@@ -2889,10 +2961,11 @@ playtips = {
 "If you fall too far, you take damage.";
 "Most falls to solid surfaces in the arenas will not kill an uninjured warrior.";
 "The Arenas Eternal are not a safe place.";
-"Don't stay where you spawn in.";
+"~Don't stay where you spawn in.";
 "Generally speaking ... Frag everything that isn't you.";
 "In 'free for all fights', the match begins when you enter the arena.";
-"Don't wait to start collecting weapons and armor. Your opponents won't.";
+"In team games, ~don't hog all the resources.";
+"~Don't wait to start collecting weapons and armor. Your opponents won't.";
 "Power ups like the ~quad spawn into the arena later on.";
 "Red hot and deadly, that's what lava is.";
 "Try hopping out of lava. You take less damage that way.";

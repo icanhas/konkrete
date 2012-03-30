@@ -2,7 +2,7 @@
 //
 // Name:			teamplay.h
 // Function:		teamplay chats
-// Programmer:		MrElusive (MrElusive@idsoftware.com)
+// Programmer:		MrElusive
 // Last update:		1999-10-03
 // Tab Size:		4 (real tabs)
 //===========================================================================
@@ -54,9 +54,10 @@
 	} //end type
 
 	//bot tells where he/she is and near which base
-	type "ctflocation"
+	type "teamlocation"
 	{
 		"I'm near the ", 0, " in the ", 1, " base";
+		"I'm close to the ", 0, " in the ", 1, " base";
 	} //end type
 
 	//start helping
@@ -120,6 +121,14 @@
 		"Reporting for duty, ", 0, ".";
 		"Just lead the way, ", 0, ".";
 		"Command me, ", 0, "!";
+	} //end type
+
+	//bot decides to accompany flag or skull carrier
+	type "accompany_flagcarrier"
+	{
+		"I'll cover you ", 0;
+		"I'll follow you ", 0;
+		"I'll cover your ~ass ", 0;
 	} //end type
 
 	//start defending a key area
@@ -248,6 +257,20 @@
 		"I'll find the flag";
 	} //end type
 
+	//attack enemy base
+	type "attackenemybase_start"
+	{
+		"I'm off to attack the enemy";
+		"leave attacking the enemy base to me";
+	} //end type
+
+	//harvest
+	type "harvest_start"
+	{
+		"I'm off to harvest some skulls";
+		"I'll harvest some";
+	} //end type
+
 	//bot is dismissed
 	type "dismissed"
 	{
@@ -316,7 +339,15 @@
 		"Are you waiting for a gold-edged invitation, ", 0, "?";
 		"Come on ", 0, ", we haven't got whole day!";
 		"Hurry up ", 0, "!";
-		0, ", what didn't you understand about 'follow me?'";
+		0, ", what didn't you understand about 'follow me' ?";
+	} //end type
+
+	//stop leading
+	type "lead_stop"
+	{
+		"you're on your own now ", 0;
+		"I'm through leading you ", 0;
+		0, " find yourself another leader";
 	} //end type
 
 	//the bot is helping someone
@@ -403,6 +434,18 @@
 		"I'm trying to bring the flag back to the base";
 	} //end type
 
+	type "attackingenemybase"
+	{
+		"I'm attacking the enemy base";
+		"I'm assaulting the enemy base";
+	} //end type
+
+	type "harvesting"
+	{
+		"I'm harvesting";
+		"I'm collecting skulls";
+	} //end type
+
 	//the bot is just roaming a bit
 	type "roaming"
 	{
@@ -414,6 +457,23 @@
 		"I'm picking up some goodies.";
 	} //end type
 
+	type "wantoffence"
+	{
+		"I want to be on offense";
+	} //end type
+
+	type "wantdefence"
+	{
+		"I want to be on defense";
+	} //end type
+
+	//the bot will keep the team preference in mind
+	type "keepinmind"
+	{
+		"Ok ", 0, " I'll keep that in mind";
+		"ok ", 0, " I'll take that into account next time";
+	} //end type
+
 	//==========================
 	// teamplay chats
 	//==========================
@@ -421,7 +481,7 @@
 	type "death_teammate"
 	{
 		"why are you shooting at me ", 0;
-		"watch your fire ", 0;
+		"watch your fire ", 0, "!";
 		"I'm on your team ", 0, "!!";
 	} //end type
 	//killed by a team mate
@@ -505,3 +565,21 @@
 		0, " accompany me";
 		0, " follow me";
 	} //end type
+	//attack enemy base command
+	type "cmd_attackenemybase"
+	{
+		0, " attack the enemy base";
+	} //end type
+	//return the flag command
+	type "cmd_returnflag"
+	{
+		0, " return the flag";
+	} //end type
+	//go harvesting
+	type "cmd_harvest"
+	{
+		0, " harvest";
+		0, " go harvesting";
+	} //end type
+
+

@@ -214,8 +214,28 @@ chat "klesk"
 		// 0 = enemy name
 	} //end type
 
+			type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Sudden silence. All minds stop at once.";
+		"All at peace now.";
+		"Small mind. Big boom.";
+		"Many mind voice cry vengeance. ~Klesk honor.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with rail gun
+	{
+		"Powerful mind death. Silence all!";
+		"The flesh of many shall feed the few.";
+		"Fall trembling before insane skillz of ~Klesk.";
+		"Worthy ~Klesk honors with sacrifice of many.";
+		"Ahhhhhh ... quiet good.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{

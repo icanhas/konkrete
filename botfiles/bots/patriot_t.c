@@ -195,8 +195,30 @@ chat "patriot"
 		// 0 = enemy name
 	} //end type
 
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Blackguard!";
+		0, "! Thou'rt a pestilence upon the land!";
+		"You waste life so casually for one so young, ", 0, ".";
+		"Greedy fool! All this will spoil 'ere it can be tasted!";
+		"Ah me, the waste of it all.";
+		// 0 = enemy name
+	} //end type 
+
+
 	//======================================================
 	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"The rush! Too ... too much all at once.";
+		"Mmmmm. Notice how the flavors of each life blend into a savory melange.";
+		"Tsk. Tsk. Add gluttony to my list of sins.";
+		"Moments like this make unlife worth ... um ... unliving?";
+		"Invention 'tis a marvelous thing.";
+	  "Ahhhh, It does not get better than this.";
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" //initiated when the bot kills someone with rail gun
 	{	

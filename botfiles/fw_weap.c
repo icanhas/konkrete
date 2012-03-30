@@ -2,12 +2,20 @@
 //
 // Name:			fw_weap.c
 // Function:
-// Programmer:		Mr Elusive (MrElusive@idsoftware.com)
+// Programmer:		Mr Elusive
 // Last update:		1999-09-08
 // Tab Size:		4 (real tabs)
 //===========================================================================
 
-
+#ifndef W_NAILGUN
+#define W_NAILGUN			40
+#endif
+#ifndef W_PROXLAUNCHER
+#define W_PROXLAUNCHER		30
+#endif
+#ifndef W_CHAINGUN
+#define W_CHAINGUN			45
+#endif
 
 weight "Gauntlet"
 {
@@ -187,3 +195,59 @@ weight "Grappling Hook"
 	} //end switch
 } //end weight
 
+weight "Nailgun"
+{
+	switch(INVENTORY_NAILGUN)
+	{
+		case 1: return 0;
+		default:
+		{
+			switch(INVENTORY_NAILS)
+			{
+				case 1: return 0;
+				default:
+				{
+					return W_NAILGUN;
+				} //end default
+			} //end switch
+		} //end default
+	} //end switch
+} //end weight
+
+weight "Prox Launcher"
+{
+	switch(INVENTORY_PROXLAUNCHER)
+	{
+		case 1: return 0;
+		default:
+		{
+			switch(INVENTORY_MINES)
+			{
+				case 1: return 0;
+				default:
+				{
+					return W_PROXLAUNCHER;
+				} //end default
+			} //end switch
+		} //end default
+	} //end switch
+} //end weight
+
+weight "Chaingun"
+{
+	switch(INVENTORY_CHAINGUN)
+	{
+		case 1: return 0;
+		default:
+		{
+			switch(INVENTORY_BELT)
+			{
+				case 1: return 0;
+				default:
+				{
+					return W_CHAINGUN;
+				} //end default
+			} //end switch
+		} //end default
+	} //end switch
+} //end weight

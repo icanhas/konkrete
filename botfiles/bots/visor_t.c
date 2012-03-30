@@ -4,7 +4,7 @@
 // Function:		chat lines for Visor
 // Programmer:		Mr. Elusive
 // Scripter:		Paul Jaquays
-// Last update:		Oct 11, 1999
+// Last update:		May 22, 2000
 // Tab Size:		3 (real tabs)
 //===========================================================================
 
@@ -133,7 +133,7 @@ chat "visor"
 
 	type "death_suicide"
 	{
-		"Don't laugh kid, you've probably done this a lot.";
+		"~Don't laugh kid, you've probably done this a lot.";
 		"I've gone and made a mess of myself again.";
 		DEATH_SUICIDE0;
 		DEATH_SUICIDE2;
@@ -182,8 +182,34 @@ chat "visor"
 
 	} //end type
 
-	//================================================================
-	//================================================================
+		type "death_kamikaze" //initiated when the bot is killed by kamikaze blast
+	{
+		"Kid, you don't know how much that just cost you.";
+		0, ", you don't know how much that just cost you.";
+		"Get ready to fast-forward to the end kid.";
+		"All weapons are good weapons. I just rather they were used elsewhere.";
+		"Generally speaking, kid, it takes skill to progress onward from here.";
+		"Were you getting jiggy with that kamikaze there, ", 0, "?";
+		"You're not licensed for that weapon, are you ", 0, ".";
+		DEATH_KAMIKAZE3;
+		// 0 = enemy name
+	} //end type 
+
+
+	//======================================================
+	//======================================================
+
+	type "kill_kamikaze" //initiated when the bot kills someone with kamikaze
+	{
+		"Sorry. Didn't mean to blow up at you folks.";
+		"Great thrill ride, but over too quick for my money.";
+		"Guess it's just not your day today, kid.";
+		"Guess it's just not your day today, ", 0, ".";
+		"Who wants another one just like that?";
+		"None shall pass!";
+		KILL_KAMIKAZE1;
+		// 0 = enemy name
+	} //end type
 
 	type "kill_rail" 
 	{
