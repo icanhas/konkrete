@@ -88,7 +88,7 @@ rmbase:
 distclean: rmbase clean
 	@rm -f $(DISTNAME).*
 
-dist: copyall
+dist: copyall $(DISTFILES)
 #tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
 	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
 
