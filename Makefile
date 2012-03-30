@@ -56,9 +56,13 @@ DISTFILES=\
      $(DSCRIPTS) \
      $(TARGETS)
 
-.SUFFIXES: .png .pdf .ps .psd .ogg .wav 
+.SUFFIXES: .png .pdf .ps .psd .svg .ogg .wav 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+%.png : %.svg
+	$(IM) $(IMFLAGS) -deconstruct -coalesce svg:$< tiff:$*.tmp.tiff
+	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
+	@rm -f $*.tmp.tiff
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 %.png : %.psd
