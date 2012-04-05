@@ -6,8 +6,8 @@ OGGFLAGS?=-Q -q6 --resample 44100
 IM?=convert
 IMFLAGS?=
 
-DBASE=base
-DISTNAME='$(DBASE)-$(shell date +"%Y-%m-%d")'
+DBASE?=base
+DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
 
 DBOTFILES=botfiles
 DDEMOS=demos
@@ -39,6 +39,8 @@ ART=\
      $(DEDITORTEX)/trigger.png
 TARGETS+=$(ART)
 
+DMODELS=$(DVIS)/models
+
 DMUSIC=$(DSOUND)/music
 DFEEDBACK=$(DSOUND)/feedback
 SND=\
@@ -52,6 +54,7 @@ DISTFILES=\
      slab-cpma.cfg \
      $(DBOTFILES) \
      $(DDEMOS) \
+     $(DMODELS) \
      $(DFONTS) \
      $(DSCRIPTS) \
      $(TARGETS)
