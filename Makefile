@@ -5,6 +5,8 @@ OGGENC?=oggenc
 OGGFLAGS?=-Q -q6 --resample 44100
 IM?=convert
 IMFLAGS?=
+CRUSH?=pngcrush
+CRUSHFLAGS?=-q -rem text -rem alla
 
 DBASE?=base
 DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
@@ -62,16 +64,24 @@ DISTFILES=\
 .SUFFIXES: .png .pdf .ps .psd .svg .ogg .wav 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
+	mv $*.tmp.png $@
 %.png : %.svg
 	$(IM) $(IMFLAGS) -deconstruct -coalesce svg:$< tiff:$*.tmp.tiff
 	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
 	@rm -f $*.tmp.tiff
+	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
+	mv $*.tmp.png $@
 %.png : %.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
+	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
+	mv $*.tmp.png $@
 %.png : %.psd
 	$(IM) $(IMFLAGS) -deconstruct -coalesce psd:$< tiff:$*.tmp.tiff
 	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
 	@rm -f $*.tmp.tiff
+	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
+	mv $*.tmp.png $@
 %.ogg : %.wav
 	$(OGGENC) $(OGGFLAGS) -o $@ $<
 
