@@ -89,7 +89,7 @@ DISTFILES=\
 
 all: $(TARGETS)
 
-copyall: all
+copyall: all $(DISTFILES)
 	@if [ ! -d $(DBASE) ]; then mkdir $(DBASE); fi
 	@tar -c $(DISTFILES) | tar -xv -C $(DBASE)
 
@@ -99,9 +99,9 @@ rmbase:
 distclean: rmbase clean
 	@rm -f $(DISTNAME).*
 
-dist: copyall $(DISTFILES)
-#tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
+dist: copyall
 	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+	tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
 
 clean:
 	@rm -f $(TARGETS)
