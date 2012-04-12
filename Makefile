@@ -96,15 +96,15 @@ copyall: all $(DISTFILES)
 	fi
 	@tar -c $(DISTFILES) | tar -xv -C $(DBASE) >/dev/null
 
-rmbase:
+distclean: clean
+	@rm -f *.7z *.xz
 	@rm -rf $(DBASE)
 
-distclean: rmbase clean
-	@rm -f $(DISTNAME).*
-
 dist: copyall
-	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+	@rm -f *.7z *.xz
 	tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
+	@echo
+	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
 
 install: copyall
 	@if [ ! -d $(DINSTALL)/$(DBASE) ]; then \
@@ -116,4 +116,5 @@ install: copyall
 
 clean:
 	@rm -f $(TARGETS)
+	@rm -rf $(DBASE)
 
