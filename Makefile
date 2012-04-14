@@ -9,6 +9,7 @@ CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 
 DBASE?=base
+DINSTALL?=/usr/local/games/quake3
 DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
 
 DBOTFILES=botfiles
@@ -90,19 +91,30 @@ DISTFILES=\
 all: $(TARGETS)
 
 copyall: all $(DISTFILES)
-	@if [ ! -d $(DBASE) ]; then mkdir $(DBASE); fi
-	@tar -c $(DISTFILES) | tar -xv -C $(DBASE)
+	@if [ ! -d $(DBASE) ]; then \
+		mkdir $(DBASE); \
+	fi
+	@tar -c $(DISTFILES) | tar -xv -C $(DBASE) >/dev/null
 
-rmbase:
+distclean: clean
+	@rm -f *.7z *.xz
 	@rm -rf $(DBASE)
 
-distclean: rmbase clean
-	@rm -f $(DISTNAME).*
-
 dist: copyall
-	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+	@rm -f *.7z *.xz
 	tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
+	@echo
+	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+
+install: copyall
+	@if [ ! -d $(DINSTALL)/$(DBASE) ]; then \
+		mkdir -p $(DINSTALL)/$(DBASE); \
+	fi
+	@cp -f -R $(DBASE)/* $(DINSTALL)/$(DBASE)
+	@echo
+	@echo "$(DBASE) installed in $(DINSTALL)"
 
 clean:
 	@rm -f $(TARGETS)
+	@rm -rf $(DBASE)
 
