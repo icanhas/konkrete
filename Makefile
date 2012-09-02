@@ -48,6 +48,7 @@ DMUSIC=$(DSOUND)/music
 DFEEDBACK=$(DSOUND)/feedback
 SND=\
      $(DSOUND)/null.ogg \
+     $(DSOUND)/default.ogg \
      $(DFEEDBACK)/hit.ogg \
      $(DMUSIC)/testm.ogg
 TARGETS+=$(SND)
