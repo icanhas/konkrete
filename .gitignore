@@ -10,4 +10,5 @@ base/
 *.bsp
 *.prt
 *.srf
+*.blend[0-9]
 
