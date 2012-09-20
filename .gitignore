@@ -1,10 +1,13 @@
 base/
 *.swp
 *.stackdump
+*.bak
 *.xz
 *.7z
-
 *.ogg
 *.png
 *.jpg
+*.bsp
+*.prt
+*.srf
 
