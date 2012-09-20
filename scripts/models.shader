@@ -3961,16 +3961,16 @@ models/ammo/rocket/rockflar
 		blendfunc GL_ONE GL_ONE
 	}
 }
-models/ammo/rocket/rocketflare
+vis/models/ammo/rocket/rocketflare
 {
 	cull disable
 	{
-		animmap 2 vis\models\weaps\rocket\rocketflare1.tga vis\models\weaps\rocket\rocketflare2.tga
+		animmap 8 vis/models/weaps/rocket/rocketflare1.tga vis/models/weaps/rocket/rocketflare2.tga
 		rgbGen wave inversesawtooth 0 1 0 8
 		blendfunc add
 	}
 	{
-		animmap 8 vis\models\weaps\rocket\rocketflare1.tga vis\models\weaps\rocket\rocketflare2.tga
+		animmap 8 vis/models/weaps/rocket/rocketflare1.tga vis/models/weaps/rocket/rocketflare2.tga
 		rgbGen wave sawtooth 0 1 0 8
 		blendfunc add
 	}
