@@ -42,7 +42,11 @@ ART=\
      $(DEDITORTEX)/hint.png \
      $(DEDITORTEX)/nodraw.png \
      $(DEDITORTEX)/noimpact.png \
-     $(DEDITORTEX)/trigger.png
+     $(DEDITORTEX)/trigger.png \
+     $(DTEXTURES)/shells/m_shell.png \
+     $(DTEXTURES)/weaps/rocketstrong/rocketflare.png \
+     $(DTEXTURES)/weaps/rocketstrong/rocketflare1.png \
+     $(DTEXTURES)/weaps/rocketstrong/rocketflare2.png
 TARGETS+=$(ART)
 
 MAPS=\
@@ -94,6 +98,8 @@ DISTFILES=\
 	@rm -f $*.tmp.tiff
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
+%.png : %.tga
+	$(IM) $(IMFLAGS) tga:$< png:$@
 %.ogg : %.wav
 	$(OGGENC) $(OGGFLAGS) -o $@ $<
 %.bsp : %.map
