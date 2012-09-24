@@ -11,7 +11,7 @@ YMAP?=ymap
 YMAPFLAGS?=-threads 4
 
 DBASE?=base
-DINSTALL?=/usr/local/games/quake3
+DINSTALL?=/usr/local/games/konkrete
 DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
 
 DBOTFILES=botfiles
@@ -23,30 +23,29 @@ DVIS=vis
 DSOUND=sound
 
 DGRAPHICS=$(DVIS)/graphics
+DMODELS=$(DVIS)/models
 DTEXTURES=$(DVIS)/textures
-D2DART=$(DGRAPHICS)/2d
-DMENUART=$(DGRAPHICS)/menu
-DEDITORTEX=$(DTEXTURES)/common
+
 ART=\
      $(DVIS)/test.png \
-     $(D2DART)/crosshaira.png \
-     $(D2DART)/crosshairb.png \
-     $(D2DART)/crosshairc.png \
-     $(DMENUART)/cursor.png \
-     $(DMENUART)/sliderbutton0.png \
-     $(DMENUART)/switch_off.png \
-     $(DMENUART)/switch_on.png \
-     $(DEDITORTEX)/areaportal.png \
-     $(DEDITORTEX)/caulk.png \
-     $(DEDITORTEX)/clip.png \
-     $(DEDITORTEX)/hint.png \
-     $(DEDITORTEX)/nodraw.png \
-     $(DEDITORTEX)/noimpact.png \
-     $(DEDITORTEX)/trigger.png \
+     $(DGRAPHICS)/2d/crosshaira.png \
+     $(DGRAPHICS)/2d/crosshairb.png \
+     $(DGRAPHICS)/2d/crosshairc.png \
+     $(DGRAPHICS)/menu/cursor.png \
+     $(DGRAPHICS)/menu/sliderbutton0.png \
+     $(DGRAPHICS)/menu/switch_off.png \
+     $(DGRAPHICS)/menu/switch_on.png \
+     $(DTEXTURES)/common/areaportal.png \
+     $(DTEXTURES)/common/caulk.png \
+     $(DTEXTURES)/common/clip.png \
+     $(DTEXTURES)/common/hint.png \
+     $(DTEXTURES)/common/nodraw.png \
+     $(DTEXTURES)/common/noimpact.png \
+     $(DTEXTURES)/common/trigger.png \
      $(DTEXTURES)/shells/m_shell.png \
-     $(DTEXTURES)/weaps/rocketstrong/rocketflare.png \
-     $(DTEXTURES)/weaps/rocketstrong/rocketflare1.png \
-     $(DTEXTURES)/weaps/rocketstrong/rocketflare2.png
+     $(DTEXTURES)/projectiles/rocketstrong/rocketflare.png \
+     $(DTEXTURES)/projectiles/rocketstrong/rocketflare1.png \
+     $(DTEXTURES)/projectiles/rocketstrong/rocketflare2.png
 TARGETS+=$(ART)
 
 MAPS=\
@@ -56,15 +55,11 @@ MAPS=\
      $(DMAPS)/kt2.bsp
 TARGETS+=$(MAPS)
 
-DMODELS=$(DVIS)/models
-
-DMUSIC=$(DSOUND)/music
-DFEEDBACK=$(DSOUND)/feedback
 SND=\
      $(DSOUND)/null.ogg \
      $(DSOUND)/default.ogg \
-     $(DFEEDBACK)/hit.ogg \
-     $(DMUSIC)/testm.ogg
+     $(DSOUND)/feedback/hit.ogg \
+     $(DSOUND)/music/testm.ogg
 TARGETS+=$(SND)
 
 DISTFILES=\
@@ -77,7 +72,6 @@ DISTFILES=\
      $(DSCRIPTS) \
      $(TARGETS)
 
-.SUFFIXES: .png .pdf .ps .psd .svg .ogg .wav 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
@@ -106,8 +100,6 @@ DISTFILES=\
 	$(YMAP) $(YMAPFLAGS) $< >/dev/null
 	$(YMAP) -vis $(YMAPFLAGS) $< >/dev/null
 	$(YMAP) -light $(YMAPFLAGS) $< >/dev/null
-
-.PHONY: all clean dist distclean copyall rmbase
 
 all: $(TARGETS)
 
