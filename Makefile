@@ -1,4 +1,3 @@
-SHELL=/bin/sh
 GS?=gs	# often "gswin64c" or "gswin32c" on Windows
 GSFLAGS?=-q -r90
 OGGENC?=oggenc
