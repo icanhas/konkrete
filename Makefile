@@ -7,6 +7,8 @@ IM?=convert
 IMFLAGS?=
 CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
+YMAP?=ymap
+YMAPFLAGS?=-threads 4
 
 DBASE?=base
 DINSTALL?=/usr/local/games/quake3
@@ -15,6 +17,7 @@ DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
 DBOTFILES=botfiles
 DDEMOS=demos
 DFONTS=fonts
+DMAPS=maps
 DSCRIPTS=scripts
 DVIS=vis
 DSOUND=sound
@@ -41,6 +44,13 @@ ART=\
      $(DEDITORTEX)/noimpact.png \
      $(DEDITORTEX)/trigger.png
 TARGETS+=$(ART)
+
+MAPS=\
+     $(DMAPS)/kctf1.bsp \
+     $(DMAPS)/kdm1.bsp \
+     $(DMAPS)/kt1.bsp \
+     $(DMAPS)/kt2.bsp
+TARGETS+=$(MAPS)
 
 DMODELS=$(DVIS)/models
 
@@ -86,6 +96,10 @@ DISTFILES=\
 	mv $*.tmp.png $@
 %.ogg : %.wav
 	$(OGGENC) $(OGGFLAGS) -o $@ $<
+%.bsp : %.map
+	$(YMAP) $(YMAPFLAGS) $< >/dev/null
+	$(YMAP) -vis $(YMAPFLAGS) $< >/dev/null
+	$(YMAP) -light $(YMAPFLAGS) $< >/dev/null
 
 .PHONY: all clean dist distclean copyall rmbase
 
