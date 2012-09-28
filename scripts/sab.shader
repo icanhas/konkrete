@@ -20,10 +20,10 @@ vis/textures/ships/griever/shipbody
         }
 }
 
-vis/models/players/griever/engine
+vis/textures/ships/griever/engine
 {
         {
-                map vis/models/players/griever/engine.tga
+                map vis/textures/ships/griever/engine.tga
                 rgbGen lightingdiffuse
         }
 }
