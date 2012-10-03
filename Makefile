@@ -58,7 +58,8 @@ SND=\
      $(DSOUND)/null.ogg \
      $(DSOUND)/default.ogg \
      $(DSOUND)/feedback/hit.ogg \
-     $(DSOUND)/music/testm.ogg
+     $(DSOUND)/music/testm.ogg \
+     $(DSOUND)/weaps/weaphover.ogg
 TARGETS+=$(SND)
 
 DISTFILES=\
