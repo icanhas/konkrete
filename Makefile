@@ -8,6 +8,7 @@ CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
 YMAPFLAGS?=-threads 4
+IQM?=iqm
 
 DBASE?=base
 DINSTALL?=/usr/local/games/konkrete
@@ -25,7 +26,7 @@ DGRAPHICS=$(DVIS)/graphics
 DMODELS=$(DVIS)/models
 DTEXTURES=$(DVIS)/textures
 
-ART=\
+VIS=\
      $(DVIS)/test.png \
      $(DGRAPHICS)/2d/crosshaira.png \
      $(DGRAPHICS)/2d/crosshairb.png \
@@ -34,6 +35,16 @@ ART=\
      $(DGRAPHICS)/menu/sliderbutton0.png \
      $(DGRAPHICS)/menu/switch_off.png \
      $(DGRAPHICS)/menu/switch_on.png \
+     $(DMODELS)/projectiles/nade.iqm \
+     $(DMODELS)/projectiles/proxmine.iqm \
+     $(DMODELS)/projectiles/rocketstrong.iqm \
+     $(DMODELS)/shells/m_shell.iqm \
+     $(DMODELS)/ships/griever/griever.iqm \
+     $(DMODELS)/weaps/grenade/grenade.iqm \
+     $(DMODELS)/weaps/lightning/lightning.iqm \
+     $(DMODELS)/weaps/minigun/minigun.iqm \
+     $(DMODELS)/weaps/plasma/plasma.iqm \
+     $(DMODELS)/weaps/railgun/railgun.iqm \
      $(DTEXTURES)/common/areaportal.png \
      $(DTEXTURES)/common/caulk.png \
      $(DTEXTURES)/common/clip.png \
@@ -44,8 +55,17 @@ ART=\
      $(DTEXTURES)/shells/m_shell.png \
      $(DTEXTURES)/projectiles/rocketstrong/rocketflare.png \
      $(DTEXTURES)/projectiles/rocketstrong/rocketflare1.png \
-     $(DTEXTURES)/projectiles/rocketstrong/rocketflare2.png
-TARGETS+=$(ART)
+     $(DTEXTURES)/projectiles/rocketstrong/rocketflare2.png \
+     $(DTEXTURES)/ships/griever/engine.png \
+     $(DTEXTURES)/ships/griever/shipbody.png \
+     $(DTEXTURES)/weaps/grenade/grenade.png \
+     $(DTEXTURES)/weaps/hook/hook.png \
+     $(DTEXTURES)/weaps/lightning/lightning.png \
+     $(DTEXTURES)/weaps/minigun/minigun.png \
+     $(DTEXTURES)/weaps/plasma/plasma.png \
+     $(DTEXTURES)/weaps/railgun/railgun.png \
+     $(DTEXTURES)/weaps/rockets/rockets.png
+TARGETS+=$(VIS)
 
 MAPS=\
      $(DMAPS)/kctf1.bsp \
@@ -100,6 +120,8 @@ DISTFILES=\
 	$(YMAP) $(YMAPFLAGS) $< >/dev/null
 	$(YMAP) -vis $(YMAPFLAGS) $< >/dev/null
 	$(YMAP) -light $(YMAPFLAGS) $< >/dev/null
+%.iqm : %.iqe
+	$(IQM) $@ $< >/dev/null
 
 all: $(TARGETS)
 
