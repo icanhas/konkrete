@@ -39,12 +39,12 @@ VIS=\
      $(DMODELS)/projectiles/proxmine.iqm \
      $(DMODELS)/projectiles/rocketstrong.iqm \
      $(DMODELS)/shells/m_shell.iqm \
-     $(DMODELS)/ships/griever/griever.iqm \
+     $(DMODELS)/ships/griever/hull.iqm \
      $(DMODELS)/weaps/grenade/grenade.iqm \
      $(DMODELS)/weaps/lightning/lightning.iqm \
      $(DMODELS)/weaps/minigun/minigun.iqm \
      $(DMODELS)/weaps/plasma/plasma.iqm \
-     $(DMODELS)/weaps/railgun/railgun.iqm \
+     $(DMODELS)/weaps/rail/railgun.iqm \
      $(DTEXTURES)/common/areaportal.png \
      $(DTEXTURES)/common/caulk.png \
      $(DTEXTURES)/common/clip.png \
