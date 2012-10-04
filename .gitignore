@@ -10,5 +10,7 @@ base/
 *.bsp
 *.prt
 *.srf
+*.iqm
 *.blend[0-9]
+*.exe
 
