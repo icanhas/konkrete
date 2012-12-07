@@ -1,0 +1,5 @@
+shipbody,vis/textures/ships/ship2/shipbody
+hook,vis/textures/weaps/hook/hook
+engine,vis/textures/ships/ship2/engine
+tag_weapon,
+tag_flag,
