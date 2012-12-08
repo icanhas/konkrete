@@ -27,43 +27,41 @@ DMODELS=$(DVIS)/models
 DTEXTURES=$(DVIS)/textures
 
 VIS=\
-     $(DVIS)/test.png \
-     $(DGRAPHICS)/2d/crosshaira.png \
-     $(DGRAPHICS)/2d/crosshairb.png \
-     $(DGRAPHICS)/2d/crosshairc.png \
-     $(DGRAPHICS)/menu/cursor.png \
-     $(DGRAPHICS)/menu/sliderbutton0.png \
-     $(DGRAPHICS)/menu/switch_off.png \
-     $(DGRAPHICS)/menu/switch_on.png \
-     $(DMODELS)/projectiles/nade.iqm \
-     $(DMODELS)/projectiles/proxmine.iqm \
-     $(DMODELS)/projectiles/rocketstrong.iqm \
-     $(DMODELS)/shells/m_shell.iqm \
-     $(DMODELS)/ships/griever/hull.iqm \
-     $(DMODELS)/ships/griever/hull_default.skin \
-     $(DMODELS)/ships/ship2/hull.iqm \
-     $(DMODELS)/ships/ship2/hull_default.skin \
-     $(DMODELS)/ships/ship3/hull.iqm \
-     $(DMODELS)/weaps/grenade/grenade.iqm \
-     $(DMODELS)/weaps/lightning/lightning.iqm \
+     vis/test.png \
+     vis/graphics/2d/crosshaira.png \
+     vis/graphics/2d/crosshairb.png \
+     vis/graphics/2d/crosshairc.png \
+     vis/graphics/menu/cursor.png \
+     vis/graphics/menu/sliderbutton0.png \
+     vis/graphics/menu/switch_off.png \
+     vis/graphics/menu/switch_on.png \
+     vis/models/projectiles/nade.iqm \
+     vis/models/projectiles/proxmine.iqm \
+     vis/models/projectiles/rocketstrong.iqm \
+     vis/models/shells/m_shell.iqm \
+     vis/models/ships/griever/hull.iqm \
+     vis/models/ships/ship2/hull.iqm \
+     vis/models/ships/ship3/hull.iqm \
+     vis/models/weaps/grenade/grenade.iqm \
+     vis/models/weaps/lightning/lightning.iqm \
      vis/models/weaps/melee/melee.iqm \
-     $(DMODELS)/weaps/minigun/minigun.iqm \
-     $(DMODELS)/weaps/plasma/plasma.iqm \
+     vis/models/weaps/minigun/minigun.iqm \
+     vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
-     $(DMODELS)/weaps/rail/railgun.iqm \
+     vis/models/weaps/rail/railgun.iqm \
      vis/models/weaps/flak/flak.iqm \
      vis/textures/dmg/bullet_mrk.png \
      vis/textures/dmg/burn_med_mrk.png \
      vis/textures/dmg/hole_lg_mrk.png \
      vis/textures/dmg/plasma_mrk.png \
      vis/textures/dmg/shadow.png \
-     $(DTEXTURES)/common/areaportal.png \
-     $(DTEXTURES)/common/caulk.png \
-     $(DTEXTURES)/common/clip.png \
-     $(DTEXTURES)/common/hint.png \
-     $(DTEXTURES)/common/nodraw.png \
-     $(DTEXTURES)/common/noimpact.png \
-     $(DTEXTURES)/common/trigger.png \
+     vis/textures/common/areaportal.png \
+     vis/textures/common/caulk.png \
+     vis/textures/common/clip.png \
+     vis/textures/common/hint.png \
+     vis/textures/common/nodraw.png \
+     vis/textures/common/noimpact.png \
+     vis/textures/common/trigger.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/regenmap2.png \
@@ -119,15 +117,15 @@ VIS=\
      vis/textures/medals/medal_gauntlet.png \
      vis/textures/medals/medal_impressive.png \
      vis/textures/medals/medal_victory.png \
-     $(DTEXTURES)/shells/m_shell.png \
-     $(DTEXTURES)/projectiles/rocketstrong/rocketflare.png \
-     $(DTEXTURES)/projectiles/rocketstrong/rocketflare1.png \
-     $(DTEXTURES)/projectiles/rocketstrong/rocketflare2.png \
-     $(DTEXTURES)/ships/griever/engine.png \
-     $(DTEXTURES)/ships/griever/shipbody.png \
-     $(DTEXTURES)/ships/ship2/engine.png \
-     $(DTEXTURES)/ships/ship2/shipbody.png \
-     $(DTEXTURES)/ships/ship3/shipbody.png \
+     vis/textures/shells/m_shell.png \
+     vis/textures/projectiles/rocketstrong/rocketflare.png \
+     vis/textures/projectiles/rocketstrong/rocketflare1.png \
+     vis/textures/projectiles/rocketstrong/rocketflare2.png \
+     vis/textures/ships/griever/engine.png \
+     vis/textures/ships/griever/shipbody.png \
+     vis/textures/ships/ship2/engine.png \
+     vis/textures/ships/ship2/shipbody.png \
+     vis/textures/ships/ship3/shipbody.png \
      vis/textures/2d/crosshaira.png \
      vis/textures/2d/defer.png \
      vis/textures/2d/lag.png \
@@ -138,39 +136,41 @@ VIS=\
      vis/textures/sprites/foe2.png \
      vis/textures/sprites/plasmaa.png \
      vis/textures/sprites/splash.png \
-     $(DTEXTURES)/weaps/grenade/grenade.png \
-     $(DTEXTURES)/weaps/hook/hook.png \
-     $(DTEXTURES)/weaps/lightning/lightning.png \
-     $(DTEXTURES)/weaps/minigun/minigun.png \
-     $(DTEXTURES)/weaps/plasma/plasma.png \
-     $(DTEXTURES)/weaps/railgun/railgun.png \
-     $(DTEXTURES)/weaps/rockets/rockets.png
+     vis/textures/weaps/grenade/grenade.png \
+     vis/textures/weaps/hook/hook.png \
+     vis/textures/weaps/lightning/lightning.png \
+     vis/textures/weaps/minigun/minigun.png \
+     vis/textures/weaps/plasma/plasma.png \
+     vis/textures/weaps/railgun/railgun.png \
+     vis/textures/weaps/rockets/rockets.png
 TARGETS+=$(VIS)
 
 MAPS=\
-     $(DMAPS)/kctf1.bsp \
-     $(DMAPS)/kctf2.bsp \
-     $(DMAPS)/kdm1.bsp \
-     $(DMAPS)/kt1.bsp \
-     $(DMAPS)/kt2.bsp
+     maps/kctf1.bsp \
+     maps/kctf2.bsp \
+     maps/kdm1.bsp \
+     maps/kt1.bsp \
+     maps/kt2.bsp
 TARGETS+=$(MAPS)
 
 SND=\
-     $(DSOUND)/null.ogg \
-     $(DSOUND)/default.ogg \
-     $(DSOUND)/feedback/hit.ogg \
-     $(DSOUND)/music/testm.ogg \
-     $(DSOUND)/weaps/weaphover.ogg
+     sound/null.ogg \
+     sound/default.ogg \
+     sound/feedback/hit.ogg \
+     sound/music/testm.ogg \
+     sound/weaps/weaphover.ogg
 TARGETS+=$(SND)
 
 DISTFILES=\
      default.cfg \
      slab-cpma.cfg \
-     $(DBOTFILES) \
-     $(DDEMOS) \
-     $(DMODELS) \
-     $(DFONTS) \
-     $(DSCRIPTS) \
+     botfiles \
+     demos \
+     vis/models \
+     fonts \
+     scripts \
+     vis/models/ships/griever/hull_default.skin \
+     vis/models/ships/ship2/hull_default.skin \
      $(TARGETS)
 
 %.png : %.pdf
