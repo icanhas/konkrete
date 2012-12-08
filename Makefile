@@ -40,11 +40,23 @@ VIS=\
      $(DMODELS)/projectiles/rocketstrong.iqm \
      $(DMODELS)/shells/m_shell.iqm \
      $(DMODELS)/ships/griever/hull.iqm \
+     $(DMODELS)/ships/griever/hull_default.skin \
+     $(DMODELS)/ships/ship2/hull.iqm \
+     $(DMODELS)/ships/ship2/hull_default.skin \
+     $(DMODELS)/ships/ship3/hull.iqm \
      $(DMODELS)/weaps/grenade/grenade.iqm \
      $(DMODELS)/weaps/lightning/lightning.iqm \
+     vis/models/weaps/melee/melee.iqm \
      $(DMODELS)/weaps/minigun/minigun.iqm \
      $(DMODELS)/weaps/plasma/plasma.iqm \
+     vis/models/weaps/proxlauncher/prox.iqm \
      $(DMODELS)/weaps/rail/railgun.iqm \
+     vis/models/weaps/flak/flak.iqm \
+     vis/textures/dmg/bullet_mrk.png \
+     vis/textures/dmg/burn_med_mrk.png \
+     vis/textures/dmg/hole_lg_mrk.png \
+     vis/textures/dmg/plasma_mrk.png \
+     vis/textures/dmg/shadow.png \
      $(DTEXTURES)/common/areaportal.png \
      $(DTEXTURES)/common/caulk.png \
      $(DTEXTURES)/common/clip.png \
@@ -52,12 +64,80 @@ VIS=\
      $(DTEXTURES)/common/nodraw.png \
      $(DTEXTURES)/common/noimpact.png \
      $(DTEXTURES)/common/trigger.png \
+     vis/textures/effects/invismap.png \
+     vis/textures/effects/quadmap2.png \
+     vis/textures/effects/regenmap2.png \
+     vis/textures/icons/envirosuit.png \
+     vis/textures/icons/flight.png \
+     vis/textures/icons/haste.png \
+     vis/textures/icons/icona_bfg.png \
+     vis/textures/icons/icona_grenade.png \
+     vis/textures/icons/icona_lightning.png \
+     vis/textures/icons/icona_machinegun.png \
+     vis/textures/icons/icona_plasma.png \
+     vis/textures/icons/icona_railgun.png \
+     vis/textures/icons/icona_rocket.png \
+     vis/textures/icons/icona_shotgun.png \
+     vis/textures/icons/iconf_blu.png \
+     vis/textures/icons/iconf_blu1.png \
+     vis/textures/icons/iconf_blu2.png \
+     vis/textures/icons/iconf_blu3.png \
+     vis/textures/icons/iconf_red.png \
+     vis/textures/icons/iconf_red1.png \
+     vis/textures/icons/iconf_red2.png \
+     vis/textures/icons/iconf_red3.png \
+     vis/textures/icons/iconh_green.png \
+     vis/textures/icons/iconh_mega.png \
+     vis/textures/icons/iconh_red.png \
+     vis/textures/icons/iconh_yellow.png \
+     vis/textures/icons/iconr_red.png \
+     vis/textures/icons/iconr_shard.png \
+     vis/textures/icons/iconr_yellow.png \
+     vis/textures/icons/iconw_bfg.png \
+     vis/textures/icons/iconw_gauntlet.png \
+     vis/textures/icons/iconw_grapple.png \
+     vis/textures/icons/iconw_grenade.png \
+     vis/textures/icons/iconw_lightning.png \
+     vis/textures/icons/iconw_machinegun.png \
+     vis/textures/icons/iconw_plasma.png \
+     vis/textures/icons/iconw_railgun.png \
+     vis/textures/icons/iconw_rocket.png \
+     vis/textures/icons/iconw_shotgun.png \
+     vis/textures/icons/invis.png \
+     vis/textures/icons/medkit.png \
+     vis/textures/icons/noammo.png \
+     vis/textures/icons/quad.png \
+     vis/textures/icons/regen.png \
+     vis/textures/icons/teleporter.png \
+     vis/textures/kdm1/wall1.png \
+     vis/textures/medals/medal_accuracy.png \
+     vis/textures/medals/medal_assist.png \
+     vis/textures/medals/medal_capture.png \
+     vis/textures/medals/medal_defend.png \
+     vis/textures/medals/medal_excellent.png \
+     vis/textures/medals/medal_frags.png \
+     vis/textures/medals/medal_gauntlet.png \
+     vis/textures/medals/medal_impressive.png \
+     vis/textures/medals/medal_victory.png \
      $(DTEXTURES)/shells/m_shell.png \
      $(DTEXTURES)/projectiles/rocketstrong/rocketflare.png \
      $(DTEXTURES)/projectiles/rocketstrong/rocketflare1.png \
      $(DTEXTURES)/projectiles/rocketstrong/rocketflare2.png \
      $(DTEXTURES)/ships/griever/engine.png \
      $(DTEXTURES)/ships/griever/shipbody.png \
+     $(DTEXTURES)/ships/ship2/engine.png \
+     $(DTEXTURES)/ships/ship2/shipbody.png \
+     $(DTEXTURES)/ships/ship3/shipbody.png \
+     vis/textures/2d/crosshaira.png \
+     vis/textures/2d/defer.png \
+     vis/textures/2d/lag.png \
+     vis/textures/2d/net.png \
+     vis/textures/2d/select.png \
+     vis/textures/sprites/balloon4.png \
+     vis/textures/sprites/bubble.png \
+     vis/textures/sprites/foe2.png \
+     vis/textures/sprites/plasmaa.png \
+     vis/textures/sprites/splash.png \
      $(DTEXTURES)/weaps/grenade/grenade.png \
      $(DTEXTURES)/weaps/hook/hook.png \
      $(DTEXTURES)/weaps/lightning/lightning.png \
@@ -69,6 +149,7 @@ TARGETS+=$(VIS)
 
 MAPS=\
      $(DMAPS)/kctf1.bsp \
+     $(DMAPS)/kctf2.bsp \
      $(DMAPS)/kdm1.bsp \
      $(DMAPS)/kt1.bsp \
      $(DMAPS)/kt2.bsp
@@ -139,7 +220,7 @@ dist: copyall
 	@rm -f *.7z *.xz
 	tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
 	@echo
-	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+#	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
 
 install: copyall
 	@if [ ! -d $(DINSTALL)/$(DBASE) ]; then \
