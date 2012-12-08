@@ -42,6 +42,7 @@ VIS=\
      vis/models/ships/griever/hull.iqm \
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
+     vis/models/weaps/flak/flak.iqm \
      vis/models/weaps/grenade/grenade.iqm \
      vis/models/weaps/lightning/lightning.iqm \
      vis/models/weaps/melee/melee.iqm \
@@ -49,12 +50,11 @@ VIS=\
      vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
-     vis/models/weaps/flak/flak.iqm \
-     vis/textures/dmg/bullet_mrk.png \
-     vis/textures/dmg/burn_med_mrk.png \
-     vis/textures/dmg/hole_lg_mrk.png \
-     vis/textures/dmg/plasma_mrk.png \
-     vis/textures/dmg/shadow.png \
+     vis/textures/2d/crosshaira.png \
+     vis/textures/2d/defer.png \
+     vis/textures/2d/lag.png \
+     vis/textures/2d/net.png \
+     vis/textures/2d/select.png \
      vis/textures/common/areaportal.png \
      vis/textures/common/caulk.png \
      vis/textures/common/clip.png \
@@ -62,6 +62,11 @@ VIS=\
      vis/textures/common/nodraw.png \
      vis/textures/common/noimpact.png \
      vis/textures/common/trigger.png \
+     vis/textures/dmg/bullet_mrk.png \
+     vis/textures/dmg/burn_med_mrk.png \
+     vis/textures/dmg/hole_lg_mrk.png \
+     vis/textures/dmg/plasma_mrk.png \
+     vis/textures/dmg/shadow.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/regenmap2.png \
@@ -76,14 +81,14 @@ VIS=\
      vis/textures/icons/icona_railgun.png \
      vis/textures/icons/icona_rocket.png \
      vis/textures/icons/icona_shotgun.png \
-     vis/textures/icons/iconf_blu.png \
      vis/textures/icons/iconf_blu1.png \
      vis/textures/icons/iconf_blu2.png \
      vis/textures/icons/iconf_blu3.png \
-     vis/textures/icons/iconf_red.png \
+     vis/textures/icons/iconf_blu.png \
      vis/textures/icons/iconf_red1.png \
      vis/textures/icons/iconf_red2.png \
      vis/textures/icons/iconf_red3.png \
+     vis/textures/icons/iconf_red.png \
      vis/textures/icons/iconh_green.png \
      vis/textures/icons/iconh_mega.png \
      vis/textures/icons/iconh_red.png \
@@ -117,20 +122,15 @@ VIS=\
      vis/textures/medals/medal_gauntlet.png \
      vis/textures/medals/medal_impressive.png \
      vis/textures/medals/medal_victory.png \
-     vis/textures/shells/m_shell.png \
-     vis/textures/projectiles/rocketstrong/rocketflare.png \
      vis/textures/projectiles/rocketstrong/rocketflare1.png \
      vis/textures/projectiles/rocketstrong/rocketflare2.png \
+     vis/textures/projectiles/rocketstrong/rocketflare.png \
+     vis/textures/shells/m_shell.png \
      vis/textures/ships/griever/engine.png \
      vis/textures/ships/griever/shipbody.png \
      vis/textures/ships/ship2/engine.png \
      vis/textures/ships/ship2/shipbody.png \
      vis/textures/ships/ship3/shipbody.png \
-     vis/textures/2d/crosshaira.png \
-     vis/textures/2d/defer.png \
-     vis/textures/2d/lag.png \
-     vis/textures/2d/net.png \
-     vis/textures/2d/select.png \
      vis/textures/sprites/balloon4.png \
      vis/textures/sprites/bubble.png \
      vis/textures/sprites/foe2.png \
