@@ -70,6 +70,7 @@ VIS=\
      vis/textures/effects/invismap.png \
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/regenmap2.png \
+     vis/textures/icons/anon.png \
      vis/textures/icons/envirosuit.png \
      vis/textures/icons/flight.png \
      vis/textures/icons/haste.png \
@@ -178,7 +179,7 @@ DISTFILES=\
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
 %.png : %.svg
-	$(IM) $(IMFLAGS) -deconstruct -coalesce svg:$< tiff:$*.tmp.tiff
+	$(IM) $(IMFLAGS) -deconstruct -coalesce -background none svg:$< tiff:$*.tmp.tiff
 	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
 	@rm -f $*.tmp.tiff
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
