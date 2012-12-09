@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="71.584755"
+     inkscape:cx="14.084754"
      inkscape:cy="65.973111"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -64,7 +64,7 @@
            y="36.57143" /></flowRegion><flowPara
          id="flowPara2991"></flowPara></flowRoot>    <text
        xml:space="preserve"
-       style="font-size:67.61066437px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       style="font-size:67.61066436999999500px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;font-family:Sans;stroke-opacity:1"
        x="0.11490364"
        y="1012.7334"
        id="text2993"
@@ -73,6 +73,6 @@
          id="tspan2995"
          x="0.11490364"
          y="1012.7334"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif">N.N.</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:FreeSerif;-inkscape-font-specification:FreeSerif;stroke:#ffffff;stroke-opacity:1">N.N.</tspan></text>
   </g>
 </svg>
