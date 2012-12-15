@@ -50,7 +50,7 @@ VIS=\
      vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
-	 vis/models/weaps/shotgun/shotgun.iqm \
+     vis/models/weaps/shotgun/shotgun.iqm \
      vis/textures/2d/crosshaira.png \
      vis/textures/2d/defer.png \
      vis/textures/2d/lag.png \
