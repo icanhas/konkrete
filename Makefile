@@ -161,6 +161,7 @@ SND=\
      sound/feedback/hit.ogg \
      sound/music/testm.ogg \
      sound/weaps/weaphover.ogg \
+     sound/weaps/nanoid/fire.ogg \
      sound/weaps/nanoid/nanoidflight.ogg
 TARGETS+=$(SND)
 
