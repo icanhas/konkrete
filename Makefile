@@ -1,6 +1,6 @@
 GS?=gs	# often "gswin64c" or "gswin32c" on Windows
 GSFLAGS?=-q -r90
-OGGENC?=oggenc
+OGG?=oggenc
 OGGFLAGS?=-Q -q6 --resample 44100
 IM?=convert
 IMFLAGS?=
@@ -203,7 +203,7 @@ DISTFILES=\
 %.png : %.tga
 	$(IM) $(IMFLAGS) tga:$< png:$@
 %.ogg : %.wav
-	$(OGGENC) $(OGGFLAGS) -o $@ $<
+	$(OGG) $(OGGFLAGS) -o $@ $<
 %.bsp : %.map
 	$(YMAP) $(YMAPFLAGS) $< >/dev/null
 	$(YMAP) -vis $(YMAPFLAGS) $< >/dev/null
@@ -240,4 +240,3 @@ install: copyall
 clean:
 	@rm -f $(TARGETS)
 	@rm -rf $(DBASE)
-
