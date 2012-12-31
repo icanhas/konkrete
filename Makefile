@@ -12,7 +12,8 @@ IQM?=iqm
 
 DBASE?=base
 DINSTALL?=/usr/local/games/konkrete
-DISTNAME?='$(DBASE)-$(shell date +"%Y-%m-%d")'
+RELEASE?=$(DBASE)-$(shell date +"%Y-%m-%d")
+DIST?=$(DBASE)-src-$(shell date +"%Y-%m-%d")
 
 DBOTFILES=botfiles
 DDEMOS=demos
@@ -168,7 +169,8 @@ SND=\
      sound/weaps/nanoid/nanoidflight.ogg
 TARGETS+=$(SND)
 
-DISTFILES=\
+RELEASEFILES=\
+     $(TARGETS) \
      default.cfg \
      slab-cpma.cfg \
      botfiles \
@@ -177,8 +179,7 @@ DISTFILES=\
      fonts \
      scripts \
      vis/models/ships/griever/hull_default.skin \
-     vis/models/ships/ship2/hull_default.skin \
-     $(TARGETS)
+     vis/models/ships/ship2/hull_default.skin
 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
@@ -213,29 +214,40 @@ DISTFILES=\
 
 all: $(TARGETS)
 
-copyall: all $(DISTFILES)
+copyall: all $(RELEASEFILES)
 	@if [ ! -d $(DBASE) ]; then \
 		mkdir $(DBASE); \
 	fi
-	@tar -c $(DISTFILES) | tar -xv -C $(DBASE) >/dev/null
+	@tar cf - $(RELEASEFILES) | tar xvf - -C $(DBASE)
 
-distclean: clean
-	@rm -f *.7z *.xz
+releaseclean: clean
+	@rm -f *.7z *.tar.*
 	@rm -rf $(DBASE)
 
-dist: copyall
+release: all
 	@rm -f *.7z *.xz
-	tar -c $(DBASE) | xz >$(DISTNAME).tar.xz
-	@echo
-#	7z a -r -ssw -scsUTF-8 -m0=lzma2 -mx=9 $(DISTNAME).7z $(DBASE)
+	@tar cf - $(RELEASEFILES) >$(RELEASE).tar
+	gzip <$(RELEASE).tar >$(RELEASE).tar.gz
+	bzip2 <$(RELEASE).tar >$(RELEASE).tar.bz2
+	xz <$(RELEASE).tar >$(RELEASE).tar.xz
+#	7z a -m0=lzma -mx=8 $(RELEASE).7z $(RELEASEFILES) >/dev/null
+	@rm $(RELEASE).tar
 
-install: copyall
+dist: all
+	git archive --format=tar HEAD >$(DIST).tar
+	gzip <$(DIST).tar >$(DIST).tar.gz
+	bzip2 <$(DIST).tar >$(DIST).tar.bz2
+	xz <$(DIST).tar >$(DIST).tar.xz
+	@rm $(DIST).tar
+
+install: all
 	@if [ ! -d $(DINSTALL)/$(DBASE) ]; then \
 		mkdir -p $(DINSTALL)/$(DBASE); \
 	fi
-	@cp -f -R $(DBASE)/* $(DINSTALL)/$(DBASE)
+	@tar cf - $(RELEASEFILES) | tar xf - -C $(DINSTALL)/$(DBASE)
 	@echo
-	@echo "$(DBASE) installed in $(DINSTALL)"
+	@echo "installed $(DINSTALL)/$(DBASE)"
+	@echo
 
 clean:
 	@rm -f $(TARGETS)
