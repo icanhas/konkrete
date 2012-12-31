@@ -2,8 +2,9 @@ base/
 *.swp
 *.stackdump
 *.bak
-*.xz
+*.tar*
 *.7z
+*.zip
 *.ogg
 *.png
 *.jpg
