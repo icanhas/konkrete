@@ -7,7 +7,7 @@ IMFLAGS?=
 CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
-YMAPFLAGS?=-threads 4
+YMAPFLAGS?=
 IQM?=iqm
 
 DBASE?=base
