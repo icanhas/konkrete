@@ -173,9 +173,9 @@ RELEASEFILES=\
      $(TARGETS) \
      default.cfg \
      slab-cpma.cfg \
+     ducky-ql.cfg \
      botfiles \
      demos \
-     vis/models \
      fonts \
      scripts \
      vis/models/ships/griever/hull_default.skin \
