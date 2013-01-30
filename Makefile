@@ -166,7 +166,8 @@ SND=\
      sound/music/testm.ogg \
      sound/weaps/weaphover.ogg \
      sound/weaps/nanoid/fire.ogg \
-     sound/weaps/nanoid/nanoidflight.ogg
+     sound/weaps/nanoid/nanoidflight.ogg \
+     sound/weaps/prox/tick.ogg
 TARGETS+=$(SND)
 
 RELEASEFILES=\
