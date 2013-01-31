@@ -181,7 +181,8 @@ RELEASEFILES=\
      fonts \
      scripts \
      vis/models/ships/griever/hull_default.skin \
-     vis/models/ships/ship2/hull_default.skin
+     vis/models/ships/ship2/hull_default.skin \
+     vis/models/ships/ship3/hull_default.skin
 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
