@@ -186,8 +186,8 @@ RELEASEFILES=\
      vis/models/ships/griever/animation.cfg \
      vis/models/ships/ship2/animation.cfg \
      vis/models/ships/ship3/animation.cfg \
-     vis/textures/2d/bigchars.tga \
-     vis/textures/2d/numbers/ \
+     vis/2d/bigchars.tga \
+     vis/2d/numbers/ \
      vis/menu/font1_prop.tga \
      vis/menu/font1_prop_glo.tga \
      vis/menu/font2_prop.tga
