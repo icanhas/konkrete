@@ -185,7 +185,9 @@ RELEASEFILES=\
      vis/models/ships/ship3/hull_default.skin \
      vis/models/ships/griever/animation.cfg \
      vis/models/ships/ship2/animation.cfg \
-     vis/models/ships/ship3/animation.cfg
+     vis/models/ships/ship3/animation.cfg \
+     vis/textures/2d/bigchars.tga \
+     vis/textures/2d/numbers/
 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
