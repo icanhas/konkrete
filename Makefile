@@ -7,7 +7,7 @@ IMFLAGS?=
 CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
-YMAPFLAGS?=
+YMAPFLAGS?=-texturedir vis/textures
 IQM?=iqm
 
 DBASE?=base
@@ -218,8 +218,8 @@ RELEASEFILES=\
 	$(OGG) $(OGGFLAGS) -o $@ $<
 %.bsp : %.map
 	$(YMAP) $(YMAPFLAGS) $< >/dev/null
-	$(YMAP) -vis $(YMAPFLAGS) $< >/dev/null
-	$(YMAP) -light $(YMAPFLAGS) $< >/dev/null
+	$(YMAP) $(YMAPFLAGS) -vis $< >/dev/null
+	$(YMAP) $(YMAPFLAGS) -light $< >/dev/null
 %.iqm : %.iqe
 	$(IQM) $@ $< >/dev/null
 
