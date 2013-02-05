@@ -27,7 +27,7 @@
      inkscape:cx="261.36321"
      inkscape:cy="257.58588"
      inkscape:document-units="pt"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      id="namedview2989"
      showgrid="false"
      units="px"
@@ -35,7 +35,8 @@
      inkscape:window-height="637"
      inkscape:window-x="228"
      inkscape:window-y="228"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     showborder="false" />
   <metadata
      id="metadata2991">
     <rdf:RDF>
@@ -48,6 +49,18 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="back">
+    <rect
+       style="fill:#454545;fill-opacity:1;fill-rule:nonzero;stroke:#00ff7f;stroke-width:4.96062993999999960;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5494"
+       width="560"
+       height="547.5"
+       x="-13.75"
+       y="-10.5" />
+  </g>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
