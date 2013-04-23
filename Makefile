@@ -172,7 +172,8 @@ SND=\
      sound/weaps/plasma/hyprbf1a.ogg \
      sound/weaps/prox/tick.ogg \
      sound/weaps/prox/trigger.ogg \
-     sound/weaps/rail/railgf1a.ogg
+     sound/weaps/rail/railgf1a.ogg \
+     sound/weaps/rail/rg_hum.ogg
 TARGETS+=$(SND)
 
 RELEASEFILES=\
