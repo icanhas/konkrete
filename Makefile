@@ -171,7 +171,8 @@ SND=\
      sound/weaps/nanoid/nanoidflight.ogg \
      sound/weaps/plasma/hyprbf1a.ogg \
      sound/weaps/prox/tick.ogg \
-     sound/weaps/prox/trigger.ogg
+     sound/weaps/prox/trigger.ogg \
+     sound/weaps/rail/railgf1a.ogg
 TARGETS+=$(SND)
 
 RELEASEFILES=\
