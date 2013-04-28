@@ -29,13 +29,6 @@ DTEXTURES=$(DVIS)/textures
 
 VIS=\
      vis/test.png \
-     vis/graphics/2d/crosshaira.png \
-     vis/graphics/2d/crosshairb.png \
-     vis/graphics/2d/crosshairc.png \
-     vis/graphics/menu/cursor.png \
-     vis/graphics/menu/sliderbutton0.png \
-     vis/graphics/menu/switch_off.png \
-     vis/graphics/menu/switch_on.png \
      vis/models/projectiles/nade.iqm \
      vis/models/projectiles/proxmine.iqm \
      vis/models/projectiles/rocketstrong.iqm \
@@ -53,8 +46,6 @@ VIS=\
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
      vis/models/weaps/shotgun/shotgun.iqm \
-     vis/textures/null.png \
-     vis/textures/2d/crosshaira.png \
      vis/textures/2d/defer.png \
      vis/textures/2d/lag.png \
      vis/textures/2d/net.png \
@@ -86,14 +77,14 @@ VIS=\
      vis/textures/icons/icona_railgun.png \
      vis/textures/icons/icona_rocket.png \
      vis/textures/icons/icona_shotgun.png \
+     vis/textures/icons/iconf_blu.png \
      vis/textures/icons/iconf_blu1.png \
      vis/textures/icons/iconf_blu2.png \
      vis/textures/icons/iconf_blu3.png \
-     vis/textures/icons/iconf_blu.png \
+     vis/textures/icons/iconf_red.png \
      vis/textures/icons/iconf_red1.png \
      vis/textures/icons/iconf_red2.png \
      vis/textures/icons/iconf_red3.png \
-     vis/textures/icons/iconf_red.png \
      vis/textures/icons/iconh_green.png \
      vis/textures/icons/iconh_mega.png \
      vis/textures/icons/iconh_red.png \
@@ -127,6 +118,11 @@ VIS=\
      vis/textures/medals/medal_gauntlet.png \
      vis/textures/medals/medal_impressive.png \
      vis/textures/medals/medal_victory.png \
+     vis/textures/menu/cursor.png \
+     vis/textures/menu/sliderbutton0.png \
+     vis/textures/menu/switch_off.png \
+     vis/textures/menu/switch_on.png \
+     vis/textures/null.png \
      vis/textures/projectiles/rocketstrong/rocketflare1.png \
      vis/textures/projectiles/rocketstrong/rocketflare2.png \
      vis/textures/projectiles/rocketstrong/rocketnade.png \
@@ -149,7 +145,10 @@ VIS=\
      vis/textures/weaps/minigun/minigun.png \
      vis/textures/weaps/plasma/plasma.png \
      vis/textures/weaps/railgun/railgun.png \
-     vis/textures/weaps/rockets/rockets.png
+     vis/textures/weaps/rockets/rockets.png \
+     vis/textures/xhairs/crosshair1.png \
+     vis/textures/xhairs/crosshair2.png \
+     vis/textures/xhairs/crosshair3.png
 TARGETS+=$(VIS)
 
 MAPS=\
@@ -167,6 +166,7 @@ SND=\
      sound/music/testm.ogg \
      sound/weaps/change.ogg \
      sound/weaps/weaphover.ogg \
+     sound/weaps/hook/fire.ogg \
      sound/weaps/nanoid/fire.ogg \
      sound/weaps/nanoid/nanoidflight.ogg \
      sound/weaps/plasma/hyprbf1a.ogg \
@@ -191,11 +191,11 @@ RELEASEFILES=\
      vis/models/ships/griever/animation.cfg \
      vis/models/ships/ship2/animation.cfg \
      vis/models/ships/ship3/animation.cfg \
-     vis/2d/bigchars.tga \
-     vis/2d/numbers/ \
-     vis/menu/font1_prop.tga \
-     vis/menu/font1_prop_glo.tga \
-     vis/menu/font2_prop.tga
+     vis/textures/2d/bigchars.tga \
+     vis/textures/2d/numbers/ \
+     vis/textures/menu/font1_prop.tga \
+     vis/textures/menu/font1_prop_glo.tga \
+     vis/textures/menu/font2_prop.tga
 
 %.png : %.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
