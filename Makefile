@@ -118,7 +118,7 @@ VIS=\
      vis/textures/medals/medal_gauntlet.png \
      vis/textures/medals/medal_impressive.png \
      vis/textures/medals/medal_victory.png \
-     vis/textures/menu/cursor.png \
+     vis/textures/menu/pointer.png \
      vis/textures/menu/sliderbutton0.png \
      vis/textures/menu/switch_off.png \
      vis/textures/menu/switch_on.png \
