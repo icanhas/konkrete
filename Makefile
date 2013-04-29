@@ -166,7 +166,6 @@ SND=\
      sound/music/testm.ogg \
      sound/weaps/change.ogg \
      sound/weaps/weaphover.ogg \
-     sound/weaps/hook/fire.ogg \
      sound/weaps/nanoid/fire.ogg \
      sound/weaps/nanoid/nanoidflight.ogg \
      sound/weaps/plasma/hyprbf1a.ogg \
