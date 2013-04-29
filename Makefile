@@ -109,7 +109,7 @@ VIS=\
      vis/textures/icons/quad.png \
      vis/textures/icons/regen.png \
      vis/textures/icons/teleporter.png \
-     vis/textures/kdm1/wall1.png \
+     vis/textures/map1/wall1.png \
      vis/textures/medals/medal_accuracy.png \
      vis/textures/medals/medal_assist.png \
      vis/textures/medals/medal_capture.png \
