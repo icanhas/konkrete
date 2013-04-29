@@ -39,10 +39,10 @@ VIS=\
      vis/models/ships/ship3/hull.iqm \
      vis/models/weaps/heminigun/heminigun.iqm \
      vis/models/weaps/flak/flak.iqm \
-     vis/models/weaps/nadelauncher/nadelauncher.iqm \
      vis/models/weaps/lightning/lightning.iqm \
      vis/models/weaps/melee/melee.iqm \
      vis/models/weaps/minigun/minigun.iqm \
+     vis/models/weaps/nadelauncher/nadelauncher.iqm \
      vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
@@ -141,10 +141,11 @@ VIS=\
      vis/textures/sprites/plasmaa.png \
      vis/textures/sprites/splash.png \
      vis/textures/weaps/heminigun/heminigun.png \
-     vis/textures/weaps/nadelauncher/nadelauncher.png \
      vis/textures/weaps/hook/hook.png \
      vis/textures/weaps/lightning/lightning.png \
+     vis/textures/weaps/melee/melee.png \
      vis/textures/weaps/minigun/minigun.png \
+     vis/textures/weaps/nadelauncher/nadelauncher.png \
      vis/textures/weaps/plasma/plasma.png \
      vis/textures/weaps/railgun/railgun.png \
      vis/textures/weaps/shotgun/shotgun.png \
