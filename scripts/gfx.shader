@@ -76,7 +76,7 @@ menuback
         //        tcmod scroll -.1  -.2
 	//} 
          {
-                map textures/sfx/logo512.tga
+                map vis/textures/menu/sigil
                 // blendFunc blend
                 rgbgen identity
         }

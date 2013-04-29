@@ -123,7 +123,7 @@ VIS=\
      vis/textures/menu/sliderbutton0.png \
      vis/textures/menu/switch_off.png \
      vis/textures/menu/switch_on.png \
-     vis/textures/menu/unknownmap.png \
+     vis/textures/menu/sigil.png \
      vis/textures/null.png \
      vis/textures/projectiles/rocketstrong/rocketflare1.png \
      vis/textures/projectiles/rocketstrong/rocketflare2.png \
