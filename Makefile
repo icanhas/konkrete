@@ -37,7 +37,7 @@ VIS=\
      vis/models/ships/griever/hull.iqm \
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
-     vis/models/weaps/chaingun/chaingun.iqm \
+     vis/models/weaps/heminigun/heminigun.iqm \
      vis/models/weaps/flak/flak.iqm \
      vis/models/weaps/nadelauncher/nadelauncher.iqm \
      vis/models/weaps/lightning/lightning.iqm \
@@ -140,7 +140,7 @@ VIS=\
      vis/textures/sprites/foe2.png \
      vis/textures/sprites/plasmaa.png \
      vis/textures/sprites/splash.png \
-     vis/textures/weaps/chaingun/chaingun.png \
+     vis/textures/weaps/heminigun/heminigun.png \
      vis/textures/weaps/nadelauncher/nadelauncher.png \
      vis/textures/weaps/hook/hook.png \
      vis/textures/weaps/lightning/lightning.png \
