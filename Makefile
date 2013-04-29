@@ -142,6 +142,7 @@ VIS=\
      vis/textures/sprites/splash.png \
      vis/textures/weaps/heminigun/heminigun.png \
      vis/textures/weaps/hook/hook.png \
+     vis/textures/weaps/lightning/lgeffect.png \
      vis/textures/weaps/lightning/lightning.png \
      vis/textures/weaps/melee/melee.png \
      vis/textures/weaps/minigun/minigun.png \
