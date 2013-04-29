@@ -147,6 +147,7 @@ VIS=\
      vis/textures/weaps/minigun/minigun.png \
      vis/textures/weaps/plasma/plasma.png \
      vis/textures/weaps/railgun/railgun.png \
+     vis/textures/weaps/shotgun/shotgun.png \
      vis/textures/weaps/rockets/rockets.png \
      vis/textures/xhairs/crosshair1.png \
      vis/textures/xhairs/crosshair2.png \
