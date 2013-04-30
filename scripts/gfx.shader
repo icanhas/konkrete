@@ -792,7 +792,7 @@ railDisc
 	cull none
         deformVertexes wave 100 sin 0 .5 0 2.4
 	{
-		clampmap gfx/misc/raildisc_mono2.tga 
+		clampmap vis/textures/sprites/splash.tga //placeholder
 		blendFunc GL_ONE GL_ONE
 		rgbGen vertex
                  tcMod rotate -30

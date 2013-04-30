@@ -65,6 +65,7 @@ VIS=\
      vis/textures/dmg/shadow.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/quadmap2.png \
+     vis/textures/effects/railcore.png \
      vis/textures/effects/regenmap2.png \
      vis/textures/effects/smokepuff1.png \
      vis/textures/icons/anon.png \
