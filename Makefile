@@ -64,6 +64,7 @@ VIS=\
      vis/textures/dmg/plasma_mrk.png \
      vis/textures/dmg/shadow.png \
      vis/textures/effects/invismap.png \
+     vis/textures/effects/plasma.png \
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/railcore.png \
      vis/textures/effects/regenmap2.png \
