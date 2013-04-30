@@ -70,39 +70,39 @@ VIS=\
      vis/textures/icons/envirosuit.png \
      vis/textures/icons/flight.png \
      vis/textures/icons/haste.png \
-     vis/textures/icons/icona_bfg.png \
-     vis/textures/icons/icona_grenade.png \
-     vis/textures/icons/icona_lightning.png \
-     vis/textures/icons/icona_machinegun.png \
-     vis/textures/icons/icona_plasma.png \
-     vis/textures/icons/icona_railgun.png \
-     vis/textures/icons/icona_rocket.png \
-     vis/textures/icons/icona_shotgun.png \
+     vis/textures/icons/bfgs.png \
+     vis/textures/icons/grenades.png \
+     vis/textures/icons/lightningcells.png \
+     vis/textures/icons/rounds.png \
+     vis/textures/icons/plasma.png \
+     vis/textures/icons/slugs.png \
+     vis/textures/icons/rockets.png \
+     vis/textures/icons/shotgunshells.png \
      vis/textures/icons/iconf_blu.png \
-     vis/textures/icons/iconf_blu1.png \
+     vis/textures/icons/blueflag.png \
      vis/textures/icons/iconf_blu2.png \
      vis/textures/icons/iconf_blu3.png \
      vis/textures/icons/iconf_red.png \
-     vis/textures/icons/iconf_red1.png \
+     vis/textures/icons/redflag.png \
      vis/textures/icons/iconf_red2.png \
      vis/textures/icons/iconf_red3.png \
-     vis/textures/icons/iconh_green.png \
-     vis/textures/icons/iconh_mega.png \
-     vis/textures/icons/iconh_red.png \
-     vis/textures/icons/iconh_yellow.png \
-     vis/textures/icons/iconr_red.png \
-     vis/textures/icons/iconr_shard.png \
-     vis/textures/icons/iconr_yellow.png \
+     vis/textures/icons/armourshard.png \
+     vis/textures/icons/armourmega.png \
+     vis/textures/icons/armourlarge.png \
+     vis/textures/icons/armourmedium.png \
+     vis/textures/icons/heavyshieldgen.png \
+     vis/textures/icons/shieldcellssmall.png \
+     vis/textures/icons/shieldcellslarge.png \
      vis/textures/icons/iconw_bfg.png \
-     vis/textures/icons/iconw_gauntlet.png \
-     vis/textures/icons/iconw_grapple.png \
-     vis/textures/icons/iconw_grenade.png \
-     vis/textures/icons/iconw_lightning.png \
-     vis/textures/icons/iconw_machinegun.png \
-     vis/textures/icons/iconw_plasma.png \
-     vis/textures/icons/iconw_railgun.png \
-     vis/textures/icons/iconw_rocket.png \
-     vis/textures/icons/iconw_shotgun.png \
+     vis/textures/icons/melee.png \
+     vis/textures/icons/hook.png \
+     vis/textures/icons/nadelauncher.png \
+     vis/textures/icons/lightning.png \
+     vis/textures/icons/machinegun.png \
+     vis/textures/icons/plasmagun.png \
+     vis/textures/icons/railgun.png \
+     vis/textures/icons/rocket.png \
+     vis/textures/icons/shotgun.png \
      vis/textures/icons/invis.png \
      vis/textures/icons/medkit.png \
      vis/textures/icons/noammo.png \
