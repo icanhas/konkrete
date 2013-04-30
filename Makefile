@@ -31,7 +31,7 @@ VIS=\
      vis/test.png \
      vis/models/projectiles/nade.iqm \
      vis/models/projectiles/proxmine.iqm \
-     vis/models/projectiles/rocketstrong.iqm \
+     vis/models/projectiles/rocket.iqm \
      vis/models/projectiles/rocketweak.iqm \
      vis/models/shells/m_shell.iqm \
      vis/models/ships/griever/hull.iqm \
@@ -125,9 +125,9 @@ VIS=\
      vis/textures/menu/switch_on.png \
      vis/textures/menu/sigil.png \
      vis/textures/null.png \
-     vis/textures/projectiles/rocketstrong/rocketflare1.png \
-     vis/textures/projectiles/rocketstrong/rocketflare2.png \
-     vis/textures/projectiles/rocketstrong/rocketnade.png \
+     vis/textures/projectiles/rocket/rocketflare1.png \
+     vis/textures/projectiles/rocket/rocketflare2.png \
+     vis/textures/projectiles/rocket/rocketnade.png \
      vis/textures/projectiles/rocketweak/rocketweakflare1.png \
      vis/textures/projectiles/rocketweak/rocketweakflare2.png \
      vis/textures/shells/m_shell.png \
