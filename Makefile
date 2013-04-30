@@ -70,7 +70,6 @@ VIS=\
      vis/textures/icons/envirosuit.png \
      vis/textures/icons/flight.png \
      vis/textures/icons/haste.png \
-     vis/textures/icons/bfgs.png \
      vis/textures/icons/grenades.png \
      vis/textures/icons/lightningcells.png \
      vis/textures/icons/rounds.png \
@@ -78,6 +77,10 @@ VIS=\
      vis/textures/icons/slugs.png \
      vis/textures/icons/rockets.png \
      vis/textures/icons/shotgunshells.png \
+     vis/textures/icons/homingrockets.png \
+     vis/textures/icons/homingrockets.png \
+     vis/textures/icons/herounds.png \
+     vis/textures/icons/nanoids.png \
      vis/textures/icons/iconf_blu.png \
      vis/textures/icons/blueflag.png \
      vis/textures/icons/iconf_blu2.png \
@@ -93,7 +96,6 @@ VIS=\
      vis/textures/icons/heavyshieldgen.png \
      vis/textures/icons/shieldcellssmall.png \
      vis/textures/icons/shieldcellslarge.png \
-     vis/textures/icons/bfg.png \
      vis/textures/icons/melee.png \
      vis/textures/icons/hook.png \
      vis/textures/icons/nadelauncher.png \
@@ -103,6 +105,10 @@ VIS=\
      vis/textures/icons/railgun.png \
      vis/textures/icons/rocket.png \
      vis/textures/icons/shotgun.png \
+     vis/textures/icons/homing.png \
+     vis/textures/icons/proxlauncher.png \
+     vis/textures/icons/heminigun.png \
+     vis/textures/icons/nanoidcannon.png \
      vis/textures/icons/invis.png \
      vis/textures/icons/medkit.png \
      vis/textures/icons/noammo.png \
