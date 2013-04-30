@@ -727,7 +727,7 @@ smokePuff
 	cull none
 	entityMergable		// allow all the sprites to be merged together
 	{
-		map gfx/misc/smokepuff3.tga
+		map vis/textures/effects/smokepuff1.tga
 		blendFunc GL_SRC_ALPHA GL_ONE_MINUS_SRC_ALPHA
 		rgbGen		vertex
 		alphaGen	vertex
