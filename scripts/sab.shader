@@ -12,16 +12,16 @@ vis/textures/projectiles/rocketweak/rocketweakflare
 		blendfunc add
 	}
 }
-vis/textures/projectiles/rocketstrong/rocketflare
+vis/textures/projectiles/rocket/rocketflare
 {
 	cull disable
 	{
-		animmap 8 vis/textures/projectiles/rocketstrong/rocketflare1.tga vis/textures/projectiles/rocketstrong/rocketflare2.tga
+		animmap 8 vis/textures/projectiles/rocket/rocketflare1.tga vis/textures/projectiles/rocket/rocketflare2.tga
 		rgbGen wave inversesawtooth 0 1 0 8
 		blendfunc add
 	}
 	{
-		animmap 8 vis/textures/projectiles/rocketstrong/rocketflare1.tga vis/textures/projectiles/rocketstrong/rocketflare2.tga
+		animmap 8 vis/textures/projectiles/rocket/rocketflare1.tga vis/textures/projectiles/rocket/rocketflare2.tga
 		rgbGen wave sawtooth 0 1 0 8
 		blendfunc add
 	}
