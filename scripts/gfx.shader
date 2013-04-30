@@ -804,7 +804,7 @@ railCore
 	sort nearest
 	cull none
 	{
-		map gfx/misc/railcore.tga 
+		vis\textures\effects\railcore.tga
 		blendFunc GL_ONE GL_ONE
 		rgbGen vertex
 		tcMod scroll -1 0
