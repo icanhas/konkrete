@@ -93,7 +93,7 @@ VIS=\
      vis/textures/icons/heavyshieldgen.png \
      vis/textures/icons/shieldcellssmall.png \
      vis/textures/icons/shieldcellslarge.png \
-     vis/textures/icons/iconw_bfg.png \
+     vis/textures/icons/bfg.png \
      vis/textures/icons/melee.png \
      vis/textures/icons/hook.png \
      vis/textures/icons/nadelauncher.png \
