@@ -3932,7 +3932,7 @@ sprites/plasma1
 {
 	cull disable
 	{
-		clampmap sprites/plasmaa.tga
+		clampmap /vis/textures/effects/plasma.tga
 		blendfunc GL_ONE GL_ONE
                 tcMod rotate 931
 	}
