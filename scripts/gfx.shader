@@ -1293,12 +1293,12 @@ rocketExplosion
 {
 	cull disable
 	{
-		animmap 8 models/weaphits/rlboom/rlboom_1.tga  models/weaphits/rlboom/rlboom_2.tga models/weaphits/rlboom/rlboom_3.tga models/weaphits/rlboom/rlboom_4.tga models/weaphits/rlboom/rlboom_5.tga models/weaphits/rlboom/rlboom_6.tga models/weaphits/rlboom/rlboom_7.tga models/weaphits/rlboom/rlboom_8.tga
+		animmap 50 vis\textures\effects\splod\1.tga  vis\textures\effects\splod\2.tga vis\textures\effects\splod\3.tga vis\textures\effects\splod\4.tga vis\textures\effects\splod\5.tga vis\textures\effects\black.tga
 		rgbGen wave inversesawtooth 0 1 0 8
 		blendfunc add
 	}
 	{
-		animmap 8 models/weaphits/rlboom/rlboom_2.tga models/weaphits/rlboom/rlboom_3.tga models/weaphits/rlboom/rlboom_4.tga models/weaphits/rlboom/rlboom_5.tga models/weaphits/rlboom/rlboom_6.tga models/weaphits/rlboom/rlboom_7.tga models/weaphits/rlboom/rlboom_8.tga gfx/colors/black.tga
+		animmap 50 vis\textures\effects\splod\1.tga  vis\textures\effects\splod\2.tga vis\textures\effects\splod\3.tga vis\textures\effects\splod\4.tga vis\textures\effects\splod\5.tga vis\textures\effects\black.tga
 		rgbGen wave sawtooth 0 1 0 8
 		blendfunc add
 	}
