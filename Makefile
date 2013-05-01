@@ -37,6 +37,7 @@ VIS=\
      vis/models/ships/griever/hull.iqm \
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
+     vis/models/weaphits/boom01.iqm \
      vis/models/weaps/heminigun/heminigun.iqm \
      vis/models/weaps/flak/flak.iqm \
      vis/models/weaps/lightning/lightning.iqm \
@@ -63,12 +64,18 @@ VIS=\
      vis/textures/dmg/hole_lg_mrk.png \
      vis/textures/dmg/plasma_mrk.png \
      vis/textures/dmg/shadow.png \
+     vis/textures/effects/black.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/plasma.png \
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/railcore.png \
      vis/textures/effects/regenmap2.png \
      vis/textures/effects/smokepuff1.png \
+     vis/textures/effects/sabsplode/1.png \
+	 vis/textures/effects/sabsplode/2.png \
+	 vis/textures/effects/sabsplode/3.png \
+	 vis/textures/effects/sabsplode/4.png \
+	 vis/textures/effects/sabsplode/5.png \
      vis/textures/icons/anon.png \
      vis/textures/icons/envirosuit.png \
      vis/textures/icons/flight.png \

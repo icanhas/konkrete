@@ -66,3 +66,18 @@ lightningBoltNew
 		tcmod scale  2 1
 	}
 }
+
+sabsplode
+{
+	cull disable
+	{
+		animmap 8 vis\textures\effects\splod\1.tga  vis\textures\effects\splod\2.tga vis\textures\effects\splod\3.tga vis\textures\effects\splod\4.tga vis\textures\effects\splod\5.tga vis\textures\effects\black.tga
+		rgbGen wave inversesawtooth 0 1 0 8
+		blendfunc add
+	}
+	{
+		animmap 8 vis\textures\effects\splod\1.tga  vis\textures\effects\splod\2.tga vis\textures\effects\splod\3.tga vis\textures\effects\splod\4.tga vis\textures\effects\splod\5.tga vis\textures\effects\black.tga
+		rgbGen wave sawtooth 0 1 0 8
+		blendfunc add
+	}
+}
