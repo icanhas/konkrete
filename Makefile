@@ -47,8 +47,8 @@ VIS=\
      vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
-     vis/models/weaps/rocketpod/strong/rocketpod.iqm\
-     vis/models/weaps/rocketpod/weak/rocketpodweak.iqm\
+     vis/models/weaps/rocketpod/strong.iqm\
+     vis/models/weaps/rocketpod/weak.iqm\
      vis/models/weaps/shotgun/shotgun.iqm \
      vis/textures/2d/defer.png \
      vis/textures/2d/lag.png \
