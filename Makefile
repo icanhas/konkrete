@@ -168,9 +168,8 @@ VIS=\
      vis/textures/weaps/railgun/railgun.png \
      vis/textures/weaps/shotgun/shotgun.png \
      vis/textures/weaps/rockets/rockets.png \
-     vis/textures/xhairs/crosshair1.png \
-     vis/textures/xhairs/crosshair2.png \
-     vis/textures/xhairs/crosshair3.png
+     vis/textures/xhairs/dot.png \
+     vis/textures/xhairs/ring.png
 TARGETS+=$(VIS)
 
 MAPS=\
