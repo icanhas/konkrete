@@ -3,7 +3,7 @@
 joint "tag_weapon" -1
 	pq -1.89999998 0.00000000 2.09999990 0.70710689 0.70710677 0.00000005 -0.00000005
 
-mesh "heminigun"
+mesh "heminigun1"
 	material "vis\textures\weaps\heminigun\heminigun"
 
 vp -2.84343290 2.33773184 -4.42834091
