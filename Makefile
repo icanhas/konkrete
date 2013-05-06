@@ -54,6 +54,17 @@ VIS=\
      vis/textures/2d/lag.png \
      vis/textures/2d/net.png \
      vis/textures/2d/select.png \
+     vis/textures/2d/numbers/one_32b.png \
+     vis/textures/2d/numbers/two_32b.png \
+     vis/textures/2d/numbers/three_32b.png \
+     vis/textures/2d/numbers/four_32b.png \
+     vis/textures/2d/numbers/five_32b.png \
+     vis/textures/2d/numbers/six_32b.png \
+     vis/textures/2d/numbers/seven_32b.png \
+     vis/textures/2d/numbers/eight_32b.png \
+     vis/textures/2d/numbers/nine_32b.png \
+     vis/textures/2d/numbers/zero_32b.png \
+     vis/textures/2d/numbers/minus_32b.png \
      vis/textures/common/areaportal.png \
      vis/textures/common/caulk.png \
      vis/textures/common/clip.png \
@@ -216,7 +227,6 @@ RELEASEFILES=\
      vis/models/ships/ship2/animation.cfg \
      vis/models/ships/ship3/animation.cfg \
      vis/textures/2d/bigchars.tga \
-     vis/textures/2d/numbers/ \
      vis/textures/menu/font2_prop.tga
 
 %.png : %.pdf
