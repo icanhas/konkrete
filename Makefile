@@ -138,6 +138,8 @@ VIS=\
      vis/textures/medals/medal_impressive.png \
      vis/textures/medals/medal_victory.png \
      vis/textures/menu/pointer.png \
+     vis/textures/menu/font1_prop.png \
+     vis/textures/menu/font1_prop_glo.png \
      vis/textures/menu/sliderbutton0.png \
      vis/textures/menu/switch_off.png \
      vis/textures/menu/switch_on.png \
@@ -215,8 +217,6 @@ RELEASEFILES=\
      vis/models/ships/ship3/animation.cfg \
      vis/textures/2d/bigchars.tga \
      vis/textures/2d/numbers/ \
-     vis/textures/menu/font1_prop.tga \
-     vis/textures/menu/font1_prop_glo.tga \
      vis/textures/menu/font2_prop.tga
 
 %.png : %.pdf
