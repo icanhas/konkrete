@@ -81,8 +81,8 @@ VIS=\
      vis/textures/dmg/shadow.png \
      vis/textures/effects/black.png \
      vis/textures/effects/bullethit/1.png \
-     vis/textures/effects/bullethit/1.png \
-     vis/textures/effects/bullethit/1.png \
+     vis/textures/effects/bullethit/3.png \
+     vis/textures/effects/bullethit/2.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/plasma.png \
      vis/textures/effects/plasmahit.png \
