@@ -38,6 +38,7 @@ VIS=\
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
      vis/models/weaphits/boom01.iqm \
+     vis/models/weaphits/ring02.iqm \
      vis/models/weaps/heminigun/heminigun.iqm \
      vis/models/weaps/flak/flak.iqm \
      vis/models/weaps/lightning/lightning.iqm \
@@ -83,6 +84,9 @@ VIS=\
      vis/textures/effects/quadmap2.png \
      vis/textures/effects/railcore.png \
      vis/textures/effects/regenmap2.png \
+     vis/textures/effects/railhit/1.png \
+     vis/textures/effects/railhit/2.png \
+     vis/textures/effects/railhit/3.png \
      vis/textures/effects/smokepuff1.png \
      vis/textures/effects/sabsplode/1.png \
 	 vis/textures/effects/sabsplode/2.png \
