@@ -1248,12 +1248,12 @@ railExplosion
 {
 	cull disable
         {
-		animmap 4 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
+		animmap 5 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
 		alphaGen wave inversesawtooth 0 1 0 5
 		blendfunc blend
 	}
 	{
-		animmap 4 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
+		animmap 5 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
 		alphaGen wave sawtooth 0 1 0 5
 		blendfunc blend
 	}
