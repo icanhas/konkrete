@@ -38,6 +38,7 @@ VIS=\
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
      vis/models/weaphits/boom01.iqm \
+     vis/models/weaphits/bullet.iqm \
      vis/models/weaphits/ring02.iqm \
      vis/models/weaps/heminigun/heminigun.iqm \
      vis/models/weaps/flak/flak.iqm \
@@ -79,6 +80,9 @@ VIS=\
      vis/textures/dmg/plasma_mrk.png \
      vis/textures/dmg/shadow.png \
      vis/textures/effects/black.png \
+     vis/textures/effects/bullethit/1.png \
+     vis/textures/effects/bullethit/1.png \
+     vis/textures/effects/bullethit/1.png \
      vis/textures/effects/invismap.png \
      vis/textures/effects/plasma.png \
      vis/textures/effects/plasmahit.png \
