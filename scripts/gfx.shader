@@ -1236,7 +1236,7 @@ plasmaExplosion
 {
 	cull disable
 	{
-		clampmap models/weaphits/plasmaboom.tga
+		clampmap vis/textures/effects/plasmahit.tga
 		blendfunc add
                 tcMod stretch triangle .6 0.1 0 8
                 tcmod rotate 999
