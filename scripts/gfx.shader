@@ -1278,12 +1278,12 @@ bulletExplosion
 {
 	cull disable
 	{
-		animmap 5 vis/textures/effects/bullethit/1.tga  animmap 5 vis/textures/effects/bullethit/2.tga  animmap 5 vis/textures/effects/bullethit/3.tga animmap 5 vis/textures/effects/black.tga
+		animmap 5 vis/textures/effects/bullethit/1.tga vis/textures/effects/bullethit/2.tga vis/textures/effects/bullethit/3.tga vis/textures/effects/black.tga
 		rgbGen wave inversesawtooth 0 1 0 5
 		blendfunc add
 	}
 	{
-		animmap 5 vis/textures/effects/bullethit/1.tga  animmap 5 vis/textures/effects/bullethit/2.tga  animmap 5 vis/textures/effects/bullethit/3.tga animmap 5 vis/textures/effects/black.tga
+		animmap 5 vis/textures/effects/bullethit/1.tga vis/textures/effects/bullethit/2.tga vis/textures/effects/bullethit/3.tga vis/textures/effects/black.tga
 		rgbGen wave sawtooth 0 1 0 5
 		blendfunc add
 	}
