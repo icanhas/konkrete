@@ -1248,12 +1248,12 @@ railExplosion
 {
 	cull disable
         {
-		animmap 5 models/weaphits/ring02_1.tga  models/weaphits/ring02_2.tga  models/weaphits/ring02_3.tga models/weaphits/ring02_4.tga gfx/colors/black.tga
+		animmap 4 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
 		alphaGen wave inversesawtooth 0 1 0 5
 		blendfunc blend
 	}
 	{
-		animmap 5 models/weaphits/ring02_2.tga  models/weaphits/ring02_3.tga models/weaphits/ring02_4.tga gfx/colors/black.tga gfx/colors/black.tga
+		animmap 4 /vis/textures/effects/railhit/1.tga  /vis/textures/effects/railhit/2.tga  /vis/textures/effects/railhit/3.tga /vis/textures/effects/black.tga
 		alphaGen wave sawtooth 0 1 0 5
 		blendfunc blend
 	}
