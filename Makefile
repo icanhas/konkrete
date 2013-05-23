@@ -46,6 +46,7 @@ VIS=\
      vis/models/weaps/melee/melee.iqm \
      vis/models/weaps/minigun/minigun.iqm \
      vis/models/weaps/nadelauncher/nadelauncher.iqm \
+     vis/models/weaps/nanoid/nanoidcannon.iqm \
      vis/models/weaps/plasma/plasma.iqm \
      vis/models/weaps/proxlauncher/prox.iqm \
      vis/models/weaps/rail/railgun.iqm \
@@ -188,6 +189,7 @@ VIS=\
      vis/textures/weaps/melee/melee.png \
      vis/textures/weaps/minigun/minigun.png \
      vis/textures/weaps/nadelauncher/nadelauncher.png \
+     vis/textures/weaps/nanoid/nanoidcannon.png \
      vis/textures/weaps/plasma/plasma.png \
      vis/textures/weaps/railgun/railgun.png \
      vis/textures/weaps/shotgun/shotgun.png \
