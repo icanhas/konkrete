@@ -38,8 +38,8 @@ vis/textures/ships/griever/engine
 {
         {
                 map vis/textures/ships/griever/engine.tga
-                rgbGen lightingdiffuse
-        }
+				rgbGen lightingdiffuse
+	}
 }
 vis/textures/weaps/hook/hook
 {
@@ -66,3 +66,31 @@ lightningBoltNew
 		tcmod scale  2 1
 	}
 }
+
+textures/metal/shinymetal
+{
+
+	{
+		//map $lightmap
+		map vis/textures/metal/metalenv.tga
+                tcGen environment
+		tcmod scale 1 1
+		rgbGen identity   
+	}
+
+		
+	{
+		map vis/textures/metal/metaldiffuse.tga
+		blendFunc GL_ONE_MINUS_SRC_ALPHA GL_SRC_ALPHA
+		rgbGen identity
+	}
+
+
+	{
+		map $lightmap
+		rgbgen identity
+		blendFunc GL_DST_COLOR GL_ZERO
+	}
+		
+} 
+
