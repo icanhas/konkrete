@@ -68,6 +68,9 @@ VIS=\
      vis/textures/2d/numbers/nine_32b.png \
      vis/textures/2d/numbers/zero_32b.png \
      vis/textures/2d/numbers/minus_32b.png \
+     vis/textures/basic/concrete.png \
+     vis/textures/basic/trimblue.png \
+     vis/textures/basic/trimred.png \
      vis/textures/common/areaportal.png \
      vis/textures/common/caulk.png \
      vis/textures/common/clip.png \
@@ -165,6 +168,8 @@ VIS=\
      vis/textures/menu/switch_off.png \
      vis/textures/menu/switch_on.png \
      vis/textures/menu/sigil.png \
+     vis/textures/metal/metaldiffuse.png \
+     vis/textures/metal/metalenv.png \
      vis/textures/null.png \
      vis/textures/projectiles/rocket/rocketflare1.png \
      vis/textures/projectiles/rocket/rocketflare2.png \
@@ -201,6 +206,7 @@ TARGETS+=$(VIS)
 MAPS=\
      maps/kctf1.bsp \
      maps/kctf2.bsp \
+     maps/kctf3.bsp \
      maps/kdm1.bsp \
      maps/kt1.bsp \
      maps/kt2.bsp
