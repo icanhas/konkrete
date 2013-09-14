@@ -29,7 +29,7 @@ DTEXTURES=$(DVIS)/textures
 
 VIS=\
      vis/test.png \
-     vis/models/projectiles/nade.iqm \
+     vis/models/projectiles/grenade.iqm \
      vis/models/projectiles/proxmine.iqm \
      vis/models/projectiles/rocket.iqm \
      vis/models/projectiles/rocketweak.iqm \
