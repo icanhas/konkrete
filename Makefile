@@ -7,7 +7,7 @@ IMFLAGS?=
 CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
-YMAPFLAGS?=-texturedir vis/textures
+YMAPFLAGS?=-fs_basepath '$(DINSTALL)' -texturedir 'vis/textures'
 IQM?=iqm
 
 DBASE?=base
@@ -272,9 +272,9 @@ RELEASEFILES=\
 %.ogg : %.wav
 	$(OGG) $(OGGFLAGS) -o $@ $<
 %.bsp : %.map
-	$(YMAP) $(YMAPFLAGS) $< >/dev/null
-	$(YMAP) $(YMAPFLAGS) -vis $< >/dev/null
-	$(YMAP) $(YMAPFLAGS) -light $< >/dev/null
+	$(YMAP) $(YMAPFLAGS) -meta '$<' >/dev/null
+	$(YMAP) $(YMAPFLAGS) -vis '$<' >/dev/null
+	$(YMAP) $(YMAPFLAGS) -light -dirty '$<' >/dev/null
 %.iqm : %.iqe
 	$(IQM) $@ $< >/dev/null
 
