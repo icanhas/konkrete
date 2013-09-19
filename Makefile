@@ -272,9 +272,9 @@ RELEASEFILES=\
 %.ogg : %.wav
 	$(OGG) $(OGGFLAGS) -o $@ $<
 %.bsp : %.map
-	$(YMAP) $(YMAPFLAGS) -meta '$<' >/dev/null
+	$(YMAP) $(YMAPFLAGS) -bsp -meta -patchmeta -samplesize 8 '$<' >/dev/null
 	$(YMAP) $(YMAPFLAGS) -vis '$<' >/dev/null
-	$(YMAP) $(YMAPFLAGS) -light -dirty '$<' >/dev/null
+	$(YMAP) $(YMAPFLAGS) -light -patchshadows -dirty -samples 4 -samplesize 8 -shade '$<' >/dev/null
 %.iqm : %.iqe
 	$(IQM) $@ $< >/dev/null
 
