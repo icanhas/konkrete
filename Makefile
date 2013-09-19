@@ -7,7 +7,8 @@ IMFLAGS?=
 CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
-YMAPFLAGS?=-fs_basepath '$(DINSTALL)' -texturedir 'vis/textures'
+YMAPTHREADS?=1
+YMAPFLAGS?=-t $(YMAPTHREADS) -fs_basepath '$(DINSTALL)' -texturedir 'vis/textures'
 IQM?=iqm
 
 DBASE?=base
