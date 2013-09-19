@@ -42,7 +42,6 @@ VIS=\
      vis/models/weaphits/bullet.iqm \
      vis/models/weaphits/ring02.iqm \
      vis/models/weaps/heminigun/heminigun.iqm \
-     vis/models/weaps/flak/flak.iqm \
      vis/models/weaps/lightning/lightning.iqm \
      vis/models/weaps/melee/melee.iqm \
      vis/models/weaps/minigun/minigun.iqm \
@@ -99,10 +98,10 @@ VIS=\
      vis/textures/effects/railhit/3.png \
      vis/textures/effects/smokepuff1.png \
      vis/textures/effects/sabsplode/1.png \
-	 vis/textures/effects/sabsplode/2.png \
-	 vis/textures/effects/sabsplode/3.png \
-	 vis/textures/effects/sabsplode/4.png \
-	 vis/textures/effects/sabsplode/5.png \
+     vis/textures/effects/sabsplode/2.png \
+     vis/textures/effects/sabsplode/3.png \
+     vis/textures/effects/sabsplode/4.png \
+     vis/textures/effects/sabsplode/5.png \
      vis/textures/icons/anon.png \
      vis/textures/icons/envirosuit.png \
      vis/textures/icons/flight.png \
