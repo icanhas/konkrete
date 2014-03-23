@@ -1,0 +1,6 @@
+shipbody,vis/textures/ships/griever/shipbodyred
+engine,vis/textures/ships/griever/enginered
+missileport,vis/textures/weaps/rockets/rockets
+hook,vis/textures/weaps/hook/hook
+tag_weapon,
+tag_flag,
