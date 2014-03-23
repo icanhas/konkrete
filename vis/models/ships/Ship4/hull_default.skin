@@ -1,4 +1,5 @@
 shipbody,vis/textures/ships/ship4/shipbody
+missileport,vis/textures/weaps/rockets/rockets
 hook,vis/textures/weaps/hook/hook
 tag_weapon,
 tag_flag,
