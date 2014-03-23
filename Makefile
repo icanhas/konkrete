@@ -8,11 +8,11 @@ CRUSH?=pngcrush
 CRUSHFLAGS?=-q -rem text -rem alla
 YMAP?=ymap
 YMAPTHREADS?=1
-YMAPFLAGS?=-t $(YMAPTHREADS) -fs_basepath '$(DINSTALL)' -texturedir 'vis/textures'
+YMAPFLAGS?=-t $(YMAPTHREADS) -fs_basepath '$(INSTALLDIR)' -texturedir 'vis/textures'
 IQM?=iqm
 
 DBASE?=base
-DINSTALL?=/usr/local/games/konkrete
+INSTALLDIR?=/usr/local/games/konkrete
 RELEASE?=$(DBASE)-$(shell date +"%Y-%m-%d")
 DIST?=$(DBASE)-src-$(shell date +"%Y-%m-%d")
 
@@ -331,12 +331,12 @@ dist: all
 	@rm $(DIST).tar
 
 install: all
-	@if [ ! -d $(DINSTALL)/$(DBASE) ]; then \
-		mkdir -p $(DINSTALL)/$(DBASE); \
+	@if [ ! -d $(INSTALLDIR)/$(DBASE) ]; then \
+		mkdir -p $(INSTALLDIR)/$(DBASE); \
 	fi
-	@tar cf - $(RELEASEFILES) | tar xf - -C $(DINSTALL)/$(DBASE)
+	@tar cf - $(RELEASEFILES) | tar xf - -C $(INSTALLDIR)/$(DBASE)
 	@echo
-	@echo "installed $(DINSTALL)/$(DBASE)"
+	@echo "installed $(INSTALLDIR)/$(DBASE)"
 	@echo
 
 clean:
