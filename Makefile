@@ -38,6 +38,7 @@ VIS=\
      vis/models/ships/griever/hull.iqm \
      vis/models/ships/ship2/hull.iqm \
      vis/models/ships/ship3/hull.iqm \
+	 vis/models/ships/ship4/hull.iqm \
      vis/models/weaphits/boom01.iqm \
      vis/models/weaphits/bullet.iqm \
      vis/models/weaphits/ring02.iqm \
@@ -178,10 +179,23 @@ VIS=\
      vis/textures/projectiles/rocketweak/rocketweakflare2.png \
      vis/textures/shells/m_shell.png \
      vis/textures/ships/griever/engine.png \
+     vis/textures/ships/griever/engineblue.png \
+     vis/textures/ships/griever/enginered.ng \
      vis/textures/ships/griever/shipbody.png \
+	 vis/textures/ships/griever/shipbodyblue.png \
+	 vis/textures/ships/griever/shipbodyred.png \
      vis/textures/ships/ship2/engine.png \
+	 vis/textures/ships/ship2/engineblue.png \
+	 vis/textures/ships/ship2/enginered.png \
      vis/textures/ships/ship2/shipbody.png \
+	 vis/textures/ships/ship2/shipbodyblue.png \
+	 vis/textures/ships/ship2/shipbodyred.png \
      vis/textures/ships/ship3/shipbody.png \
+	 vis/textures/ships/ship3/shipbodyblue.png \
+	 vis/textures/ships/ship3/shipbodyred.png \
+	 vis/textures/ships/ship4/shipbody.png \
+	 vis/textures/ships/ship4/shipbodyblue.png \
+	 vis/textures/ships/ship4/shipbodyred.png \
      vis/textures/sprites/balloon4.png \
      vis/textures/sprites/bubble.png \
      vis/textures/sprites/foe2.png \
@@ -239,11 +253,21 @@ RELEASEFILES=\
      fonts \
      scripts \
      vis/models/ships/griever/hull_default.skin \
+	 vis/models/ships/griever/hull_blue.skin \
+	 vis/models/ships/griever/hull_red.skin \
      vis/models/ships/ship2/hull_default.skin \
+     vis/models/ships/ship2/hull_blue.skin \
+     vis/models/ships/ship2/hull_red.skin \
      vis/models/ships/ship3/hull_default.skin \
+	 vis/models/ships/ship3/hull_blue.skin \
+	 vis/models/ships/ship3/hull_red.skin \
+     vis/models/ships/ship4/hull_default.skin \
+	 vis/models/ships/ship4/hull_blue.skin \
+	 vis/models/ships/ship4/hull_red.skin \
      vis/models/ships/griever/animation.cfg \
      vis/models/ships/ship2/animation.cfg \
      vis/models/ships/ship3/animation.cfg \
+	 vis/models/ships/ship4/animation.cfg \
      vis/textures/2d/bigchars.tga \
      vis/textures/menu/font2_prop.tga
 
