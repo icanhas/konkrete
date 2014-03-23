@@ -271,35 +271,35 @@ RELEASEFILES=\
   vis/textures/2d/bigchars.tga \
   vis/textures/menu/font2_prop.tga
 
-%.png : %.pdf
+%.png:%.pdf
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
-%.png : %.svg
+%.png:%.svg
 	$(IM) $(IMFLAGS) -deconstruct -coalesce -background none svg:$< tiff:$*.tmp.tiff
 	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
 	@rm -f $*.tmp.tiff
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
-%.png : %.ps
+%.png:%.ps
 	$(GS) $(GSFLAGS) -sDEVICE=pngalpha -o $@ $<
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
-%.png : %.psd
+%.png:%.psd
 	$(IM) $(IMFLAGS) -deconstruct -coalesce psd:$< tiff:$*.tmp.tiff
 	$(IM) $(IMFLAGS) tiff:$*.tmp.tiff[0] png:$@
 	@rm -f $*.tmp.tiff
 	$(CRUSH) $(CRUSHFLAGS) $@ $*.tmp.png
 	mv $*.tmp.png $@
-%.png : %.tga
+%.png:%.tga
 	$(IM) $(IMFLAGS) tga:$< png:$@
-%.ogg : %.wav
+%.ogg:%.wav
 	$(OGG) $(OGGFLAGS) -o $@ $<
-%.bsp : %.map
+%.bsp:%.map
 	$(YMAP) $(YMAPFLAGS) -bsp -meta -patchmeta -samplesize 8 '$<' >/dev/null
 	$(YMAP) $(YMAPFLAGS) -vis '$<' >/dev/null
 	$(YMAP) $(YMAPFLAGS) -light -patchshadows -dirty -samples 4 -samplesize 8 -shade '$<' >/dev/null
-%.iqm : %.iqe
+%.iqm:%.iqe
 	$(IQM) $@ $< >/dev/null
 
 all: $(TARGETS)
