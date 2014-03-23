@@ -180,7 +180,7 @@ VIS=\
      vis/textures/shells/m_shell.png \
      vis/textures/ships/griever/engine.png \
      vis/textures/ships/griever/engineblue.png \
-     vis/textures/ships/griever/enginered.ng \
+     vis/textures/ships/griever/enginered.png \
      vis/textures/ships/griever/shipbody.png \
 	 vis/textures/ships/griever/shipbodyblue.png \
 	 vis/textures/ships/griever/shipbodyred.png \
