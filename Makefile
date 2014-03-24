@@ -30,6 +30,7 @@ DTEXTURES=$(DVIS)/textures
 
 VIS=\
   vis/test.png \
+  vis/models/items/flag.iqm \
   vis/models/projectiles/grenade.iqm \
   vis/models/projectiles/proxmine.iqm \
   vis/models/projectiles/rocket.iqm \
