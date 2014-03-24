@@ -92,5 +92,13 @@ textures/metal/shinymetal
 		blendFunc GL_DST_COLOR GL_ZERO
 	}
 		
-} 
+}
 
+textures/common/flag
+{
+	cull disable
+    {
+		map vis/textures/basic/flag.tga
+        rgbGen lightingdiffuse
+    }
+}
