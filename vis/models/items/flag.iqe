@@ -4,7 +4,7 @@ joint "main" -1
 	pq 0.00000000 0.00000000 0.00000000 -0.70710683 -0.00000000 -0.00000000 -0.70710683
 
 mesh "flag"
-	material "common\flag"
+	material "textures\common\flag"
 
 vp -1.39999998 0.93333888 -34.14599991
 	vt 0.77545035 0.70734179
